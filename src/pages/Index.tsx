@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
@@ -211,7 +212,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[{
             title: "Redução de Custos",
-            desc: "Até 16% menos gastos com insumos através de aplicação localizada",
+            desc: "Até 80% menos gastos com insumos através de aplicação localizada",
             icon: "💰"
           }, {
             title: "Aumento de Produtividade",
@@ -363,7 +364,7 @@ const Index = () => {
             <Card className="p-6">
               <CardContent className="p-0">
                 <p className="text-gray-600 mb-4 italic">
-                  "Reduzimos em cerca de 16% o custo por hectare com herbicidas na dessecação."
+                  "Reduzimos em cerca de 80% o custo por hectare com herbicidas na dessecação."
                 </p>
                 <div className="font-semibold text-gray-900">Antônio Basílio</div>
                 <div className="text-green-600 text-sm">Fazenda Mata do Cedro</div>
