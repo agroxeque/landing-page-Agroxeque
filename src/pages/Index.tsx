@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
@@ -222,7 +223,7 @@ const Index = () => {
             icon: "📈"
           }, {
             title: "Vistorias Eficientes",
-            desc: "Tempo de campo reduzido com direcionamento preciso",
+            desc: "Tempo de campo reduzido com inspeções direcionadas e visitas menos frequentes",
             icon: "🎯"
           }, {
             title: "Decisões Inteligentes",
@@ -444,3 +445,4 @@ const Index = () => {
 };
 
 export default Index;
+
