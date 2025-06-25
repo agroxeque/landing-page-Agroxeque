@@ -178,10 +178,7 @@ const Index = () => {
                   "Assim também a fé, se não tiver obras, é morta em si mesma." Ti 2:17
                 </h2>
                 <div className="max-w-4xl mx-auto">
-                  <p className="text-white text-lg leading-relaxed">
-                    Acreditamos que o resultado depende da ação, e não da informação. Por isso, nossas soluções vão muito além da detecção de anomalias na lavoura. 
-                    Agroxeque é a ferramenta ideal para você gerar prescrições de forma pontual e específica, tratando os problemas apenas onde eles de fato existem.
-                  </p>
+                  <p className="text-white text-lg leading-relaxed">Acreditamos que o resultado depende da ação, e não da informação. Por isso, nossas soluções vão muito além da detecção de anomalias na lavoura. Agroxeque é a ferramenta ideal para você gerar prescrições de forma pontual e específica, tratando os problemas apenas onde de fato eles existem.</p>
                 </div>
               </div>
             </section>
