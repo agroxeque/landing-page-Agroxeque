@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
@@ -16,15 +17,15 @@ const Index = () => {
       </header>
 
       {/* Dobra 1: O Impacto Imediato */}
-      <section className="relative bg-gradient-to-br from-green-50 to-green-100 py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-green-50 to-green-100 py-12 md:py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="hexagon-pattern"></div>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             <span className="text-slate-950">Para nós, cada hectare importa!</span>
           </h1>
-          <p className="text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed text-xl">
+          <p className="text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed text-lg md:text-xl">
             Aqui você pode monitorar, analisar e intervir em cada hectare, de forma única e independente, com rapidez e facilidade.<br />
             Essa é nossa missão, bem-vindo à Agroxeque!
           </p>
@@ -43,16 +44,16 @@ const Index = () => {
       </section>
 
       {/* Dobra 2: A Dor e a Promessa */}
-      <section className="py-20 bg-white">
+      <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Sua Lavoura Guarda Segredos que <span className="text-red-600">Valem Ouro</span>!
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Enquanto você toma decisões no escuro, a Agroxeque revela dados valiosos sobre o potencial escondido dentro de cada talhão.</p>
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Enquanto você toma decisões no escuro, a Agroxeque revela dados valiosos sobre o potencial escondido dentro de cada talhão.</p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
@@ -94,16 +95,16 @@ const Index = () => {
       </section>
 
       {/* Dobra 3: Como Funciona */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Agricultura Digital há Poucos Passos, com <span className="text-green-600">Poucos Cliques</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Da captura de imagens até a aplicação em campo - processo simples, resultados extraordinários</p>
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Da captura de imagens até a aplicação em campo - processo simples, resultados extraordinários</p>
           </div>
           
-          <div className="grid md:grid-cols-5 gap-8">
+          <div className="grid md:grid-cols-5 gap-6 md:gap-8">
             {[{
             number: "1",
             title: "Capture as Imagens",
@@ -137,20 +138,20 @@ const Index = () => {
       </section>
 
       {/* Dobra 4: Diferencial Chave */}
-      <section className="py-20 bg-white">
+      <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               <span className="text-green-600">Qual é seu melhor hectare?</span>
             </h2>
           </div>
           
-          <div className="space-y-20">
+          <div className="space-y-12 md:space-y-20">
             {/* Ranking de Células */}
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">Descubra com a Agroxeque</h3>
-                <p className="text-lg text-gray-600 mb-6">Nossa exclusiva tecnologia de &quot;Ranking&quot; classifica cada célula numericamente, ordenando-as da melhor à pior. Isso permite vistorias direcionadas, otimização de recursos e decisões baseadas em informações, ao invés de impressões.</p>
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Descubra com a Agroxeque</h3>
+                <p className="text-base md:text-lg text-gray-600 mb-6">Nossa exclusiva tecnologia de &quot;Ranking&quot; classifica cada célula numericamente, ordenando-as da melhor à pior. Isso permite vistorias direcionadas, otimização de recursos e decisões baseadas em informações, ao invés de impressões.</p>
                 <ul className="space-y-3">
                   <li className="flex items-center space-x-3">
                     <Check className="w-5 h-5 text-green-600" />
@@ -172,22 +173,22 @@ const Index = () => {
             </div>
             
             {/* Nova Seção - Citação Bíblica */}
-            <section className="py-12 bg-green-700">
+            <section className="py-8 md:py-12 bg-green-700">
               <div className="container mx-auto px-4 text-center">
-                <h2 className="text-2xl font-bold text-white mb-6">
+                <h2 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6">
                   "Assim também a fé, se não tiver obras, é morta em si mesma." Ti 2:17
                 </h2>
                 <div className="max-w-4xl mx-auto">
-                  <p className="text-white text-lg leading-relaxed">Acreditamos que o resultado depende da ação, e não da informação. Por isso, nossas soluções vão muito além da detecção de anomalias na lavoura. Agroxeque é a ferramenta ideal para você gerar prescrições de forma pontual e específica, tratando os problemas apenas onde de fato eles existem.</p>
+                  <p className="text-white text-base md:text-lg leading-relaxed">Acreditamos que o resultado depende da ação, e não da informação. Por isso, nossas soluções vão muito além da detecção de anomalias na lavoura. Agroxeque é a ferramenta ideal para você gerar prescrições de forma pontual e específica, tratando os problemas apenas onde de fato eles existem.</p>
                 </div>
               </div>
             </section>
             
             {/* Prescrições Flexíveis */}
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="md:order-2">
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">Mesmo Talhão, Necessidades Diferentes</h3>
-                <p className="text-lg text-gray-600 mb-6">Defina para cada célula individualmente ou em grupo, um tipo de tratamento único ou uma dose específica, de forma  independente.</p>
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Mesmo Talhão, Necessidades Diferentes</h3>
+                <p className="text-base md:text-lg text-gray-600 mb-6">Defina para cada célula individualmente ou em grupo, um tipo de tratamento único ou uma dose específica, de forma  independente.</p>
                 <div className="space-y-4">
                   <div className="bg-green-50 p-4 rounded-lg">
                     <h4 className="font-semibold text-green-800">Taxa Variável em Área Total</h4>
@@ -212,15 +213,15 @@ const Index = () => {
       </section>
 
       {/* Dobra 5: Benefícios Tangíveis */}
-      <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-green-50 to-blue-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Uma Plataforma Única, com <span className="text-green-600">Múltiplos Benefícios</span>
             </h2>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             {[{
             title: "Redução de Custos",
             desc: "Até 75% menos gastos com alguns insumos através de aplicação localizada",
@@ -257,15 +258,15 @@ const Index = () => {
       </section>
 
       {/* Dobra 6: Público-Alvo */}
-      <section className="py-20 bg-white">
+      <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Ideal para Quem Busca <span className="text-green-600">Tomar Decisões Assertivas</span> no Campo
             </h2>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             <div className="text-center">
               <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="w-12 h-12 text-green-600" />
@@ -297,18 +298,18 @@ const Index = () => {
       </section>
 
       {/* Dobra 7: Modelo de Créditos */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Pague Apenas Pelo Que Usar – <span className="text-green-600">Sem Surpresas</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Modelo sob-demanda que se adapta ao tamanho do seu negócio. Cadastro gratuito, cobrança por hectare processado, com preço justo e descontos progressivos.</p>
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Modelo sob-demanda que se adapta ao tamanho do seu negócio. Cadastro gratuito, cobrança por hectare processado, com preço justo e descontos progressivos.</p>
           </div>
           
           <div className="max-w-4xl mx-auto">
-            <Card className="p-8">
-              <div className="grid md:grid-cols-3 gap-8 text-center">
+            <Card className="p-6 md:p-8">
+              <div className="grid md:grid-cols-3 gap-6 md:gap-8 text-center">
                 <div>
                   <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                     0
@@ -343,7 +344,7 @@ const Index = () => {
       </section>
 
       {/* Dobra 8: Pacotes de Créditos */}
-      <section className="py-20 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 relative overflow-hidden">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 opacity-5">
           <div className="hexagon-pattern"></div>
@@ -352,15 +353,15 @@ const Index = () => {
         <div className="absolute bottom-10 right-10 w-40 h-40 bg-emerald-200 rounded-full opacity-20 blur-xl"></div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               <span className="text-green-600">Pacotes de Créditos</span> que se encaixam no seu negócio
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-4">
               Escolha uma combinação de pacotes que melhor se adequa à sua demanda e frequencia de uso.
             </p>
             <div className="bg-gradient-to-r from-green-100 to-emerald-100 rounded-lg p-4 max-w-2xl mx-auto border border-green-200">
-              <p className="text-lg font-semibold text-green-800">
+              <p className="text-base md:text-lg font-semibold text-green-800">
                 Pagamento com PIX ou cartão de crédito. Parcele seus pacotes em até 6 x sem juros!
               </p>
             </div>
@@ -368,34 +369,34 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-green-200">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">10 Créditos</h3>
+              <CardContent className="p-6 md:p-8 text-center">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">10 Créditos</h3>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-green-600">R$ 8,90</span>
+                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 8,90</span>
                   <span className="text-gray-600 text-sm block">/hectare</span>
                 </div>
                 <div className="mb-6 space-y-2">
-                  <p className="text-xl font-semibold text-gray-800">R$ 89,00</p>
+                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 89,00</p>
                   <p className="text-sm text-gray-600">Em até 6 x de R$ 14,83</p>
                 </div>
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
                   Escolher Pacote
                 </Button>
               </CardContent>
             </Card>
             
             <Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-green-200">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">50 Créditos</h3>
+              <CardContent className="p-6 md:p-8 text-center">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">50 Créditos</h3>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-green-600">R$ 6,98</span>
+                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 6,98</span>
                   <span className="text-gray-600 text-sm block">/hectare</span>
                 </div>
                 <div className="mb-6 space-y-2">
-                  <p className="text-xl font-semibold text-gray-800">R$ 349,00</p>
+                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 349,00</p>
                   <p className="text-sm text-gray-600">Em até 6 x de R$ 58,17</p>
                 </div>
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
                   Escolher Pacote
                 </Button>
               </CardContent>
@@ -408,41 +409,41 @@ const Index = () => {
                   Mais Vendido
                 </div>
               </div>
-              <CardContent className="p-8 text-center pt-10">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">100 Créditos</h3>
+              <CardContent className="p-6 md:p-8 text-center pt-10">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">100 Créditos</h3>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-green-600">R$ 5,49</span>
+                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 5,49</span>
                   <span className="text-gray-600 text-sm block">/hectare</span>
                 </div>
                 <div className="mb-6 space-y-2">
-                  <p className="text-xl font-semibold text-gray-800">R$ 549,00</p>
+                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 549,00</p>
                   <p className="text-sm text-gray-600">Em até 6 x de R$ 91,50</p>
                 </div>
-                <Button className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
+                <Button className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
                   Escolher Pacote
                 </Button>
               </CardContent>
             </Card>
             
             <Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-green-200">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">200 Créditos</h3>
+              <CardContent className="p-6 md:p-8 text-center">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">200 Créditos</h3>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-green-600">R$ 4,89</span>
+                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 4,89</span>
                   <span className="text-gray-600 text-sm block">/hectare</span>
                 </div>
                 <div className="mb-6 space-y-2">
-                  <p className="text-xl font-semibold text-gray-800">R$ 978,00</p>
+                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 978,00</p>
                   <p className="text-sm text-gray-600">Em até 6 x de R$ 163,00</p>
                 </div>
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
                   Escolher Pacote
                 </Button>
               </CardContent>
             </Card>
           </div>
           
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 md:mt-12">
             <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 inline-block border border-green-100 shadow-sm">
               <p className="text-gray-600 text-sm font-medium">* 1 crédito = 1 hectare ou 100 MB</p>
             </div>
@@ -451,15 +452,15 @@ const Index = () => {
       </section>
 
       {/* Dobra 9: Prova Social */}
-      <section className="py-20 bg-white">
+      <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Veja o Que Dizem <span className="text-green-600">Nossos Usuários</span>
             </h2>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             <Card className="p-6">
               <CardContent className="p-0">
                 <p className="text-gray-600 mb-4 italic">&quot;Utilizando a Agroxeque, conseguimos melhorar o aproveitamento e o vigor da nossa semente, identificando áreas mais prejudicadas e realizando a colheita delas separadamente. Assim, destinamos para semente apenas a produção de áreas sem ocorrência de avarias e longe de reboleiras.&quot;</p>
@@ -506,16 +507,16 @@ const Index = () => {
       </section>
 
       {/* Dobra 10: Chamada Final */}
-      <section className="py-20 bg-gradient-to-br from-green-600 to-green-700 text-white">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-green-600 to-green-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Pronto para Desbloquear o Potencial Máximo da Sua Lavoura?
           </h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+          <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-90">
             Junte-se à vanguarda da agricultura digital. Transforme dados em decisões, 
             hectares em lucros e sua fazenda em um case de sucesso.
           </p>
-          <Button className="bg-white text-green-600 hover:bg-gray-100 px-12 py-4 text-lg font-semibold">
+          <Button className="bg-white text-green-600 hover:bg-gray-100 px-8 md:px-12 py-4 text-base md:text-lg font-semibold">
             Crie Sua Conta Gratuita Agora
           </Button>
           <p className="mt-4 text-sm opacity-75">
@@ -525,7 +526,7 @@ const Index = () => {
       </section>
 
       {/* Rodapé */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-gray-900 text-white py-8 md:py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
