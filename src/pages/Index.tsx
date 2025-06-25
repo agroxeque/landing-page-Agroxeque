@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
@@ -151,11 +150,7 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-3xl font-bold text-gray-900 mb-6">Descubra com a Agroxeque</h3>
-                <p className="text-lg text-gray-600 mb-6">
-                  Nossa exclusiva tecnologia de ranking classifica cada célula individualmente, 
-                  da melhor (1) à pior (n). Isso permite vistorias direcionadas, otimização de 
-                  recursos e decisões baseadas em dados precisos para cada metro da sua lavoura.
-                </p>
+                <p className="text-lg text-gray-600 mb-6">Nossa exclusiva tecnologia de &quot;Ranking&quot; classifica cada célula numericamente, ordenando-as da melhor à pior. Isso permite vistorias direcionadas, otimização de recursos e decisões baseadas em informações, ao invés de impressões.</p>
                 <ul className="space-y-3">
                   <li className="flex items-center space-x-3">
                     <Check className="w-5 h-5 text-green-600" />
