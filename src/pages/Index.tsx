@@ -467,6 +467,7 @@ const Index = () => {
                 </p>
                 <div className="font-semibold text-gray-900">Antônio Basílio</div>
                 <div className="text-green-600 text-sm">Fazenda Mata do Cedro</div>
+                <div className="text-gray-500 text-xs">Presidente Olegário - MG</div>
               </CardContent>
             </Card>
             
@@ -479,6 +480,7 @@ const Index = () => {
                 </p>
                 <div className="font-semibold text-gray-900">Matheus Grossi</div>
                 <div className="text-green-600 text-sm">Fazenda Lavrinha</div>
+                <div className="text-gray-500 text-xs">Serra do Salitre - MG</div>
               </CardContent>
             </Card>
             
@@ -490,6 +492,7 @@ const Index = () => {
                 </p>
                 <div className="font-semibold text-gray-900">José Carlos Siqueira</div>
                 <div className="text-green-600 text-sm">ZK Agro Consultoria</div>
+                <div className="text-gray-500 text-xs">Franca - SP</div>
               </CardContent>
             </Card>
           </div>
