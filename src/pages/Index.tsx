@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
@@ -217,7 +218,7 @@ const Index = () => {
             icon: "💰"
           }, {
             title: "Aumento de Produtividade",
-            desc: "Até 5 sacos a mais por hectare com manejo direcionado",
+            desc: "Identifique rapidamente pontos problemáticos e recupere o vigor em tempo hábil",
             icon: "📈"
           }, {
             title: "Vistorias Eficientes",
