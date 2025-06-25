@@ -171,6 +171,21 @@ const Index = () => {
               </div>
             </div>
             
+            {/* Nova Seção - Citação Bíblica */}
+            <section className="py-12 bg-green-700">
+              <div className="container mx-auto px-4 text-center">
+                <h2 className="text-2xl font-bold text-white mb-6">
+                  "Assim também a fé, se não tiver obras, é morta em si mesma." Ti 2:17
+                </h2>
+                <div className="max-w-4xl mx-auto">
+                  <p className="text-white text-lg leading-relaxed">
+                    Acreditamos que o resultado depende da ação, e não da informação. Por isso, nossas soluções vão muito além da detecção de anomalias na lavoura. 
+                    Agroxeque é a ferramenta ideal para você gerar prescrições de forma pontual e específica, tratando os problemas apenas onde eles de fato existem.
+                  </p>
+                </div>
+              </div>
+            </section>
+            
             {/* Prescrições Flexíveis */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="md:order-2">
