@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
@@ -106,7 +107,7 @@ const Index = () => {
           <div className="grid md:grid-cols-5 gap-8">
             {[{
             number: "1",
-            title: "Cadastre & Voe",
+            title: "Capture as Imagens",
             desc: "Faça upload das imagens do seu drone RGB convencional"
           }, {
             number: "2",
