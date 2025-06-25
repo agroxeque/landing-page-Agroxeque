@@ -391,7 +391,7 @@ const Index = () => {
             
             <Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-3 border-gradient-to-r from-yellow-400 to-orange-500 shadow-lg">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full text-sm font-bold flex items-center gap-2 shadow-lg py-1 px-6">
+                <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full text-sm font-bold flex items-center gap-2 shadow-lg mx-0 my-0 py-[10px] px-[2px]">
                   <Crown className="w-4 h-4 fill-current" />
                   Mais Vendido
                 </div>
