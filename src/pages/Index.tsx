@@ -89,9 +89,7 @@ Essa é nossa missão, bem-vindo à Agroxeque!</p>
             <div className="relative">
               <img src="/lovable-uploads/0cda620c-c0da-44c5-88e3-c4731b0c82e4.png" alt="Agricultural fields as chessboard" className="w-full rounded-lg shadow-xl" />
               <div className="absolute inset-0 bg-gradient-to-t from-green-600/20 to-transparent rounded-lg"></div>
-              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur rounded-lg p-4">
-                <p className="text-sm font-semibold text-green-600">Com Agroxeque: Visão Completa</p>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -147,7 +145,7 @@ Essa é nossa missão, bem-vindo à Agroxeque!</p>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Agroxeque: A Única Plataforma com <span className="text-green-600">Inteligência Granular Real</span>
+              Agroxeque: A Única Plataforma com <span className="text-green-600">Qual é seu melhor hectare?</span>
             </h2>
           </div>
           
