@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
@@ -120,7 +119,7 @@ const Index = () => {
           }, {
             number: "4",
             title: "Prescrição com Liberdade",
-            desc: "Crie prescrições flexíveis: taxa variável, catação ou híbrida"
+            desc: "Gere Mapas de Prescrição Flexíveis, perfeitos para maquinário Terrestre ou Drones"
           }, {
             number: "5",
             title: "Execute com Xeque-Map",
