@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
@@ -114,7 +115,7 @@ const Index = () => {
             desc: "Obtenha Automaticamente Ortofoto, MDS, Índice de Vegetação e Relatório"
           }, {
             number: "3",
-            title: "Analise com Score",
+            title: "Analise com Dados Concretos",
             desc: "Receba o ranking exclusivo de células da melhor (1) à pior (n)"
           }, {
             number: "4",
