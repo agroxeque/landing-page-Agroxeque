@@ -100,9 +100,7 @@ const Index = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Inteligência Agrícola ao Seu Alcance em <span className="text-green-600">Poucos Passos</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Da captura com drone até a aplicação em campo - processo simples, resultados extraordinários
-            </p>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Da captura de imagens até a aplicação em campo - processo simples, resultados extraordinários</p>
           </div>
           
           <div className="grid md:grid-cols-5 gap-8">
