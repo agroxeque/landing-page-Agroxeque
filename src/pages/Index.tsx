@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, Users, ArrowDown, Plus, Star } from "lucide-react";
+import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
 const Index = () => {
   return <div className="min-h-screen bg-white">
       {/* Header */}
@@ -391,8 +391,8 @@ const Index = () => {
             
             <Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-3 border-gradient-to-r from-yellow-400 to-orange-500 shadow-lg">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full text-sm font-bold flex items-center gap-2 shadow-lg py-[2px] my-0 mx-0 px-[54px]">
-                  <Star className="w-4 h-4 fill-current" />
+                <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full text-sm font-bold flex items-center gap-2 shadow-lg py-1 px-6">
+                  <Crown className="w-4 h-4 fill-current" />
                   Mais Vendido
                 </div>
               </div>
