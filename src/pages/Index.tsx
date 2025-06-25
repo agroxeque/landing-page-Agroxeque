@@ -249,7 +249,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Ideal para Quem Busca <span className="text-green-600">Gera Resultados</span> no Campo
+              Ideal para Quem Busca <span className="text-green-600">Tomar Decisões Assertivas</span> no Campo
             </h2>
           </div>
           
