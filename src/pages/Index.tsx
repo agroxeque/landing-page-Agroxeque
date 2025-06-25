@@ -1,6 +1,8 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
+
 const Index = () => {
   return <div className="min-h-screen bg-white">
       {/* Header */}
@@ -219,7 +221,7 @@ const Index = () => {
             icon: "📈"
           }, {
             title: "Vistorias Eficientes",
-            desc: "Tempo de campo reduzido com direcionamento preciso",
+            desc: "Tempo de campo reduzido com inspeções direcionadas e visitas menos frequentes",
             icon: "🎯"
           }, {
             title: "Decisões Inteligentes",
