@@ -227,11 +227,11 @@ const Index = () => {
             icon: "🧠"
           }, {
             title: "Uso Otimizado do Maquinário",
-            desc: "Economicamente viável e Ecologicamente sustentável",
+            desc: "Aplicações localizadas geram operações mais curtas",
             icon: "🚜"
           }, {
             title: "Manejo Fitossanitário Estratégico",
-            desc: "Tratamento preventivo nas áreas críticas",
+            desc: "Economicamente viável e Ecologicamente sustentável",
             icon: "🌱"
           }].map((benefit, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardContent className="p-6 text-center">
