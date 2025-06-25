@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, Users, ArrowDown, Plus } from "lucide-react";
+import { Check, Users, ArrowDown, Plus, Star } from "lucide-react";
 const Index = () => {
   return <div className="min-h-screen bg-white">
       {/* Header */}
@@ -332,7 +332,89 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Dobra 8: Prova Social */}
+      {/* Dobra 8: Pacotes de Créditos */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Escolha o <span className="text-green-600">Pacote Ideal</span> para Seu Negócio
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Pacotes flexíveis com preços que se adaptam ao tamanho da sua operação</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <Card className="relative hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Pacote 10</h3>
+                <div className="mb-4">
+                  <span className="text-3xl font-bold text-green-600">R$ 8,90</span>
+                  <span className="text-gray-600 text-sm block">/hectare</span>
+                </div>
+                <p className="text-gray-600 mb-6">10 créditos</p>
+                <Button className="w-full bg-green-600 hover:bg-green-700">
+                  Escolher Pacote
+                </Button>
+              </CardContent>
+            </Card>
+            
+            <Card className="relative hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Pacote 50</h3>
+                <div className="mb-4">
+                  <span className="text-3xl font-bold text-green-600">R$ 6,98</span>
+                  <span className="text-gray-600 text-sm block">/hectare</span>
+                </div>
+                <p className="text-gray-600 mb-6">50 créditos</p>
+                <Button className="w-full bg-green-600 hover:bg-green-700">
+                  Escolher Pacote
+                </Button>
+              </CardContent>
+            </Card>
+            
+            <Card className="relative hover:shadow-lg transition-shadow border-2 border-green-500">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                <span className="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
+                  <Star className="w-4 h-4" />
+                  Mais Vendido
+                </span>
+              </div>
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Pacote 100</h3>
+                <div className="mb-4">
+                  <span className="text-3xl font-bold text-green-600">R$ 5,49</span>
+                  <span className="text-gray-600 text-sm block">/hectare</span>
+                </div>
+                <p className="text-gray-600 mb-6">100 créditos</p>
+                <Button className="w-full bg-green-600 hover:bg-green-700">
+                  Escolher Pacote
+                </Button>
+              </CardContent>
+            </Card>
+            
+            <Card className="relative hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 text-center">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Pacote 200</h3>
+                <div className="mb-4">
+                  <span className="text-3xl font-bold text-green-600">R$ 4,89</span>
+                  <span className="text-gray-600 text-sm block">/hectare</span>
+                </div>
+                <p className="text-gray-600 mb-6">200 créditos</p>
+                <Button className="w-full bg-green-600 hover:bg-green-700">
+                  Escolher Pacote
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="text-center mt-8">
+            <p className="text-gray-600 text-sm">
+              * Créditos não expiram • Suporte técnico incluído • Sem taxas ocultas
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Dobra 9: Prova Social */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -390,7 +472,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Dobra 9: Chamada Final */}
+      {/* Dobra 10: Chamada Final */}
       <section className="py-20 bg-gradient-to-br from-green-600 to-green-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">
