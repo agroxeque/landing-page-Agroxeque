@@ -204,7 +204,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Com Agroxeque, Sua Agricultura <span className="text-green-600">Sobe de Nível</span>
+              Com Agroxeque, Sua Agricultura <span className="text-green-600">Múltiplos Benefícios</span>
             </h2>
           </div>
           
