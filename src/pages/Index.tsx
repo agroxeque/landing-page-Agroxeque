@@ -450,11 +450,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="p-6">
               <CardContent className="p-0">
-                <p className="text-gray-600 mb-4 italic">
-                  "Utilizando a Agroxeque, conseguimos melhorar o aproveitamento e o vigor da nossa semente, 
-                  identificando áreas mais prejudicadas e realizando a colheita delas separadamente. 
-                  Assim, destinamos para semente apenas a produção de áreas sem histórico de avarias ou reboleiras."
-                </p>
+                <p className="text-gray-600 mb-4 italic">&quot;Utilizando a Agroxeque, conseguimos melhorar o aproveitamento e o vigor da nossa semente, identificando áreas mais prejudicadas e realizando a colheita delas separadamente. Assim, destinamos para semente apenas a produção de áreas sem ocorrência de avarias e longe de reboleiras.&quot;</p>
                 <div className="font-semibold text-gray-900">Márcia Soares</div>
                 <div className="text-green-600 text-sm">Sementes Planura</div>
               </CardContent>
