@@ -60,7 +60,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">Diagnósticos Imprecisos</h3>
-                  <p className="text-gray-600">Vistorias a olho nu perdem 80% dos problemas da lavoura</p>
+                  <p className="text-gray-600 text-left">Percorre vários pontos do talhão e ainda sair com mais dúvidas do que respostas?</p>
                 </div>
               </div>
               
