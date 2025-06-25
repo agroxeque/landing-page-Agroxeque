@@ -60,7 +60,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">Diagnósticos Imprecisos</h3>
-                  <p className="text-gray-600 text-left">Percorre vários pontos do talhão e ainda sair com mais dúvidas do que respostas?</p>
+                  <p className="text-gray-600 text-left">Percorre vários pontos do talhão e ainda sai com mais dúvidas do que respostas?</p>
                 </div>
               </div>
               
@@ -80,7 +80,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">Limitações de Satélite</h3>
-                  <p className="text-gray-600">Dependência de clima e baixa resolução espacial</p>
+                  <p className="text-gray-600">Cansado de esperar o satélite passar sobre as nuvem que cobem sua fazenda?</p>
                 </div>
               </div>
             </div>
