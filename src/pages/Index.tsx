@@ -1,12 +1,8 @@
-
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-white">
+  return <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -179,7 +175,7 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="md:order-2">
                 <h3 className="text-3xl font-bold text-gray-900 mb-6">Mesmo Talhão, Necessidades Diferentes</h3>
-                <p className="text-lg text-gray-600 mb-6">Defina para cada célula, individualmente ou em grupo, um tipo de tratamento único, ou uma dose específica, de forma  totalmente independente.</p>
+                <p className="text-lg text-gray-600 mb-6">Defina para cada célula individualmente ou em grupo, um tipo de tratamento único ou uma dose específica, de forma  independente.</p>
                 <div className="space-y-4">
                   <div className="bg-green-50 p-4 rounded-lg">
                     <h4 className="font-semibold text-green-800">Taxa Variável em Área Total</h4>
@@ -237,15 +233,13 @@ const Index = () => {
             title: "Manejo Fitossanitário Estratégico",
             desc: "Tratamento preventivo nas áreas críticas",
             icon: "🌱"
-          }].map((benefit, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
+          }].map((benefit, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardContent className="p-6 text-center">
                     <div className="text-4xl mb-4">{benefit.icon}</div>
                     <h3 className="font-semibold text-gray-900 mb-3">{benefit.title}</h3>
                     <p className="text-gray-600">{benefit.desc}</p>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
           </div>
         </div>
       </section>
@@ -440,9 +434,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
-
