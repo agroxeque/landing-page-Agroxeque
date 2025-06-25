@@ -174,25 +174,20 @@ const Index = () => {
             {/* Prescrições Flexíveis */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="md:order-2">
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">
-                  Prescrições Realmente Inteligentes
-                </h3>
-                <p className="text-lg text-gray-600 mb-6">
-                  Três tipos de prescrição para máxima flexibilidade: taxa variável total, 
-                  catações localizadas, ou sistema híbrido que combina ambos conforme sua necessidade.
-                </p>
+                <h3 className="text-3xl font-bold text-gray-900 mb-6">Mesmo talhão, necessidades diferentes</h3>
+                <p className="text-lg text-gray-600 mb-6">Defina para uma única célula ou um grupo delas, uma dose específica ou tipo de tratamento independente das demais</p>
                 <div className="space-y-4">
                   <div className="bg-green-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-green-800">Taxa Variável Total</h4>
-                    <p className="text-green-700 text-sm">Aplicação diferenciada em toda área</p>
+                    <h4 className="font-semibold text-green-800">Taxa Variável em Área Total</h4>
+                    <p className="text-green-700 text-sm">Aplicação com doses independentes em toda área</p>
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg">
                     <h4 className="font-semibold text-blue-800">Catações Localizadas</h4>
-                    <p className="text-blue-700 text-sm">Tratamento apenas de pontos específicos</p>
+                    <p className="text-blue-700 text-sm">Aplicação Binária (aplicar/não aplicar) tratando apenas células selecionadas</p>
                   </div>
                   <div className="bg-purple-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-purple-800">Sistema Híbrido</h4>
-                    <p className="text-purple-700 text-sm">Combinação inteligente dos dois métodos</p>
+                    <h4 className="font-semibold text-purple-800">Mapa Híbrido</h4>
+                    <p className="text-purple-700 text-sm">Agrupamento de células, formando zonas binárias de aplicação, variando as doses ou tratamento dentro de uma zona.</p>
                   </div>
                 </div>
               </div>
