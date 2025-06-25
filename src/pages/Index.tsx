@@ -1,7 +1,7 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
-
 const Index = () => {
   return <div className="min-h-screen bg-white">
       {/* Header */}
@@ -176,7 +176,7 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="md:order-2">
                 <h3 className="text-3xl font-bold text-gray-900 mb-6">Mesmo Talhão, Necessidades Diferentes</h3>
-                <p className="text-gray-600">Identifique rapidamente regiões problemáticas e recupere o vigor em tempo hábil</p>
+                <p className="text-lg text-gray-600 mb-6">Defina para cada célula, individualmente ou em grupo, um tipo de tratamento único, ou uma dose específica, de forma  totalmente independente.</p>
                 <div className="space-y-4">
                   <div className="bg-green-50 p-4 rounded-lg">
                     <h4 className="font-semibold text-green-800">Taxa Variável em Área Total</h4>
@@ -220,7 +220,7 @@ const Index = () => {
             icon: "📈"
           }, {
             title: "Vistorias Eficientes",
-            desc: "Tempo de campo reduzido com inspeções direcionadas e visitas menos frequentes",
+            desc: "Tempo de campo reduzido com direcionamento preciso",
             icon: "🎯"
           }, {
             title: "Decisões Inteligentes",
