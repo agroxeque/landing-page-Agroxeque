@@ -267,10 +267,7 @@ const Index = () => {
                 <Users className="w-12 h-12 text-blue-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Consultores Agrícolas</h3>
-              <p className="text-gray-600">
-                Profissionais que querem oferecer análises diferenciadas e recomendações 
-                precisas baseadas em dados científicos.
-              </p>
+              <p className="text-gray-600">Profissionais que querem obter dados preciosos e oferecer relatórios diferenciados e recomendações precisas baseadas em dados científicos.</p>
             </div>
             
             <div className="text-center">
