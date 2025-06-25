@@ -24,7 +24,7 @@ const Index = () => {
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             <span className="text-slate-950">Para nós, cada hectare importa!</span>
           </h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">Aqui você pode monitorar, analisar e intervir em cada hectare, de forma única e independente, com rapidez e facilidade.<br />
+          <p className="text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed text-xl">Aqui você pode monitorar, analisar e intervir em cada hectare, de forma única e independente, com rapidez e facilidade.<br />
 Essa é nossa missão, bem-vindo à Agroxeque!</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg">
