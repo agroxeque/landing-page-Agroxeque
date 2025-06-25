@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus, Star } from "lucide-react";
@@ -324,9 +323,7 @@ const Index = () => {
               </div>
               
               <div className="text-center mt-8">
-                <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3">
-                  Conheça Nossos Pacotes de Créditos
-                </Button>
+                
               </div>
             </Card>
           </div>
