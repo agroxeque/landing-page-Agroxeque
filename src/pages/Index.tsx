@@ -1,9 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
+
 const Index = () => {
-  return <div className="min-h-screen bg-white">
+  return (
+    <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -212,7 +213,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[{
             title: "Redução de Custos",
-            desc: "Até 80% menos gastos com insumos através de aplicação localizada",
+            desc: "Até 75% menos gastos com alguns insumos através de aplicação localizada",
             icon: "💰"
           }, {
             title: "Aumento de Produtividade",
@@ -234,13 +235,15 @@ const Index = () => {
             title: "Manejo Fitossanitário Estratégico",
             desc: "Tratamento preventivo nas áreas críticas",
             icon: "🌱"
-          }].map((benefit, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 text-center">
-                  <div className="text-4xl mb-4">{benefit.icon}</div>
-                  <h3 className="font-semibold text-gray-900 mb-3">{benefit.title}</h3>
-                  <p className="text-gray-600">{benefit.desc}</p>
-                </CardContent>
-              </Card>)}
+          }].map((benefit, index) => (
+                <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6 text-center">
+                    <div className="text-4xl mb-4">{benefit.icon}</div>
+                    <h3 className="font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+                    <p className="text-gray-600">{benefit.desc}</p>
+                  </CardContent>
+                </Card>
+              ))}
           </div>
         </div>
       </section>
@@ -435,6 +438,8 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
