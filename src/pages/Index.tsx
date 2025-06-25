@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
@@ -112,7 +111,7 @@ const Index = () => {
           }, {
             number: "2",
             title: "Processe na Nuvem",
-            desc: "Nossa IA gera ortofotos, VARI e modelo digital de superfície"
+            desc: "Obtenha Automaticamente Ortofoto, MDS, Índice de Vegetação e Relatório"
           }, {
             number: "3",
             title: "Analise com Score",
