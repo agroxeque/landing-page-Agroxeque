@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
@@ -175,8 +174,8 @@ const Index = () => {
             {/* Prescrições Flexíveis */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="md:order-2">
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">Mesmo talhão, necessidades diferentes</h3>
-                <p className="text-lg text-gray-600 mb-6">Defina para uma única célula ou um grupo delas, uma dose específica ou tipo de tratamento independente das demais</p>
+                <h3 className="text-3xl font-bold text-gray-900 mb-6">Mesmo Talhão, Necessidades Diferentes</h3>
+                <p className="text-lg text-gray-600 mb-6">Defina para cada célula ou um grupo delas, um tipo de tratamento ou dose específica, totalmente independente.</p>
                 <div className="space-y-4">
                   <div className="bg-green-50 p-4 rounded-lg">
                     <h4 className="font-semibold text-green-800">Taxa Variável em Área Total</h4>
