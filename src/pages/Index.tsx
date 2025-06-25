@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
@@ -81,7 +80,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">Limitações de Satélite</h3>
-                  <p className="text-gray-600">Desanimado com tantas nuvens escondendo a imagem do satélite que passou semana passada?</p>
+                  <p className="text-gray-600">Cansado de avaliar o NDVI das nuvens ao invés da cultura?</p>
                 </div>
               </div>
             </div>
