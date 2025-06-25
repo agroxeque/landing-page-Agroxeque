@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
@@ -168,7 +167,7 @@ const Index = () => {
                 </ul>
               </div>
               <div className="relative">
-                <img src="/lovable-uploads/0787eea2-7447-4885-a336-ac2a0c463531.png" alt="Ranking de Células interface" className="w-full rounded-lg shadow-xl" />
+                <img src="/lovable-uploads/7bf07b2d-9a2a-4ee8-acb1-8c29dedcc540.png" alt="Ranking de Células interface" className="w-full rounded-lg shadow-xl" />
               </div>
             </div>
             
