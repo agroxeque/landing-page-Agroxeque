@@ -98,7 +98,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Inteligência Agrícola ao Seu Alcance em <span className="text-green-600">Poucos Passos</span>
+              Agricultura Digital há Poucos Passos, com <span className="text-green-600">Poucos Passos</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">Da captura de imagens até a aplicação em campo - processo simples, resultados extraordinários</p>
           </div>
