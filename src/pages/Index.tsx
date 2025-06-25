@@ -167,7 +167,7 @@ const Index = () => {
                 </ul>
               </div>
               <div className="relative">
-                <img src="/lovable-uploads/fa31a42f-50c4-42b8-9157-642aa72e9733.png" alt="MAP interface with cell ranking" className="w-full rounded-lg shadow-xl" />
+                <img src="/lovable-uploads/15cddc26-75aa-4d7c-bbc4-d8c0ae490858.png" alt="Ranking de Células interface" className="w-full rounded-lg shadow-xl" />
               </div>
             </div>
             
