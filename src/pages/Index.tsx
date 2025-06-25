@@ -110,7 +110,7 @@ const Index = () => {
             desc: "Faça upload das imagens do seu drone RGB convencional"
           }, {
             number: "2",
-            title: "Processe na Nuvem",
+            title: "Processamento Automático",
             desc: "Obtenha Automaticamente Ortofoto, MDS, Índice de Vegetação e Relatório"
           }, {
             number: "3",
