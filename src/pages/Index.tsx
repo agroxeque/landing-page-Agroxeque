@@ -302,10 +302,7 @@ const Index = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Pague Apenas Pelo Que Usar – <span className="text-green-600">Sem Surpresas</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Modelo on-demand que se adapta ao seu ritmo. Cadastro gratuito, 
-              créditos por hectare processado e descontos progressivos.
-            </p>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Modelo sob-demanda que se adapta ao tamanho do seu negócio. Cadastro gratuito, cobrança por hectare processado, preço justo e descontos progressivos.</p>
           </div>
           
           <div className="max-w-4xl mx-auto">
