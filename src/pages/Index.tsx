@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
@@ -228,7 +229,7 @@ const Index = () => {
             icon: "🧠"
           }, {
             title: "Uso Otimizado do Maquinário",
-            desc: "Aplicação apenas onde necessário",
+            desc: "Economicamente viável e Ecologicamente sustentável",
             icon: "🚜"
           }, {
             title: "Manejo Fitossanitário Estratégico",
@@ -438,3 +439,4 @@ const Index = () => {
     </div>;
 };
 export default Index;
+
