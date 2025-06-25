@@ -462,9 +462,7 @@ const Index = () => {
             
             <Card className="p-6">
               <CardContent className="p-0">
-                <p className="text-gray-600 mb-4 italic">
-                  "Reduzimos em cerca de 80% o custo por hectare com herbicidas na dessecação."
-                </p>
+                <p className="text-gray-600 mb-4 italic">&quot;Reduzimos em cerca de 18% o custo por hectare com herbicidas na dessecação.&quot;</p>
                 <div className="font-semibold text-gray-900">Antônio Basílio</div>
                 <div className="text-green-600 text-sm">Fazenda Mata do Cedro</div>
                 <div className="text-gray-500 text-xs">Presidente Olegário - MG</div>
