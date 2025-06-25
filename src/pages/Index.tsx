@@ -192,7 +192,7 @@ const Index = () => {
                 </div>
               </div>
               <div className="md:order-1 relative">
-                <img src="/lovable-uploads/ebcc0c15-2421-452f-9635-c8c4bbe8d82c.png" alt="Hexagonal cells pattern" className="w-full rounded-lg shadow-xl" />
+                <img alt="Hexagonal cells pattern" className="w-full rounded-lg shadow-xl" src="/lovable-uploads/30573fd0-4e62-4cbd-9fa2-e19e75727003.png" />
               </div>
             </div>
           </div>
