@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
@@ -118,7 +119,7 @@ const Index = () => {
             desc: "Acesse o \"Ranking de Células\" para verificar a condição de cada hectare"
           }, {
             number: "4",
-            title: "Prescreva com Precisão",
+            title: "Prescrição com Liberdade",
             desc: "Crie prescrições flexíveis: taxa variável, catação ou híbrida"
           }, {
             number: "5",
