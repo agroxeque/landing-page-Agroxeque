@@ -1,5 +1,3 @@
-
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
@@ -181,7 +179,7 @@ const Index = () => {
                 <div className="space-y-4">
                   <div className="bg-green-50 p-4 rounded-lg">
                     <h4 className="font-semibold text-green-800">Taxa Variável em Área Total</h4>
-                    <p className="text-green-700 text-sm">Aplicação com doses independentes em toda área</p>
+                    <p className="text-green-700 text-sm">Aplicação com doses independentes ao longo de toda área</p>
                   </div>
                   <div className="bg-blue-50 p-4 rounded-lg">
                     <h4 className="font-semibold text-blue-800">Catações Localizadas</h4>
@@ -439,4 +437,3 @@ const Index = () => {
     </div>;
 };
 export default Index;
-
