@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus } from "lucide-react";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-white">
+  return <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -111,42 +109,34 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-5 gap-8">
-            {[
-              {
-                number: "1",
-                title: "Cadastre & Voe",
-                desc: "Faça upload das imagens do seu drone RGB convencional"
-              },
-              {
-                number: "2",
-                title: "Processe na Nuvem",
-                desc: "Nossa IA gera ortofotos, VARI e modelo digital de superfície"
-              },
-              {
-                number: "3",
-                title: "Analise com Score",
-                desc: "Receba o ranking exclusivo de células da melhor (1) à pior (n)"
-              },
-              {
-                number: "4",
-                title: "Prescreva com Precisão",
-                desc: "Crie prescrições flexíveis: taxa variável, catação ou híbrida"
-              },
-              {
-                number: "5",
-                title: "Execute com Xeque-Map",
-                desc: "Use nosso app móvel para navegação e aplicação em campo"
-              }
-            ].map((step, index) => (
-              <div key={index} className="text-center">
+            {[{
+            number: "1",
+            title: "Cadastre & Voe",
+            desc: "Faça upload das imagens do seu drone RGB convencional"
+          }, {
+            number: "2",
+            title: "Processe na Nuvem",
+            desc: "Nossa IA gera ortofotos, VARI e modelo digital de superfície"
+          }, {
+            number: "3",
+            title: "Analise com Score",
+            desc: "Receba o ranking exclusivo de células da melhor (1) à pior (n)"
+          }, {
+            number: "4",
+            title: "Prescreva com Precisão",
+            desc: "Crie prescrições flexíveis: taxa variável, catação ou híbrida"
+          }, {
+            number: "5",
+            title: "Execute com Xeque-Map",
+            desc: "Use nosso app móvel para navegação e aplicação em campo"
+          }].map((step, index) => <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   {step.number}
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">{step.title}</h3>
                 <p className="text-gray-600 text-sm">{step.desc}</p>
                 {index < 4 && <ArrowDown className="w-6 h-6 text-green-600 mx-auto mt-4 md:hidden" />}
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -164,9 +154,7 @@ const Index = () => {
             {/* Ranking de Células */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">
-                  Poder do Score Hectare a Hectare
-                </h3>
+                <h3 className="text-3xl font-bold text-gray-900 mb-6">Descubra com a Agroxeque</h3>
                 <p className="text-lg text-gray-600 mb-6">
                   Nossa exclusiva tecnologia de ranking classifica cada célula individualmente, 
                   da melhor (1) à pior (n). Isso permite vistorias direcionadas, otimização de 
@@ -235,46 +223,37 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Redução de Custos",
-                desc: "Até 16% menos gastos com insumos através de aplicação localizada",
-                icon: "💰"
-              },
-              {
-                title: "Aumento de Produtividade",
-                desc: "Até 5 sacos a mais por hectare com manejo direcionado",
-                icon: "📈"
-              },
-              {
-                title: "Vistorias Eficientes",
-                desc: "Tempo de campo reduzido com direcionamento preciso",
-                icon: "🎯"
-              },
-              {
-                title: "Decisões Inteligentes",
-                desc: "Base de dados científica para todas as escolhas",
-                icon: "🧠"
-              },
-              {
-                title: "Uso Otimizado do Maquinário",
-                desc: "Aplicação apenas onde necessário",
-                icon: "🚜"
-              },
-              {
-                title: "Manejo Fitossanitário Estratégico",
-                desc: "Tratamento preventivo nas áreas críticas",
-                icon: "🌱"
-              }
-            ].map((benefit, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+            {[{
+            title: "Redução de Custos",
+            desc: "Até 16% menos gastos com insumos através de aplicação localizada",
+            icon: "💰"
+          }, {
+            title: "Aumento de Produtividade",
+            desc: "Até 5 sacos a mais por hectare com manejo direcionado",
+            icon: "📈"
+          }, {
+            title: "Vistorias Eficientes",
+            desc: "Tempo de campo reduzido com direcionamento preciso",
+            icon: "🎯"
+          }, {
+            title: "Decisões Inteligentes",
+            desc: "Base de dados científica para todas as escolhas",
+            icon: "🧠"
+          }, {
+            title: "Uso Otimizado do Maquinário",
+            desc: "Aplicação apenas onde necessário",
+            icon: "🚜"
+          }, {
+            title: "Manejo Fitossanitário Estratégico",
+            desc: "Tratamento preventivo nas áreas críticas",
+            icon: "🌱"
+          }].map((benefit, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl mb-4">{benefit.icon}</div>
                   <h3 className="font-semibold text-gray-900 mb-3">{benefit.title}</h3>
                   <p className="text-gray-600">{benefit.desc}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -472,8 +451,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
