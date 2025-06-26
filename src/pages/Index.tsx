@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
@@ -203,9 +202,6 @@ const Index = () => {
             </div>
             
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div className="relative">
-                <img alt="Hexagonal cells pattern" className="w-full rounded-lg shadow-xl" src="/lovable-uploads/30573fd0-4e62-4cbd-9fa2-e19e75727003.png" />
-              </div>
               <div className="space-y-4">
                 <div className="bg-green-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-green-800">Taxa Variável em Área Total</h4>
@@ -223,6 +219,9 @@ const Index = () => {
                   <h4 className="font-semibold text-orange-800">Taxa Fixa</h4>
                   <p className="text-orange-700 text-sm">Recomendações gerais mais precisas, apoiadas em análise de dados concretos, sob uma visão detalhada e abrangente do talhão.</p>
                 </div>
+              </div>
+              <div className="relative">
+                <img alt="Hexagonal cells pattern" className="w-full rounded-lg shadow-xl" src="/lovable-uploads/30573fd0-4e62-4cbd-9fa2-e19e75727003.png" />
               </div>
             </div>
           </div>
