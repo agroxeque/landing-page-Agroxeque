@@ -376,11 +376,7 @@ const Index = () => {
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-4">
               Escolha uma combinação de pacotes que melhor se adequa à sua demanda e frequencia de uso.
             </p>
-            <div className="bg-gradient-to-r from-green-100 to-emerald-100 rounded-lg p-4 max-w-2xl mx-auto border border-green-200">
-              <p className="text-base md:text-lg font-semibold text-green-800">
-                Pagamento com PIX ou cartão de crédito. Parcele seus pacotes em até 6 x sem juros!
-              </p>
-            </div>
+            
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
