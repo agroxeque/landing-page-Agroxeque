@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-white">
+  return <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -72,7 +70,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">Desperdício de Insumos</h3>
-                  <p className="text-gray-600">Aplicação uniforme quando deveria ser localizada</p>
+                  <p className="text-gray-600">Tratamento em área total mesmo quando o problema é pontual</p>
                 </div>
               </div>
               
@@ -562,8 +560,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
