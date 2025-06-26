@@ -139,9 +139,9 @@ const Index = () => {
           
           {/* Texto conclusivo movido para baixo dos 5 passos */}
           <div className="text-center mt-12">
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Hoje em dia os drones são muito populares e acessíveis. A Agroxeque é o elo que une seu drone à ações práticas de manejo,<br />
-              tornando-os realmente úteis
+            <p className="text-base text-gray-700 max-w-4xl mx-auto md:text-xl font-bold">
+              Hoje em dia os drones são muito populares e acessíveis.<br />
+              A Agroxeque é o elo que une seu drone à ações práticas de manejo, tornando-os realmente úteis
             </p>
           </div>
         </div>
