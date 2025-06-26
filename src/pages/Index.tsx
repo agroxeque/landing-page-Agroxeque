@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
+
 const Index = () => {
   return <div className="min-h-screen bg-white">
       {/* Header */}
@@ -518,6 +520,114 @@ const Index = () => {
                 <div className="text-gray-500 text-xs">Franca - SP</div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Nova Seção FAQ */}
+      <section className="py-12 md:py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Perguntas <span className="text-green-600">Frequentes</span>
+            </h2>
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+              Tire suas dúvidas sobre a Agroxeque e descubra como nossa plataforma pode transformar sua agricultura
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              <AccordionItem value="culturas" className="bg-white rounded-lg border shadow-sm">
+                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
+                  Quais tipos de culturas posso monitorar com a Agroxeque?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
+                  A Agroxeque foi projetada para ser flexível e pode ser utilizada para monitorar uma ampla variedade de culturas agrícolas: Soja, milho, Sorgo, trigo, Algodão, café, cana-de-açúcar, batata, tomate, fruticultura em geral, enfim... a plataforma permite um monitoramento detalhado de qualquer tipo de plantio. Com as imagens de alta resolução e os demais produtos digitais disponíveis na Agroxeque, você consegue acompanhar o desenvolvimento das suas plantas em qualquer estágio, facilitando a identificação de problemas e a tomada de decisões para otimizar a produção.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="drones" className="bg-white rounded-lg border shadow-sm">
+                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
+                  Quais modelos de drone posso utilizar?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
+                  Na verdade, você pode usar qualquer drone que seja capaz de realizar mapeamento aéreo autônomo. Existem drones profissionais, projetados especificamente para mapeamentos, que apresentam como vantagem um alto rendimento operacional, porém com um custo mais alto. No entanto, existe uma linha de drones não profissionais, mas muito populares por apresentarem uma boa qualidade de câmera e segurança de operação, com ótimo custo benefício para esta finalidade. Dentre eles, os mais utilizados são os da linha DJI (DJI Air 2S, DJI mini 3, DJI mini 4 e DJI Air 3), mas podem ser utilizados outros modelos da marca, inclusive, modelos de outras marcas também. O mais importante é se certificar que seu drone tenha compatibilidade com softwares de mapeamento (que criam os planos de vôo autônomos), como Dronelink ou Drone Harmony.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="equipamentos" className="bg-white rounded-lg border shadow-sm">
+                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
+                  Preciso de equipamentos específicos para utilizar as prescrições geradas na Agroxeque?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
+                  Não necessariamente. As prescrições geradas pela Agroxeque são extremamente versáteis. Se você possui maquinário moderno com sistemas de aplicação por taxa variável, poderá exportar as prescrições geradas em ShapeFile ou KML, e utilizar estes mapas diretamente no seu monitor. Por outro lado, caso você não possua este tipo de equipamento, você pode exportar as prescrições geradas para o aplicativo móvel "Xeque-Map" e utilizá-lo para navegação com seu maquinário. O aplicativo irá carregar o mapa e permitir que você se oriente dentro desta prescrição, auxiliando na aplicação binária (aplica/não aplica) e taxas variáveis com poucas doses, onde você poderia alterar de forma manual a dose do produto aplicado, verificando a mudança de zona pela tela do aplicativo.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="cadastro" className="bg-white rounded-lg border shadow-sm">
+                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
+                  Como faço para cadastrar um talhão?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
+                  Este é um processo bastante simples, que é realizado em poucos segundos. Você precisa apenas informar à qual fazenda o talhão pertence, inserir o nome de identificação do talhão, selecionar o formato da grade (malha de células) que prefere utilizar, além de definir também o tamanho das células que compõem a malha. Por fim, você deve subir um arquivo de polígono, em formato kml ou kmz, referente à delimitação deste talhão. Caso ainda não tenha este arquivo de polígono, você pode gerá-lo facilmente de várias formas, inclusive pelo Google Earth.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="ranking" className="bg-white rounded-lg border shadow-sm">
+                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
+                  O que exatamente é o "Ranking de células"?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
+                  Nossa exclusiva tecnologia de ranking de células, consiste em aplicar sobre o talhão, uma malha virtual, com tamanho e formato personalizados. O processamento automatizado Agroxeque, irá extrair várias informações referentes à cultura presente dentro da região de cada célula, atribuindo uma espécie de nota para cada uma, e em seguida classificar e ordenar todo o conjunto. Assim, se seu talhão possui 75 células, o sistema irá definir como célula 1, aquela que está posicionada sobre a cultura com o melhor nível de desenvolvimento naquele talhão, e 75 seria a onde a cultura apresenta a pior condição de desenvolvimento, em comparação com as demais células.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="limites" className="bg-white rounded-lg border shadow-sm">
+                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
+                  Qual o limite de área e imagens para cada projeto de processamento?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
+                  Um projeto deve conter entre 2 e 100 hectares, e um limite máximo de 1.000 imagens. Caso seu talhão exceda este limite, você pode dividir o talhão em 2 ou mais partes, cadastrando-o como por exemplo: "Pivô 7 lado A" e "Pivô 7 lado B", o que irá reduzir também o número de imagens geradas em cada projeto.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="computador" className="bg-white rounded-lg border shadow-sm">
+                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
+                  Preciso de um computador potente para utilizar a plataforma AgroXeque?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
+                  Não. E essa é uma das grandes vantagens da nossa plataforma! Todo o processamento pesado das imagens (a criação da ortofoto e dos modelos digitais) é realizado em servidores cloud de alta performance, não no seu computador.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="creditos" className="bg-white rounded-lg border shadow-sm">
+                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
+                  E se as imagens que eu enviei apresentarem algum erro em seu processamento? Perco meus créditos?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
+                  Alguns parâmetros errados no planejamento do vôo, defeitos na câmera ou até mesmo sujeira na lente, podem causar imperfeições em algumas imagens, provocando erros no ortomosaico gerado. Nestes casos, você pode abrir uma solicitação de revisão de projeto, dentro de um prazo estabelecido. Caso seja constatado pela nossa equipe, que os arquivos gerados estejam de fato corrompidos, o total de créditos consumidos naquele projeto será creditado em sua conta, pra que possa realizar uma nova aquisição de imagens e criar um novo projeto do zero, sem precisar gastar mais créditos para isso. Mas atenção: Você não pode enviar as mesmas imagens novamente. Este reembolso só é válido para que você faça um novo mapeamento, com parâmetros de voo mais rigorosos, garantindo que o segundo processamento seja realizado com sucesso.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="offline" className="bg-white rounded-lg border shadow-sm">
+                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
+                  O aplicativo Xeque-Map funciona offline?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
+                  Sim! O Xeque-Map foi desenvolvido pensando na realidade do campo, onde normalmente a conexão com a internet é instável ou inexistente. O funcionamento é simples: Enquanto estiver conectado (em casa, no escritório, ou em uma área com sinal), você abre o aplicativo e faz o download dos mapas de prescrição que deseja usar, para memória do seu smartphone ou tablet. Uma vez no campo, mesmo sem qualquer sinal de internet, o aplicativo usará o GPS do seu aparelho (que não precisa de internet) para permitir sua navegação dentro dos polígonos e das células de manejo que você criou na plataforma.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="pontos-controle" className="bg-white rounded-lg border shadow-sm">
+                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
+                  Preciso coletar pontos de controle para o levantamento aéreo do meu projeto?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
+                  Não. Os pontos de controle aumentam bastante a precisão dos modelos gerados e por isso são fundamentais em projetos relacionados à cartografia, topografia e agrimensura. Na Agroxeque, nosso foco é 100% direcionado para agricultura, portanto a margem de erro alcançada nos levantamentos sem pontos de controle (normalmente entre 2 e 5 metros de acurácia) é plenamente satisfatória para a finalidade que será empregada através dos mapas gerados.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
