@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
-
 const Index = () => {
   return <div className="min-h-screen bg-white">
       {/* Header */}
@@ -531,9 +530,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Perguntas <span className="text-green-600">Frequentes</span>
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              Tire suas dúvidas sobre a Agroxeque e descubra como nossa plataforma pode transformar sua agricultura
-            </p>
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Tire suas dúvidas sobre a Agroxeque e descubra como nossa plataforma pode transformar o manejo da sua lavoura</p>
           </div>
           
           <div className="max-w-4xl mx-auto">
