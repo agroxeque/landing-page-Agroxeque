@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
@@ -114,7 +115,7 @@ const Index = () => {
           }, {
             number: "3",
             title: "Analise com Dados Concretos",
-            desc: "Acesse o \"Ranking de Células\" para verificar a condição de cada hectare"
+            desc: "Avalie cada célula do talhão, para entender sua real condição"
           }, {
             number: "4",
             title: "Prescrição com Liberdade",
