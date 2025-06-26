@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
@@ -99,7 +100,7 @@ const Index = () => {
           <div className="text-center mb-12 md:mb-16">
             {/* Texto conclusivo movido para cima */}
             <div className="mb-8">
-              <p className="text-base text-gray-700 max-w-4xl mx-auto font-bold md:text-base">
+              <p className="text-base text-gray-700 max-w-4xl mx-auto md:text-xl font-bold">
                 Hoje em dia os drones são muito populares e acessíveis. A Agroxeque é o elo que une seu drone à ações práticas de manejo, tornando-os realmente úteis
               </p>
             </div>
