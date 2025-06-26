@@ -198,7 +198,7 @@ const Index = () => {
             {/* Prescrições Flexíveis */}
             <div className="text-center mb-8 md:mb-12">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Mesmo Talhão, Necessidades Diferentes</h3>
-              <p className="text-base md:text-lg text-gray-600 max-w-4xl mx-auto">Defina para cada célula individualmente ou em grupo, um tipo de tratamento único ou uma dose específica, de forma independente.</p>
+              <p className="text-base md:text-lg text-gray-600 max-w-4xl mx-auto">Defina uma dose ou tratamento específico para cada célula individualmente ou em grupo, de acordo com a necessidade de cada uma</p>
             </div>
             
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
