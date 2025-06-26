@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
@@ -185,7 +184,7 @@ const Index = () => {
             </div>
             
             {/* Nova Seção - Citação Bíblica */}
-            <section className="py-8 md:py-12 bg-green-700">
+            <section className="py-8 bg-green-700 md:py-[33px]">
               <div className="container mx-auto px-4 text-center">
                 <h2 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6">
                   "Assim também a fé, se não tiver obras, é morta em si mesma." Ti 2:17
