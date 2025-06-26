@@ -114,7 +114,7 @@ const Index = () => {
           }, {
             number: "3",
             title: "Analise com Dados Concretos",
-            desc: "Avalie cada célula do talhão, para entender sua real condição"
+            desc: "Acesse o \"Ranking de Células\" para verificar a condição de cada hectare"
           }, {
             number: "4",
             title: "Prescrição com Liberdade",
@@ -177,7 +177,7 @@ const Index = () => {
                   </li>
                   <li className="flex items-center space-x-3">
                     <Check className="w-5 h-5 text-green-600" />
-                    <span>Base de dados geostatística para definição do manejo correto</span>
+                    <span>Base científica para todas as decisões</span>
                   </li>
                 </ul>
               </div>
