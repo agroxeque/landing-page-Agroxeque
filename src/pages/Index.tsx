@@ -240,7 +240,7 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="relative">
-              <img src="/lovable-uploads/0787eea2-7447-4885-a336-ac2a0c463531.png" alt="Xeque-Map aplicativo móvel" className="w-full rounded-lg shadow-xl" />
+              <img alt="Xeque-Map aplicativo móvel" className="w-full rounded-lg shadow-xl" src="/lovable-uploads/c59006a0-53dc-41ad-b1b4-35435de1e727.png" />
             </div>
             <div>
               <p className="text-base md:text-lg text-gray-600 mb-6">
