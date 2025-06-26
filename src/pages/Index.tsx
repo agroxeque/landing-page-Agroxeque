@@ -137,7 +137,7 @@ const Index = () => {
           
           {/* Texto conclusivo */}
           <div className="mt-12 md:mt-16 text-center">
-            <p className="text-base md:text-lg text-gray-700 max-w-4xl mx-auto">
+            <p className="text-base text-gray-700 max-w-4xl mx-auto md:text-xl font-bold">
               Hoje em dia os drones são muito populares e acessíveis. A Agroxeque é o elo que une seu drone à ações práticas de manejo, tornando-os realmente úteis
             </p>
           </div>
