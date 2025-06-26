@@ -288,7 +288,7 @@ const Index = () => {
                 <Users className="w-12 h-12 text-green-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Agricultores Inovadores</h3>
-              <p className="text-gray-600">Produtores que buscam tecnologia para otimizar recursos, maximizar lucros e tornar a sua atividade agrícola mais eficiente.</p>
+              <p className="text-gray-600">Produtores que precisam de ferramentas para otimizar recursos, maximizar lucros e tornar a sua atividade agrícola mais eficiente.</p>
             </div>
             
             <div className="text-center">
