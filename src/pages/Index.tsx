@@ -196,30 +196,31 @@ const Index = () => {
             </section>
             
             {/* Prescrições Flexíveis */}
+            <div className="text-center mb-8 md:mb-12">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Mesmo Talhão, Necessidades Diferentes</h3>
+              <p className="text-base md:text-lg text-gray-600 max-w-4xl mx-auto">Defina para cada célula individualmente ou em grupo, um tipo de tratamento único ou uma dose específica, de forma independente.</p>
+            </div>
+            
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div className="md:order-2">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Mesmo Talhão, Necessidades Diferentes</h3>
-                <p className="text-base md:text-lg text-gray-600 mb-6">Defina para cada célula individualmente ou em grupo, um tipo de tratamento único ou uma dose específica, de forma  independente.</p>
-                <div className="space-y-4">
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-green-800">Taxa Variável em Área Total</h4>
-                    <p className="text-green-700 text-sm">Aplicação com doses independentes ao longo de toda área</p>
-                  </div>
-                  <div className="bg-blue-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-blue-800">Catações Localizadas</h4>
-                    <p className="text-blue-700 text-sm">Aplicação Binária (aplicar/não aplicar) tratando apenas células selecionadas</p>
-                  </div>
-                  <div className="bg-purple-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-purple-800">Mapa Híbrido</h4>
-                    <p className="text-purple-700 text-sm">Agrupamento de células, formando zonas binárias de aplicação, variando as doses ou tratamento dentro de uma zona.</p>
-                  </div>
-                  <div className="bg-orange-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-orange-800">Taxa Fixa</h4>
-                    <p className="text-orange-700 text-sm">Recomendações gerais mais precisas, apoiadas em análise de dados concretos, sob uma visão detalhada e abrangente do talhão.</p>
-                  </div>
+              <div className="space-y-4">
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-green-800">Taxa Variável em Área Total</h4>
+                  <p className="text-green-700 text-sm">Aplicação com doses independentes ao longo de toda área</p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-blue-800">Catações Localizadas</h4>
+                  <p className="text-blue-700 text-sm">Aplicação Binária (aplicar/não aplicar) tratando apenas células selecionadas</p>
+                </div>
+                <div className="bg-purple-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-purple-800">Mapa Híbrido</h4>
+                  <p className="text-purple-700 text-sm">Agrupamento de células, formando zonas binárias de aplicação, variando as doses ou tratamento dentro de uma zona.</p>
+                </div>
+                <div className="bg-orange-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-orange-800">Taxa Fixa</h4>
+                  <p className="text-orange-700 text-sm">Recomendações gerais mais precisas, apoiadas em análise de dados concretos, sob uma visão detalhada e abrangente do talhão.</p>
                 </div>
               </div>
-              <div className="md:order-1 relative">
+              <div className="relative">
                 <img alt="Hexagonal cells pattern" className="w-full rounded-lg shadow-xl" src="/lovable-uploads/30573fd0-4e62-4cbd-9fa2-e19e75727003.png" />
               </div>
             </div>
