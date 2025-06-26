@@ -100,7 +100,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Transformando Dados em Lucro, com estes <span className="text-green-600">5 Passos Simples</span>
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-6">Hoje em dia os drones são muito populares e acessíveis. A Agroxeque é o elo que une seu drone à ações práticas de manejo, tornando-os realmente úteis</p>
+            
             
           </div>
           
