@@ -108,7 +108,7 @@ const Index = () => {
             {[{
             number: "1",
             title: "Capture as Imagens",
-            desc: "Faça upload das imagens do seu drone RGB convencional"
+            desc: "Faça o upload das imagens obtidas com seu próprio drone"
           }, {
             number: "2",
             title: "Processamento Automático",
