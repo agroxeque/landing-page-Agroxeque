@@ -98,9 +98,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Agricultura Digital há Poucos Passos, com <span className="text-green-600">5 Passos Simples</span>
+              Transformando Dados em Lucro, com estes <span className="text-green-600">5 Passos Simples</span>
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-6">Transforme Dados em Lucro, através de 5 Passos Simples</p>
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-6">Hoje em dia os drones são muito populares e acessíveis. A Agroxeque é o elo que une seu drone à ações práticas de manejo, tornando-os realmente úteis</p>
             
           </div>
           
@@ -133,6 +133,15 @@ const Index = () => {
                 <p className="text-gray-600 text-sm">{step.desc}</p>
                 {index < 4 && <ArrowDown className="w-6 h-6 text-green-600 mx-auto mt-4 md:hidden" />}
               </div>)}
+          </div>
+          
+          {/* Texto conclusivo */}
+          <div className="mt-12 md:mt-16 text-center">
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 md:p-8 max-w-4xl mx-auto border border-green-100 shadow-sm">
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
+                "Hoje em dia os drones são muito populares e acessíveis. A Agroxeque é o elo que une seu drone à ações práticas de manejo, tornando-os realmente úteis"
+              </p>
+            </div>
           </div>
         </div>
       </section>
