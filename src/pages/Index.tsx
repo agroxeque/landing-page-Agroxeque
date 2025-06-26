@@ -229,6 +229,42 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Nova Seção - Xeque-Map */}
+      <section className="py-12 md:py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Xeque-Map: <span className="text-green-600">Seu Plano de Ação na Palma da Mão</span>
+            </h2>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="relative">
+              <img src="/lovable-uploads/0787eea2-7447-4885-a336-ac2a0c463531.png" alt="Xeque-Map aplicativo móvel" className="w-full rounded-lg shadow-xl" />
+            </div>
+            <div>
+              <p className="text-base md:text-lg text-gray-600 mb-6">
+                Xeque-Map é o aplicativo de navegação offline da Agroxeque. Ele carrega e exibe os mapas gerados na plataforma principal, permitindo que você se oriente dentro do talhão, enquanto se desloca por ele.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-center space-x-3">
+                  <Check className="w-5 h-5 text-green-600" />
+                  <span>Realize avaliações presenciais direcionadas</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <Check className="w-5 h-5 text-green-600" />
+                  <span>Colete amostras de pontos estratégicos</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <Check className="w-5 h-5 text-green-600" />
+                  <span>Aplique tratamentos localizados</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Dobra 5: Benefícios Tangíveis */}
       <section className="py-12 md:py-20 bg-gradient-to-br from-green-50 to-blue-50">
         <div className="container mx-auto px-4">
