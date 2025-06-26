@@ -138,9 +138,7 @@ const Index = () => {
           {/* Texto conclusivo */}
           <div className="mt-12 md:mt-16 text-center">
             <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 md:p-8 max-w-4xl mx-auto border border-green-100 shadow-sm">
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
-                "Hoje em dia os drones são muito populares e acessíveis. A Agroxeque é o elo que une seu drone à ações práticas de manejo, tornando-os realmente úteis"
-              </p>
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">Hoje em dia os drones são muito populares e acessíveis. A Agroxeque é o elo que une seu drone à ações práticas de manejo, tornando-os realmente úteis</p>
             </div>
           </div>
         </div>
