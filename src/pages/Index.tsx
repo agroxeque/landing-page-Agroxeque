@@ -114,7 +114,7 @@ const Index = () => {
           }, {
             number: "3",
             title: "Analise com Dados Concretos",
-            desc: "Acesse o \"Ranking de Células\" para verificar a condição de cada hectare"
+            desc: "Avalie cada célula do talhão, para entender suas reais condições"
           }, {
             number: "4",
             title: "Prescrição com Liberdade",
