@@ -390,6 +390,7 @@ const Index = () => {
                 <div className="mb-6 space-y-2">
                   <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 89,00</p>
                   <p className="text-sm text-gray-600">Em até 6 x de R$ 14,83</p>
+                  <p className="text-xs text-gray-500">Sem acréscimos</p>
                 </div>
                 <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
                   Escolher Pacote
@@ -407,6 +408,7 @@ const Index = () => {
                 <div className="mb-6 space-y-2">
                   <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 349,00</p>
                   <p className="text-sm text-gray-600">Em até 6 x de R$ 58,17</p>
+                  <p className="text-xs text-gray-500">Sem acréscimos</p>
                 </div>
                 <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
                   Escolher Pacote
@@ -430,6 +432,7 @@ const Index = () => {
                 <div className="mb-6 space-y-2">
                   <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 549,00</p>
                   <p className="text-sm text-gray-600">Em até 6 x de R$ 91,50</p>
+                  <p className="text-xs text-gray-500">Sem acréscimos</p>
                 </div>
                 <Button className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
                   Escolher Pacote
@@ -447,6 +450,7 @@ const Index = () => {
                 <div className="mb-6 space-y-2">
                   <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 978,00</p>
                   <p className="text-sm text-gray-600">Em até 6 x de R$ 163,00</p>
+                  <p className="text-xs text-gray-500">Sem acréscimos</p>
                 </div>
                 <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
                   Escolher Pacote
