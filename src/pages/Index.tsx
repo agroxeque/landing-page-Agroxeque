@@ -166,7 +166,7 @@ const Index = () => {
               </div>
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Descubra com a Agroxeque</h3>
-                <p className="text-base md:text-lg text-gray-600 mb-6">Nossa exclusiva tecnologia de &quot;Ranking&quot; classifica cada célula numericamente, ordenando-as da melhor à pior. Isso permite vistorias direcionadas, otimização de recursos e decisões baseadas em informações, ao invés de impressões.</p>
+                <p className="text-base md:text-lg text-gray-600 mb-6">Nossa exclusiva tecnologia de &quot;Ranking&quot; classifica cada célula numericamente, ordenando-as da melhor à pior. Isso otimiza as visitas presenciais, destacando os pontos que requerem mais atenção e permite quantificar a área com uma determinada característica. Dessa forma, você toma decisões mais assertivas, baseando-se em informações, ao invés de impressões.</p>
                 <ul className="space-y-3">
                   <li className="flex items-center space-x-3">
                     <Check className="w-5 h-5 text-green-600" />
