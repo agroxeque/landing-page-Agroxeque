@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
+
 const Index = () => {
-  return <div className="min-h-screen bg-white">
+  return (
+    <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -104,38 +106,40 @@ const Index = () => {
           
           <div className="grid md:grid-cols-5 gap-6 md:gap-8">
             {[{
-            number: "1",
-            title: "Capture as Imagens",
-            desc: "Faça o upload das imagens obtidas com seu próprio drone"
-          }, {
-            number: "2",
-            title: "Processamento Automático",
-            desc: "Obtenha Automaticamente Ortofoto, MDS, Índice de Vegetação e Relatório"
-          }, {
-            number: "3",
-            title: "Analise com Dados Concretos",
-            desc: "Acesse o \"Ranking de Células\" para verificar a condição de cada hectare"
-          }, {
-            number: "4",
-            title: "Prescrição com Liberdade",
-            desc: "Gere Mapas de Prescrição Flexíveis, perfeitos para maquinário ou Drones"
-          }, {
-            number: "5",
-            title: "Execute com Xeque-Map",
-            desc: "Use nosso app móvel para navegação e aplicação em campo"
-          }].map((step, index) => <div key={index} className="text-center">
+              number: "1",
+              title: "Capture as Imagens",
+              desc: "Faça o upload das imagens obtidas com seu próprio drone"
+            }, {
+              number: "2",
+              title: "Processamento Automático",
+              desc: "Obtenha Automaticamente Ortofoto, MDS, Índice de Vegetação e Relatório"
+            }, {
+              number: "3",
+              title: "Analise com Dados Concretos",
+              desc: "Acesse o \"Ranking de Células\" para verificar a condição de cada hectare"
+            }, {
+              number: "4",
+              title: "Prescrição com Liberdade",
+              desc: "Gere Mapas de Prescrição Flexíveis, perfeitos para maquinário ou Drones"
+            }, {
+              number: "5",
+              title: "Execute com Xeque-Map",
+              desc: "Use nosso app móvel para navegação e aplicação em campo"
+            }].map((step, index) => (
+              <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   {step.number}
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">{step.title}</h3>
                 <p className="text-gray-600 text-sm">{step.desc}</p>
                 {index < 4 && <ArrowDown className="w-6 h-6 text-green-600 mx-auto mt-4 md:hidden" />}
-              </div>)}
+              </div>
+            ))}
           </div>
           
           {/* Texto conclusivo movido para baixo dos 5 passos */}
           <div className="text-center mt-12">
-            <p className="text-base text-gray-700 max-w-4xl mx-auto md:text-xl font-bold">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Hoje em dia os drones são muito populares e acessíveis. A Agroxeque é o elo que une seu drone à ações práticas de manejo,<br />
               tornando-os realmente úteis
             </p>
@@ -229,30 +233,30 @@ const Index = () => {
           
           <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             {[{
-            title: "Redução de Custos",
-            desc: "Até 75% menos gastos com alguns insumos através de aplicação localizada",
-            icon: "💰"
-          }, {
-            title: "Aumento de Produtividade",
-            desc: "Identifique rapidamente pontos problemáticos e recupere o vigor em tempo hábil",
-            icon: "📈"
-          }, {
-            title: "Vistorias Eficientes",
-            desc: "Tempo de campo reduzido com inspeções direcionadas e visitas menos frequentes",
-            icon: "🎯"
-          }, {
-            title: "Decisões Inteligentes",
-            desc: "Base de dados geoestatística para todas as escolhas",
-            icon: "🧠"
-          }, {
-            title: "Uso Otimizado do Maquinário",
-            desc: "Aplicações localizadas geram operações mais curtas",
-            icon: "🚜"
-          }, {
-            title: "Manejo Fitossanitário Estratégico",
-            desc: "Economicamente viável e Ecologicamente sustentável",
-            icon: "🌱"
-          }].map((benefit, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
+              title: "Redução de Custos",
+              desc: "Até 75% menos gastos com alguns insumos através de aplicação localizada",
+              icon: "💰"
+            }, {
+              title: "Aumento de Produtividade",
+              desc: "Identifique rapidamente pontos problemáticos e recupere o vigor em tempo hábil",
+              icon: "📈"
+            }, {
+              title: "Vistorias Eficientes",
+              desc: "Tempo de campo reduzido com inspeções direcionadas e visitas menos frequentes",
+              icon: "🎯"
+            }, {
+              title: "Decisões Inteligentes",
+              desc: "Base de dados geoestatística para todas as escolhas",
+              icon: "🧠"
+            }, {
+              title: "Uso Otimizado do Maquinário",
+              desc: "Aplicações localizadas geram operações mais curtas",
+              icon: "🚜"
+            }, {
+              title: "Manejo Fitossanitário Estratégico",
+              desc: "Economicamente viável e Ecologicamente sustentável",
+              icon: "🌱"
+            }].map((benefit, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardContent className="p-6 text-center">
                     <div className="text-4xl mb-4">{benefit.icon}</div>
                     <h3 className="font-semibold text-gray-900 mb-3">{benefit.title}</h3>
@@ -550,6 +554,8 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
