@@ -177,7 +177,7 @@ const Index = () => {
                   </li>
                   <li className="flex items-center space-x-3">
                     <Check className="w-5 h-5 text-green-600" />
-                    <span>Base científica para todas as decisões</span>
+                    <span>Imagens de alta qualidade no momento exato que você precisa</span>
                   </li>
                 </ul>
               </div>
