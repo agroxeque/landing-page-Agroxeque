@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
@@ -99,12 +98,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Transformando Dados em Lucro, com estes <span className="text-green-600">5 Passos Simples</span>
+              Agricultura Digital há Poucos Passos, com <span className="text-green-600">5 Passos Simples</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-6">Transforme Dados em Lucro, através de 5 Passos Simples</p>
-            <p className="text-base md:text-lg text-gray-700 max-w-4xl mx-auto font-medium">
-              Hoje em dia os drones são muito populares e acessíveis. A Agroxeque é o elo que une seu drone à ações práticas de manejo, tornando-os realmente úteis
-            </p>
+            
           </div>
           
           <div className="grid md:grid-cols-5 gap-6 md:gap-8">
