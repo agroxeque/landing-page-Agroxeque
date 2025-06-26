@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
+
 const Index = () => {
-  return <div className="min-h-screen bg-white">
+  return (
+    <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -198,7 +200,7 @@ const Index = () => {
             {/* Prescrições Flexíveis */}
             <div className="text-center mb-8 md:mb-12">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Mesmo Talhão, Necessidades Diferentes</h3>
-              <p className="text-base md:text-lg text-gray-600 max-w-4xl mx-auto">Defina uma dose ou tratamento específico para cada célula individualmente ou em grupo, de acordo com a necessidade de cada uma</p>
+              <p className="text-base md:text-lg text-gray-600 max-w-6xl mx-auto">Defina uma dose ou tratamento específico para cada célula individualmente ou em grupo, de acordo com a necessidade de cada uma</p>
             </div>
             
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -560,6 +562,8 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
