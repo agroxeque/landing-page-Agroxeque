@@ -49,7 +49,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Sua Lavoura Guarda Segredos que <span className="text-red-600">Valem Ouro</span>!
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Enquanto você toma decisões no escuro, a Agroxeque revela dados valiosos sobre o potencial escondido dentro de cada talhão.</p>
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Agroxeque revela dados valiosos sobre o potencial escondido dentro de cada talhão.</p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
