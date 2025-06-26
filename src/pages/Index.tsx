@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
@@ -252,7 +253,7 @@ const Index = () => {
             icon: "🎯"
           }, {
             title: "Decisões Inteligentes",
-            desc: "Base de dados geoestatística para todas as escolhas",
+            desc: "Base de dados geoestatística para definição do manejo correto",
             icon: "🧠"
           }, {
             title: "Uso Otimizado do Maquinário",
