@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
@@ -178,7 +177,7 @@ const Index = () => {
                   </li>
                   <li className="flex items-center space-x-3">
                     <Check className="w-5 h-5 text-green-600" />
-                    <span>Base científica para todas as decisões</span>
+                    <span>Base de dados geostatística para definição do manejo correto</span>
                   </li>
                 </ul>
               </div>
