@@ -177,7 +177,7 @@ const Index = () => {
                   </li>
                   <li className="flex items-center space-x-3">
                     <Check className="w-5 h-5 text-green-600" />
-                    <span>Imagens de alta qualidade no momento exato que você precisa</span>
+                    <span>Imagens nítidas e no momento que você precisa</span>
                   </li>
                 </ul>
               </div>
