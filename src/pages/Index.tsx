@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
@@ -160,6 +161,9 @@ const Index = () => {
           <div className="space-y-12 md:space-y-20">
             {/* Ranking de Células */}
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <div className="relative flex justify-center">
+                <img src="/lovable-uploads/7bf07b2d-9a2a-4ee8-acb1-8c29dedcc540.png" alt="Ranking de Células interface" className="w-2/3 rounded-lg shadow-xl" />
+              </div>
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Descubra com a Agroxeque</h3>
                 <p className="text-base md:text-lg text-gray-600 mb-6">Nossa exclusiva tecnologia de &quot;Ranking&quot; classifica cada célula numericamente, ordenando-as da melhor à pior. Isso permite vistorias direcionadas, otimização de recursos e decisões baseadas em informações, ao invés de impressões.</p>
@@ -177,9 +181,6 @@ const Index = () => {
                     <span>Base científica para todas as decisões</span>
                   </li>
                 </ul>
-              </div>
-              <div className="relative flex justify-center">
-                <img src="/lovable-uploads/7bf07b2d-9a2a-4ee8-acb1-8c29dedcc540.png" alt="Ranking de Células interface" className="w-2/3 rounded-lg shadow-xl" />
               </div>
             </div>
             
@@ -202,6 +203,9 @@ const Index = () => {
             </div>
             
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <div className="relative">
+                <img alt="Hexagonal cells pattern" className="w-full rounded-lg shadow-xl" src="/lovable-uploads/30573fd0-4e62-4cbd-9fa2-e19e75727003.png" />
+              </div>
               <div className="space-y-4">
                 <div className="bg-green-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-green-800">Taxa Variável em Área Total</h4>
@@ -219,9 +223,6 @@ const Index = () => {
                   <h4 className="font-semibold text-orange-800">Taxa Fixa</h4>
                   <p className="text-orange-700 text-sm">Recomendações gerais mais precisas, apoiadas em análise de dados concretos, sob uma visão detalhada e abrangente do talhão.</p>
                 </div>
-              </div>
-              <div className="relative">
-                <img alt="Hexagonal cells pattern" className="w-full rounded-lg shadow-xl" src="/lovable-uploads/30573fd0-4e62-4cbd-9fa2-e19e75727003.png" />
               </div>
             </div>
           </div>
