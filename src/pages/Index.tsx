@@ -114,7 +114,7 @@ const Index = () => {
           }, {
             number: "3",
             title: "Analise com Dados Concretos",
-            desc: "Avalie cada célula do talhão, para entender suas reais condições"
+            desc: "Avalie cada célula do talhão, para entender sua real condição"
           }, {
             number: "4",
             title: "Prescrição com Liberdade",
