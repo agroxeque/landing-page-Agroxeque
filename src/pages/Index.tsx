@@ -546,7 +546,7 @@ const Index = () => {
             
             <Card className="p-6">
               <CardContent className="p-0">
-                <p className="text-gray-600 mb-4 italic">"Gasto muito mais tempo pra percorrer e avaliar os talhões dos clientes que não usam a Agroxeque, e ainda saio de lá com uma visão vaga e subjetiva. Depois que a gente acostuma, fica difícil avaliar um talhão sem o mapa de ranking"</p>
+                <p className="text-gray-600 mb-4 italic">"Gasto muito mais tempo pra percorrer e avaliar os talhões dos clientes que não usam a Agroxeque, e ainda saio de lá com uma visão vaga e subjetiva. Depois que a gente acostuma, fica difícil avaliar uma lavoura sem o mapa de ranking"</p>
                 <div className="font-semibold text-gray-900">José Carlos Siqueira</div>
                 <div className="text-green-600 text-sm">ZK Agro Consultoria</div>
                 <div className="text-gray-500 text-xs">Franca - SP</div>
