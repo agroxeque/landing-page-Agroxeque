@@ -1,8 +1,32 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
+import { useState, useEffect } from "react";
+
 const Index = () => {
+  // Estado para controlar a rotação das imagens
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  // Array com as três imagens para rotação
+  const rotatingImages = [
+    "/lovable-uploads/d8064e8f-eb57-44e4-a6c3-a5305a61e286.png",
+    "/lovable-uploads/01005b75-72ca-405b-bf36-b9a86167f5d0.png",
+    "/lovable-uploads/55fc5e86-51f1-47bd-a19c-685bb7aa7f08.png"
+  ];
+
+  // Effect para rotacionar as imagens a cada 3 segundos
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % rotatingImages.length
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -87,7 +111,11 @@ const Index = () => {
             </div>
             
             <div className="relative">
-              <img src="/lovable-uploads/95bed2e3-3e94-49df-9f3d-518692e6c4c0.png" alt="Chess pieces on agricultural field" className="w-full rounded-lg shadow-xl" />
+              <img 
+                src={rotatingImages[currentImageIndex]} 
+                alt="Agricultural field views" 
+                className="w-full rounded-lg shadow-xl transition-opacity duration-500" 
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-green-600/20 to-transparent rounded-lg"></div>
             </div>
           </div>
