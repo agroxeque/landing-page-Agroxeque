@@ -114,7 +114,7 @@ const Index = () => {
             desc: "Obtenha Automaticamente Ortofoto, MDS, Índice de Vegetação e Relatório"
           }, {
             number: "3",
-            title: "Analise com Dados Concretos",
+            title: "Análise com Dados Concretos",
             desc: "Avalie cada célula do talhão, para entender sua real condição"
           }, {
             number: "4",
