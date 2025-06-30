@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -267,7 +268,15 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="relative">
-              <img alt="Xeque-Map aplicativo móvel" className="w-full rounded-lg shadow-xl" src="/lovable-uploads/c59006a0-53dc-41ad-b1b4-35435de1e727.png" />
+              <video 
+                src="/Video_Xeque_Map.mp4" 
+                alt="Xeque-Map aplicativo móvel" 
+                className="w-full rounded-lg shadow-xl" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+              />
             </div>
             <div>
               <p className="text-base md:text-lg text-gray-600 mb-6">
