@@ -169,7 +169,7 @@ const Index = () => {
               <p className="text-base text-gray-700 max-w-4xl mx-auto font-bold py-0 md:text-lg px-0">
                 Hoje em dia os drones são muito populares e acessíveis.
                 <br />
-                A Agroxeque é o elo que une seu drone à ações práticas de manejo, tornando-os realmente úteis
+                A Agroxeque é a ponte que liga seu drone às ações práticas de manejo, tornando-os realmente úteis
               </p>
             </div>
           </div>
