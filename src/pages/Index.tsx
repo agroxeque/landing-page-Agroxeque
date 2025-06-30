@@ -149,7 +149,7 @@ const Index = () => {
             desc: "Gere Mapas de Prescrição Flexíveis, perfeitos para maquinário ou Drones"
           }, {
             number: "5",
-            title: "Execute com Xeque-Map",
+            title: "Mãos à Obra com Xeque-Map",
             desc: "Use nosso app móvel para navegação e operação de campo"
           }].map((step, index) => <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
