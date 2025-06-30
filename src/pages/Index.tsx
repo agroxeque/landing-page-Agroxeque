@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -267,11 +268,10 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="relative">
+            <div className="relative h-64 md:h-80">
               <video 
                 src="/Video_Xeque_Map.mp4" 
-                alt="Xeque-Map aplicativo móvel" 
-                className="w-full rounded-lg shadow-xl" 
+                className="w-full h-full object-cover rounded-lg shadow-xl" 
                 autoPlay 
                 loop 
                 muted 
@@ -739,3 +739,4 @@ const Index = () => {
     </div>;
 };
 export default Index;
+
