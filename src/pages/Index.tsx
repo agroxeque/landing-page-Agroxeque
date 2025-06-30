@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -270,8 +269,7 @@ const Index = () => {
             <div className="relative">
               <video 
                 src="/Video_Xeque_Map.mp4" 
-                alt="Xeque-Map aplicativo móvel" 
-                className="w-full rounded-lg shadow-xl" 
+                className="w-full h-64 md:h-80 rounded-lg shadow-xl object-cover" 
                 autoPlay 
                 loop 
                 muted 
