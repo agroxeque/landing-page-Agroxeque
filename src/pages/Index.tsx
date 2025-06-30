@@ -269,7 +269,7 @@ const Index = () => {
             <div className="relative">
               <video 
                 src="/Video_Xeque_Map.mp4" 
-                className="w-full h-64 md:h-80 rounded-lg shadow-xl object-cover" 
+                className="w-full h-64 md:h-80 rounded-lg shadow-xl object-contain bg-gray-100" 
                 autoPlay 
                 loop 
                 muted 
