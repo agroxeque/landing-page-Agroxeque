@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -151,7 +150,7 @@ const Index = () => {
           }, {
             number: "5",
             title: "Execute com Xeque-Map",
-            desc: "Use nosso app móvel para navegação e aplicação em campo"
+            desc: "Use nosso app móvel para navegação e operação de campo"
           }].map((step, index) => <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   {step.number}
