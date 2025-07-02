@@ -44,7 +44,7 @@ const Index = () => {
       <section 
         className="relative overflow-hidden min-h-screen"
         style={{
-          '--video-scale': '0.75',
+          '--video-scale': '0.95',
           '--overlay-opacity': '0.25',
           '--content-padding-x': '6rem',
           '--content-padding-y': '4rem'
