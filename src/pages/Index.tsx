@@ -46,8 +46,8 @@ const Index = () => {
         style={{
           '--video-scale': '0.95',
           '--overlay-opacity': '0.25',
-          '--content-padding-x': '12rem',
-          '--content-padding-y': '8rem'
+          '--content-padding-x': '6rem',
+          '--content-padding-y': '4rem'
         } as React.CSSProperties}
       >
         {/* Vídeo como background */}
