@@ -553,7 +553,7 @@ const Index = () => {
               <CardContent className="p-0">
                 <p className="text-gray-600 mb-4 italic">&quot;Reduzimos em cerca de 18% o custo com herbicidas na dessecação.&quot;</p>
                 <div className="font-semibold text-gray-900">Geraldo Basílio</div>
-                <div className="text-green-600 text-sm">Fazenda Rio da Prata</div>
+                <div className="text-green-600 text-sm">Fazenda Rio Formoso</div>
                 <div className="text-gray-500 text-xs">João Pinheiro - MG</div>
               </CardContent>
             </Card>
