@@ -53,7 +53,7 @@ const Index = () => {
         
         <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-between h-full py-8 md:py-12">
           {/* Texto superior */}
-          <div className="flex-1 flex flex-col justify-center items-center mb-8">
+          <div className="flex-1 flex flex-col justify-center items-center mb-2">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               <span className="text-white">Para nós, cada hectare importa!</span>
             </h1>
@@ -67,7 +67,7 @@ const Index = () => {
             <div className="w-full max-w-2xl">
               <video 
                 src="/Hero_Compress.mp4" 
-                className="w-full h-auto rounded-lg shadow-2xl border-4 border-white/20" 
+                className="w-full h-auto rounded-lg shadow-2xl border-0" 
                 autoPlay 
                 loop 
                 muted 
