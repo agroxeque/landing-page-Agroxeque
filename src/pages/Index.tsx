@@ -41,7 +41,7 @@ const Index = () => {
 
       {/* Dobra 1: O Impacto Imediato - Hero Section com Vídeo Background */}
       <section 
-        className="relative overflow-hidden min-h-screen bg-black"
+        className="relative overflow-hidden min-h-screen bg-white"
         style={{
           '--video-scale': '0.95',
           '--overlay-opacity': '0.25',
