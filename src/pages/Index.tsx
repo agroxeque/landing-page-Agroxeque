@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -40,19 +39,22 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Dobra 1: O Impacto Imediato - Hero Section com Background */}
-      <section 
-        className="relative bg-cover bg-center bg-no-repeat overflow-hidden"
-        style={{
-          backgroundImage: `url('/lovable-uploads/e544d47b-ab68-487d-a5ca-a14500225fd7.png')`,
-          aspectRatio: '16/9',
-          minHeight: '80vh'
-        }}
-      >
+      {/* Dobra 1: O Impacto Imediato - Hero Section com Vídeo Background */}
+      <section className="relative overflow-hidden min-h-screen">
+        {/* Vídeo como background */}
+        <video 
+          src="/Hero_Compress.mp4" 
+          className="absolute inset-0 w-full h-full object-cover" 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+        />
+        
         {/* Overlay para melhorar legibilidade do texto */}
         <div className="absolute inset-0 bg-black/40"></div>
         
-        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-between h-full py-8 md:py-12">
+        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-between h-full py-8 md:py-12 min-h-screen">
           {/* Texto superior */}
           <div className="flex-1 flex flex-col justify-center items-center mb-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
@@ -61,21 +63,6 @@ const Index = () => {
             <p className="text-white max-w-3xl mx-auto mb-6 leading-relaxed text-lg md:text-xl drop-shadow-md">
               Aqui você pode monitorar, analisar e intervir em cada hectare, de forma única e independente, com rapidez e facilidade.
             </p>
-          </div>
-          
-          {/* Vídeo centralizado */}
-          <div className="flex-1 flex items-center justify-center mb-8">
-            <div className="w-full max-w-2xl">
-              <video 
-                src="/Hero_Compress.mp4" 
-                className="w-full h-auto rounded-lg shadow-2xl border-4 border-white/20" 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                style={{ aspectRatio: '16/9' }}
-              />
-            </div>
           </div>
           
           {/* Botões na parte inferior */}
