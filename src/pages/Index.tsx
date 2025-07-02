@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
 import { useState, useEffect } from "react";
+
 const Index = () => {
   // Estado para controlar a rotação das imagens
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -17,6 +18,7 @@ const Index = () => {
     }, 3000);
     return () => clearInterval(interval);
   }, []);
+
   return <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -38,7 +40,17 @@ const Index = () => {
       '--content-padding-y': '2rem'
     } as React.CSSProperties}>
         {/* Vídeo como background */}
-        <video src="/Hero_Compress.mp4" className="absolute inset-0 w-full h-full object-contain bg-white" autoPlay loop muted playsInline />
+        <video 
+          src="/Hero_Compress.mp4" 
+          className="absolute inset-0 w-full h-full object-contain bg-white" 
+          style={{
+            transform: `scale(${getComputedStyle(document.documentElement).getPropertyValue('--video-scale') || '0.35'})`
+          }}
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+        />
         
         {/* Overlay para melhorar legibilidade do texto */}
         <div className="absolute inset-0 bg-black" style={{
@@ -700,4 +712,5 @@ const Index = () => {
       </footer>
     </div>;
 };
+
 export default Index;
