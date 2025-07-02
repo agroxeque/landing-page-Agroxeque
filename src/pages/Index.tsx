@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -52,8 +53,7 @@ const Index = () => {
         {/* Vídeo como background */}
         <video 
           src="/Hero_Compress.mp4" 
-          className="absolute inset-0 w-full h-full object-cover" 
-          style={{ transform: 'scale(var(--video-scale))' }}
+          className="absolute inset-0 w-full h-full object-contain" 
           autoPlay 
           loop 
           muted 
