@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -42,18 +41,18 @@ const Index = () => {
 
       {/* Dobra 1: O Impacto Imediato - Hero Section com Vídeo Background */}
       <section 
-        className="relative overflow-hidden min-h-screen"
+        className="relative overflow-hidden min-h-screen bg-white"
         style={{
           '--video-scale': '0.95',
           '--overlay-opacity': '0.25',
           '--content-padding-x': '6rem',
-          '--content-padding-y': '4rem'
+          '--content-padding-y': '2rem'
         } as React.CSSProperties}
       >
         {/* Vídeo como background */}
         <video 
           src="/Hero_Compress.mp4" 
-          className="absolute inset-0 w-full h-full object-contain" 
+          className="absolute inset-0 w-full h-full object-contain bg-white" 
           autoPlay 
           loop 
           muted 
@@ -67,16 +66,15 @@ const Index = () => {
         ></div>
         
         <div 
-          className="container mx-auto text-center relative z-10 flex flex-col justify-between h-full min-h-screen"
+          className="container mx-auto text-center relative z-10 flex flex-col justify-start h-full min-h-screen pt-20"
           style={{ 
             paddingLeft: 'var(--content-padding-x)', 
             paddingRight: 'var(--content-padding-x)',
-            paddingTop: 'var(--content-padding-y)',
             paddingBottom: 'var(--content-padding-y)'
           }}
         >
           {/* Texto superior */}
-          <div className="flex-1 flex flex-col justify-center items-center mb-12">
+          <div className="flex-1 flex flex-col justify-start items-center mb-12 mt-16">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               <span className="text-white">Para nós, cada hectare importa!</span>
             </h1>
@@ -86,7 +84,7 @@ const Index = () => {
           </div>
           
           {/* Botões na parte inferior */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 mt-auto">
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg shadow-xl">
                 Experimente Grátis Agora
