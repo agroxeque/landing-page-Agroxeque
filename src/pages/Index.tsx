@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -8,17 +7,25 @@ import { useState, useEffect } from "react";
 const Index = () => {
   // Estado para controlar a rotação das imagens
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
+  
   // Array com as três imagens para rotação
-  const rotatingImages = ["/lovable-uploads/d8064e8f-eb57-44e4-a6c3-a5305a61e286.png", "/lovable-uploads/01005b75-72ca-405b-bf36-b9a86167f5d0.png", "/lovable-uploads/55fc5e86-51f1-47bd-a19c-685bb7aa7f08.png"];
+  const rotatingImages = [
+    "/lovable-uploads/d8064e8f-eb57-44e4-a6c3-a5305a61e286.png",
+    "/lovable-uploads/01005b75-72ca-405b-bf36-b9a86167f5d0.png",
+    "/lovable-uploads/55fc5e86-51f1-47bd-a19c-685bb7aa7f08.png"
+  ];
 
   // Effect para rotacionar as imagens a cada 3 segundos
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex(prevIndex => (prevIndex + 1) % rotatingImages.length);
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % rotatingImages.length
+      );
     }, 3000);
+
     return () => clearInterval(interval);
   }, []);
+
   return <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -33,34 +40,45 @@ const Index = () => {
       </header>
 
       {/* Dobra 1: O Impacto Imediato - Hero Section com Novo Background */}
-      <section className="relative bg-cover bg-center bg-no-repeat overflow-hidden" style={{
-      backgroundImage: `url('/BG_Hero.jpg')`,
-      aspectRatio: '16/9',
-      minHeight: '100vh'
-    }}>
+      <section 
+        className="relative bg-cover bg-center bg-no-repeat overflow-hidden"
+        style={{
+          backgroundImage: `url('/BG_Hero.jpg')`,
+          aspectRatio: '16/9',
+          minHeight: '100vh'
+        }}
+      >
         {/* Overlay para melhorar legibilidade do texto */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/80"></div>
         
-        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-center items-center h-full pt-4 pb-12 space-y-4">
+        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-between h-full py-8 md:py-12">
           {/* Texto superior */}
-          <div className="text-center">
+          <div className="flex-1 flex flex-col justify-center items-center mb-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               <span className="text-white">Para nós, cada hectare importa!</span>
             </h1>
-            <p className="text-white max-w-3xl mx-auto mb-2 leading-relaxed text-lg md:text-xl drop-shadow-md">
+            <p className="text-white max-w-3xl mx-auto mb-6 leading-relaxed text-lg md:text-xl drop-shadow-md">
               Aqui você pode monitorar, analisar e intervir em cada hectare, de forma única e independente, com rapidez e facilidade.
             </p>
           </div>
           
           {/* Vídeo centralizado */}
-          <div className="w-full max-w-2xl">
-            <video src="/Hero_Compress.mp4" className="w-full h-auto rounded-lg shadow-2xl" autoPlay loop muted playsInline style={{
-            aspectRatio: '16/9'
-          }} />
+          <div className="flex-1 flex items-center justify-center mb-8">
+            <div className="w-full max-w-2xl">
+              <video 
+                src="/Hero_Compress.mp4" 
+                className="w-full h-auto rounded-lg shadow-2xl border-4 border-white/20" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                style={{ aspectRatio: '16/9' }}
+              />
+            </div>
           </div>
           
           {/* Botões na parte inferior */}
-          <div className="mt-8">
+          <div className="flex-shrink-0">
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
               <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg shadow-lg">
                 Experimente Grátis Agora
@@ -120,7 +138,11 @@ const Index = () => {
             </div>
             
             <div className="relative">
-              <img src={rotatingImages[currentImageIndex]} alt="Agricultural field views" className="w-full rounded-lg shadow-xl transition-opacity duration-500" />
+              <img 
+                src={rotatingImages[currentImageIndex]} 
+                alt="Agricultural field views" 
+                className="w-full rounded-lg shadow-xl transition-opacity duration-500" 
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-green-600/20 to-transparent rounded-lg"></div>
             </div>
           </div>
@@ -257,6 +279,49 @@ const Index = () => {
               <div className="relative">
                 <img alt="Hexagonal cells pattern" className="w-full rounded-lg shadow-xl" src="/lovable-uploads/30573fd0-4e62-4cbd-9fa2-e19e75727003.png" />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Nova Seção - Xeque-Map */}
+      <section className="py-12 md:py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Xeque-Map: <span className="text-green-600">Seu Plano de Ação na Palma da Mão</span>
+            </h2>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="relative">
+              <video 
+                src="/Video_Xeque_Map.mp4" 
+                className="w-full h-64 md:h-80 rounded-lg shadow-xl object-contain bg-gray-100" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+              />
+            </div>
+            <div>
+              <p className="text-base md:text-lg text-gray-600 mb-6">
+                Xeque-Map é o aplicativo de navegação offline da Agroxeque. Ele carrega e exibe os mapas gerados na plataforma principal, permitindo que você se oriente dentro do talhão, enquanto se desloca por ele.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-center space-x-3">
+                  <Check className="w-5 h-5 text-green-600" />
+                  <span>Realize avaliações presenciais direcionadas</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <Check className="w-5 h-5 text-green-600" />
+                  <span>Colete amostras de pontos estratégicos</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <Check className="w-5 h-5 text-green-600" />
+                  <span>Aplique tratamentos localizados</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -699,5 +764,4 @@ const Index = () => {
       </footer>
     </div>;
 };
-
 export default Index;
