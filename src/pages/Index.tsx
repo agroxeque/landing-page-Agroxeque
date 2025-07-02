@@ -49,7 +49,7 @@ const Index = () => {
         }}
       >
         {/* Overlay para melhorar legibilidade do texto */}
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/25"></div>
         
         <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-center items-center h-full py-4 space-y-4">
           {/* Texto superior */}
