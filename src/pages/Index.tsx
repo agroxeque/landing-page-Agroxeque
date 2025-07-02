@@ -68,6 +68,19 @@ const Index = () => {
               Ver Demonstração
             </Button>
           </div>
+          
+          {/* Vídeo Hero */}
+          <div className="max-w-4xl mx-auto">
+            <video 
+              src="/Video_Hero.mp4" 
+              className="w-full rounded-lg shadow-2xl" 
+              style={{ aspectRatio: '16/9' }}
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+            />
+          </div>
         </div>
       </section>
 
