@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
 import { useState, useEffect } from "react";
+
 const Index = () => {
   // Estado para controlar a rotação das imagens
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -17,6 +18,7 @@ const Index = () => {
     }, 3000);
     return () => clearInterval(interval);
   }, []);
+
   return <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -39,9 +41,9 @@ const Index = () => {
         {/* Overlay para melhorar legibilidade do texto */}
         <div className="absolute inset-0 bg-black/40"></div>
         
-        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-between h-full md:py-12 py-[16px]">
+        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-center items-center h-full space-y-4 py-4">
           {/* Texto superior */}
-          <div className="flex-1 flex flex-col justify-center items-center mb-8">
+          <div className="text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               <span className="text-white">Para nós, cada hectare importa!</span>
             </h1>
@@ -50,17 +52,23 @@ const Index = () => {
             </p>
           </div>
           
-          {/* Vídeo centralizado */}
-          <div className="flex-1 flex items-center justify-center mb-8">
-            <div className="w-full max-w-2xl">
-              <video src="/Hero_Compress.mp4" autoPlay loop muted playsInline style={{
-              aspectRatio: '16/9'
-            }} className="w-full h-auto shadow-2xl border-4 border-white/20 rounded-none" />
-            </div>
+          {/* Vídeo centralizado - SEM MOLDURA */}
+          <div className="w-full max-w-2xl">
+            <video 
+              src="/Hero_Compress.mp4" 
+              autoPlay 
+              loop 
+              muted 
+              playsInline 
+              style={{
+                aspectRatio: '16/9'
+              }} 
+              className="w-full h-auto !border-0 !shadow-none !outline-none" 
+            />
           </div>
           
           {/* Botões na parte inferior */}
-          <div className="flex-shrink-0">
+          <div className="text-center">
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
               <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg shadow-lg">
                 Experimente Grátis Agora
@@ -735,4 +743,5 @@ const Index = () => {
       </footer>
     </div>;
 };
+
 export default Index;
