@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -40,7 +41,7 @@ const Index = () => {
         {/* Overlay para melhorar legibilidade do texto */}
         <div className="absolute inset-0 bg-black/40"></div>
         
-        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-center items-center h-full md:py-12 py-[16px] space-y-4">
+        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-center items-center h-full pt-4 pb-12 space-y-4">
           {/* Texto superior */}
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
