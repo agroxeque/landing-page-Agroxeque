@@ -51,7 +51,7 @@ const Index = () => {
         paddingLeft: 'var(--content-padding-x)',
         paddingRight: 'var(--content-padding-x)',
         paddingBottom: 'var(--content-padding-y)'
-      }} className="container mx-auto text-center relative z-10 flex flex-col justify-start h-full min-h-screen pt-20 py-[38px]">
+      }} className="container mx-auto text-center relative z-10 flex flex-col justify-start h-full min-h-screen pt-20 py-[23px]">
           {/* Texto superior */}
           <div className="flex-1 flex flex-col justify-start items-center mb-12 mt-16 my-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
