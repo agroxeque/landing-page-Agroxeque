@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
 import { useState, useEffect } from "react";
+
 const Index = () => {
   // Estado para controlar a rotação das imagens
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -41,7 +42,7 @@ const Index = () => {
         
         <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-between h-full md:py-12 py-[16px]">
           {/* Texto superior */}
-          <div className="flex-1 flex flex-col justify-center items-center mb-8">
+          <div className="flex-1 flex flex-col justify-center items-center mb-4">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               <span className="text-white">Para nós, cada hectare importa!</span>
             </h1>
@@ -53,7 +54,7 @@ const Index = () => {
           {/* Vídeo centralizado */}
           <div className="flex-1 flex items-center justify-center mb-8">
             <div className="w-full max-w-2xl">
-              <video src="/Hero_Compress.mp4" className="w-full h-auto rounded-lg shadow-2xl border-4 border-white/20" autoPlay loop muted playsInline style={{
+              <video src="/Hero_Compress.mp4" className="w-full h-auto rounded-lg shadow-2xl" autoPlay loop muted playsInline style={{
               aspectRatio: '16/9'
             }} />
             </div>
@@ -735,4 +736,5 @@ const Index = () => {
       </footer>
     </div>;
 };
+
 export default Index;
