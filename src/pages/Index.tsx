@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -44,7 +45,7 @@ const Index = () => {
         {/* Vídeo como background */}
         <video 
           src="/Hero_Compress.mp4" 
-          className="absolute inset-0 w-full h-full object-cover" 
+          className="absolute inset-0 w-full h-full object-cover scale-110" 
           autoPlay 
           loop 
           muted 
@@ -54,7 +55,7 @@ const Index = () => {
         {/* Overlay para melhorar legibilidade do texto */}
         <div className="absolute inset-0 bg-black/40"></div>
         
-        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-between h-full py-8 md:py-12 min-h-screen">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12 text-center relative z-10 flex flex-col justify-between h-full py-12 md:py-16 min-h-screen">
           {/* Texto superior */}
           <div className="flex-1 flex flex-col justify-center items-center mb-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
