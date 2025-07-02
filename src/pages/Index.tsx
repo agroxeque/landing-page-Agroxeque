@@ -51,9 +51,9 @@ const Index = () => {
         {/* Overlay para melhorar legibilidade do texto */}
         <div className="absolute inset-0 bg-black/30"></div>
         
-        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-between h-full py-8 md:py-12">
+        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-center items-center h-full py-4 space-y-4">
           {/* Texto superior */}
-          <div className="flex-1 flex flex-col justify-center items-center mb-8">
+          <div className="text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               <span className="text-white">Para nós, cada hectare importa!</span>
             </h1>
@@ -62,23 +62,21 @@ const Index = () => {
             </p>
           </div>
           
-          {/* Vídeo centralizado */}
-          <div className="flex-1 flex items-center justify-center mb-8">
-            <div className="w-full max-w-2xl">
-              <video 
-                src="/Hero_Compress.mp4" 
-                className="w-full h-auto rounded-lg shadow-2xl border-4 border-white/20" 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                style={{ aspectRatio: '16/9' }}
-              />
-            </div>
+          {/* Vídeo centralizado - SEM MOLDURA */}
+          <div className="w-full max-w-2xl">
+            <video 
+              src="/Hero_Compress.mp4" 
+              className="w-full h-auto rounded-lg shadow-lg" 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              style={{ aspectRatio: '16/9' }}
+            />
           </div>
           
           {/* Botões na parte inferior */}
-          <div className="flex-shrink-0">
+          <div className="text-center">
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
               <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg shadow-lg">
                 Experimente Grátis Agora
