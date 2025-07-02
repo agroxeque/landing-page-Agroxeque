@@ -44,7 +44,7 @@ const Index = () => {
       <section 
         className="relative bg-cover bg-center bg-no-repeat overflow-hidden"
         style={{
-          backgroundImage: `url('/lovable-uploads/8d2c61d5-fdb3-4300-8cc9-5a928af950a6.png')`,
+          backgroundImage: `url('/BG_Hero.jpg')`,
           aspectRatio: '16/9',
           minHeight: '100vh'
         }}
