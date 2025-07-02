@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -39,13 +40,13 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Dobra 1: O Impacto Imediato - Hero Section com Background */}
+      {/* Dobra 1: O Impacto Imediato - Hero Section com Novo Background */}
       <section 
         className="relative bg-cover bg-center bg-no-repeat overflow-hidden"
         style={{
-          backgroundImage: `url('/lovable-uploads/e544d47b-ab68-487d-a5ca-a14500225fd7.png')`,
+          backgroundImage: `url('/lovable-uploads/8d2c61d5-fdb3-4300-8cc9-5a928af950a6.png')`,
           aspectRatio: '16/9',
-          minHeight: '80vh'
+          minHeight: '100vh'
         }}
       >
         {/* Overlay para melhorar legibilidade do texto */}
