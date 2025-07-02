@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -41,11 +40,20 @@ const Index = () => {
       </header>
 
       {/* Dobra 1: O Impacto Imediato - Hero Section com Vídeo Background */}
-      <section className="relative overflow-hidden min-h-screen">
+      <section 
+        className="relative overflow-hidden min-h-screen"
+        style={{
+          '--video-scale': '0.83',
+          '--overlay-opacity': '0.25',
+          '--content-padding-x': '6rem',
+          '--content-padding-y': '4rem'
+        } as React.CSSProperties}
+      >
         {/* Vídeo como background */}
         <video 
           src="/Hero_Compress.mp4" 
-          className="absolute inset-0 w-full h-full object-cover scale-90" 
+          className="absolute inset-0 w-full h-full object-cover" 
+          style={{ transform: 'scale(var(--video-scale))' }}
           autoPlay 
           loop 
           muted 
@@ -53,9 +61,20 @@ const Index = () => {
         />
         
         {/* Overlay para melhorar legibilidade do texto */}
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div 
+          className="absolute inset-0 bg-black"
+          style={{ opacity: 'var(--overlay-opacity)' }}
+        ></div>
         
-        <div className="container mx-auto px-6 md:px-10 lg:px-16 text-center relative z-10 flex flex-col justify-between h-full py-16 md:py-20 min-h-screen">
+        <div 
+          className="container mx-auto text-center relative z-10 flex flex-col justify-between h-full min-h-screen"
+          style={{ 
+            paddingLeft: 'var(--content-padding-x)', 
+            paddingRight: 'var(--content-padding-x)',
+            paddingTop: 'var(--content-padding-y)',
+            paddingBottom: 'var(--content-padding-y)'
+          }}
+        >
           {/* Texto superior */}
           <div className="flex-1 flex flex-col justify-center items-center mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
@@ -268,49 +287,6 @@ const Index = () => {
               <div className="relative">
                 <img alt="Hexagonal cells pattern" className="w-full rounded-lg shadow-xl" src="/lovable-uploads/30573fd0-4e62-4cbd-9fa2-e19e75727003.png" />
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Nova Seção - Xeque-Map */}
-      <section className="py-12 md:py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Xeque-Map: <span className="text-green-600">Seu Plano de Ação na Palma da Mão</span>
-            </h2>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="relative">
-              <video 
-                src="/Video_Xeque_Map.mp4" 
-                className="w-full h-64 md:h-80 rounded-lg shadow-xl object-contain bg-gray-100" 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-              />
-            </div>
-            <div>
-              <p className="text-base md:text-lg text-gray-600 mb-6">
-                Xeque-Map é o aplicativo de navegação offline da Agroxeque. Ele carrega e exibe os mapas gerados na plataforma principal, permitindo que você se oriente dentro do talhão, enquanto se desloca por ele.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-600" />
-                  <span>Realize avaliações presenciais direcionadas</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-600" />
-                  <span>Colete amostras de pontos estratégicos</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-600" />
-                  <span>Aplique tratamentos localizados</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
