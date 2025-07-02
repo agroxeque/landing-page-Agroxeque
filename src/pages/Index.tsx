@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -31,27 +32,52 @@ const Index = () => {
       </header>
 
       {/* Dobra 1: O Impacto Imediato - Hero Section com Vídeo Background */}
-      <section className="relative overflow-hidden min-h-screen bg-white" style={{
-      '--video-scale': '0.25',
-      '--overlay-opacity': '0.25',
-      '--content-padding-x': '6rem',
-      '--content-padding-y': '2rem'
-    } as React.CSSProperties}>
+      <section className="relative overflow-hidden min-h-screen bg-white">
+        <style jsx>{`
+          .hero-section {
+            --video-scale: 0.25;
+            --overlay-opacity: 0.25;
+            --content-padding-x: 6rem;
+            --content-padding-y: 2rem;
+          }
+          
+          .hero-video {
+            transform: scale(var(--video-scale));
+            background-color: white;
+          }
+          
+          .hero-overlay {
+            opacity: var(--overlay-opacity);
+          }
+          
+          .hero-content {
+            padding-left: var(--content-padding-x);
+            padding-right: var(--content-padding-x);
+            padding-bottom: var(--content-padding-y);
+          }
+          
+          @media (max-width: 768px) {
+            .hero-section {
+              --content-padding-x: 2rem;
+              --content-padding-y: 1rem;
+            }
+          }
+        `}</style>
+        
         {/* Vídeo como background */}
-        <video src="/Hero_Compress.mp4" className="absolute inset-0 w-full h-full object-contain bg-white" style={{
-        transform: `scale(${getComputedStyle(document.documentElement).getPropertyValue('--video-scale') || '0.35'})`
-      }} autoPlay loop muted playsInline />
+        <video 
+          src="/Hero_Compress.mp4" 
+          className="hero-video absolute inset-0 w-full h-full object-contain" 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+        />
         
         {/* Overlay para melhorar legibilidade do texto */}
-        <div className="absolute inset-0 bg-black" style={{
-        opacity: 'var(--overlay-opacity)'
-      }}></div>
+        <div className="hero-overlay absolute inset-0 bg-black"></div>
         
-        <div style={{
-        paddingLeft: 'var(--content-padding-x)',
-        paddingRight: 'var(--content-padding-x)',
-        paddingBottom: 'var(--content-padding-y)'
-      }} className="container mx-auto text-center relative z-10 flex flex-col justify-start h-full min-h-screen pt-20 py-[23px]">
+        <div className="hero-content hero-section container mx-auto text-center relative z-10 flex flex-col justify-start h-full min-h-screen pt-20 py-[23px]">
           {/* Texto superior */}
           <div className="flex-1 flex flex-col justify-start items-center mb-12 mt-16 my-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
