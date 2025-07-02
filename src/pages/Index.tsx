@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -59,8 +58,7 @@ const Index = () => {
               <span className="text-white">Para nós, cada hectare importa!</span>
             </h1>
             <p className="text-white max-w-3xl mx-auto mb-6 leading-relaxed text-lg md:text-xl drop-shadow-md">
-              Aqui você pode monitorar, analisar e intervir em cada hectare, de forma única e independente, com rapidez e facilidade.<br />
-              Essa é nossa missão, bem-vindo à Agroxeque!
+              Aqui você pode monitorar, analisar e intervir em cada hectare, de forma única e independente, com rapidez e facilidade.
             </p>
           </div>
           
