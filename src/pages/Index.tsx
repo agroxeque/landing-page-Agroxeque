@@ -45,13 +45,13 @@ const Index = () => {
         style={{
           backgroundImage: `url('/BG_Hero.jpg')`,
           aspectRatio: '16/9',
-          minHeight: '100vh'
+          minHeight: '85vh'
         }}
       >
         {/* Overlay para melhorar legibilidade do texto */}
-        <div className="absolute inset-0 bg-black/25"></div>
+        <div className="absolute inset-0 bg-black/22"></div>
         
-        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-center items-center h-full py-4 space-y-4">
+        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-center items-center h-full py-2 space-y-4">
           {/* Texto superior */}
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
