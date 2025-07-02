@@ -45,7 +45,7 @@ const Index = () => {
         {/* Vídeo como background */}
         <video 
           src="/Hero_Compress.mp4" 
-          className="absolute inset-0 w-full h-full object-cover scale-110" 
+          className="absolute inset-0 w-full h-full object-cover scale-90" 
           autoPlay 
           loop 
           muted 
@@ -53,26 +53,26 @@ const Index = () => {
         />
         
         {/* Overlay para melhorar legibilidade do texto */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
         
-        <div className="container mx-auto px-4 md:px-8 lg:px-12 text-center relative z-10 flex flex-col justify-between h-full py-12 md:py-16 min-h-screen">
+        <div className="container mx-auto px-6 md:px-10 lg:px-16 text-center relative z-10 flex flex-col justify-between h-full py-16 md:py-20 min-h-screen">
           {/* Texto superior */}
-          <div className="flex-1 flex flex-col justify-center items-center mb-8">
+          <div className="flex-1 flex flex-col justify-center items-center mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               <span className="text-white">Para nós, cada hectare importa!</span>
             </h1>
-            <p className="text-white max-w-3xl mx-auto mb-6 leading-relaxed text-lg md:text-xl drop-shadow-md">
+            <p className="text-white max-w-3xl mx-auto mb-8 leading-relaxed text-lg md:text-xl drop-shadow-md">
               Aqui você pode monitorar, analisar e intervir em cada hectare, de forma única e independente, com rapidez e facilidade.
             </p>
           </div>
           
           {/* Botões na parte inferior */}
           <div className="flex-shrink-0">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
-              <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg shadow-lg">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+              <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg shadow-xl">
                 Experimente Grátis Agora
               </Button>
-              <Button variant="outline" className="border-white border-2 text-white hover:bg-white hover:text-green-600 px-8 py-4 text-lg shadow-lg">
+              <Button variant="outline" className="border-white border-2 text-white hover:bg-white hover:text-green-600 px-8 py-4 text-lg shadow-xl">
                 Ver Demonstração
               </Button>
             </div>
