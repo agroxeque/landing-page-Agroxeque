@@ -26,7 +26,8 @@ const Index = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return <div className="min-h-screen bg-white">
+  return (
+    <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-2 flex justify-between items-center">
@@ -370,7 +371,8 @@ const Index = () => {
 																		<p className="text-gray-600">{benefit.desc}</p>
 																</CardContent>
 														</Card>
-          </div>
+													))}
+										</div>
         </div>
       </section>
 
@@ -763,6 +765,7 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>;
+    </div>
+  );
 };
 export default Index;
