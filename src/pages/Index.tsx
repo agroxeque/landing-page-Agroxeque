@@ -408,8 +408,8 @@ const Index = () => {
             </div>
             
             <div className="text-center">
-              <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-12 h-12" style={{color: '#212f0b'}} />
+              <div className="w-24 h-24 bg-[#212f0b] rounded-full flex items-center justify-center mx-auto mb-6">
+                <Users className="w-12 h-12 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Gerentes de Fazendas</h3>
               <p className="text-gray-600">
