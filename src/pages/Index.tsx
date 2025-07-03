@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -265,9 +266,9 @@ const Index = () => {
                   <h4 className="font-semibold text-blue-800">Catações Localizadas</h4>
                   <p className="text-blue-700 text-sm">Aplicação Binária (aplicar/não aplicar) tratando apenas células selecionadas</p>
                 </div>
-                <div className="bg-purple-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-purple-800">Mapa Híbrido</h4>
-                  <p className="text-purple-700 text-sm">Agrupamento de células, formando zonas binárias de aplicação, variando as doses ou tratamento dentro de uma zona.</p>
+                <div className="p-4 rounded-lg" style={{backgroundColor: '#212f0b'}}>
+                  <h4 className="font-semibold text-white">Mapa Híbrido</h4>
+                  <p className="text-white text-sm">Agrupamento de células, formando zonas binárias de aplicação, variando as doses ou tratamento dentro de uma zona.</p>
                 </div>
                 <div className="bg-orange-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-orange-800">Taxa Fixa</h4>
