@@ -29,7 +29,7 @@ const Index = () => {
   return <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 py-2 flex justify-between items-center">
           <div className="flex items-center">
             <img src="/lovable-uploads/4ba08d45-ca97-4027-9bc4-2779e7baf9ba.png" alt="Agroxeque Logo" className="h-12 w-auto" />
           </div>
@@ -45,19 +45,19 @@ const Index = () => {
         style={{
           backgroundImage: `url('/BG_Hero.jpg')`,
           aspectRatio: '16/9',
-          minHeight: '85vh'
+          minHeight: '75vh'
         }}
       >
         {/* Overlay para melhorar legibilidade do texto */}
         <div className="absolute inset-0 bg-black/22"></div>
         
-        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-center items-center h-full py-2 space-y-4">
+        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-center items-center h-full pt-4 pb-8 space-y-6">
           {/* Texto superior */}
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
               <span className="text-white">Para nós, cada hectare importa!</span>
             </h1>
-            <p className="text-white max-w-3xl mx-auto mb-6 leading-relaxed text-lg md:text-xl drop-shadow-md">
+            <p className="text-white max-w-3xl mx-auto mb-4 leading-relaxed text-lg md:text-xl drop-shadow-md">
               Aqui você pode monitorar, analisar e intervir em cada hectare, de forma única e independente, com rapidez e facilidade.
             </p>
           </div>
