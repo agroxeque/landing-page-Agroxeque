@@ -94,9 +94,6 @@ const Index = () => {
                 Ver Demonstração
               </Button>
             </div>
-            <p className="mt-3 sm:mt-4 text-xs sm:text-sm text-white/80">
-              Sem compromisso • Teste grátis • Suporte especializado
-            </p>
           </div>
         </div>
       </section>
