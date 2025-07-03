@@ -339,30 +339,30 @@ const Index = () => {
             {[{
             title: "Redução de Custos",
             desc: "Até 75% menos gastos com alguns insumos através de aplicação localizada",
-            icon: "💰"
+            icon: "♛"
           }, {
             title: "Aumento de Produtividade",
             desc: "Identifique rapidamente pontos problemáticos e recupere o vigor em tempo hábil",
-            icon: "📈"
+            icon: "♚"
           }, {
             title: "Vistorias Eficientes",
             desc: "Tempo de campo reduzido com inspeções direcionadas e visitas menos frequentes",
-            icon: "🎯"
+            icon: "♜"
           }, {
             title: "Decisões Inteligentes",
             desc: "Base de dados geoestatística para definição do manejo correto",
-            icon: "🧠"
+            icon: "♝"
           }, {
             title: "Uso Otimizado do Maquinário",
             desc: "Aplicações localizadas geram operações mais curtas",
-            icon: "🚜"
+            icon: "♞"
           }, {
             title: "Manejo Fitossanitário Estratégico",
             desc: "Economicamente viável e Ecologicamente sustentável",
-            icon: "🌱"
+            icon: "♟"
           }].map((benefit, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardContent className="p-6 text-center">
-                    <div className="text-4xl mb-4">{benefit.icon}</div>
+                    <div className="text-4xl mb-4" style={{ color: '#212f0b' }}>{benefit.icon}</div>
                     <h3 className="font-semibold text-gray-900 mb-3">{benefit.title}</h3>
                     <p className="text-gray-600">{benefit.desc}</p>
                   </CardContent>
