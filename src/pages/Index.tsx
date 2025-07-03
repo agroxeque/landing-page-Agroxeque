@@ -40,12 +40,13 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Dobra 1: O Impacto Imediato - Hero Section com Novo Background (CORRIGIDO) */}
+{/* Dobra 1: O Impacto Imediato - Hero Section (VERSÃO CORRIGIDA FINAL) */}
       <section 
         className="relative bg-cover bg-center bg-no-repeat overflow-x-hidden"
         style={{
           backgroundImage: `url('/BG_Hero.jpg')`,
-          aspectRatio: '16/9',
+          // A linha abaixo foi removida para resolver o problema de responsividade
+          // aspectRatio: '16/9', 
           minHeight: '75vh'
         }}
       >
@@ -53,26 +54,24 @@ const Index = () => {
         <div className="absolute inset-0 bg-black/22"></div>
         
         {/* 
-          Container principal. Principais mudanças:
-          - Aumentado o padding horizontal para `px-4` (16px) em telas pequenas para dar mais respiro.
-          - Removidos os divs internos que envolviam o texto e os botões.
+          Este container interno agora irá se comportar corretamente, pois seu pai (<section>)
+          não tem mais uma largura forçada e se ajustará à largura da tela.
         */}
-        <div className="w-full max-w-5xl mx-auto px-4 text-center relative z-10 flex flex-col items-center justify-center h-full pt-8 md:pt-16 pb-8 md:pb-16 space-y-4 sm:space-y-6">
+        <div className="w-full max-w-5xl mx-auto px-4 text-center relative z-10 flex flex-col items-center justify-center h-full min-h-[75vh] py-8 md:py-16 space-y-4 sm:space-y-6">
           
-          {/* Título - Sem div wrapper */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-lg">
             Para nós, cada hectare importa!
           </h1>
           
-          {/* 
-            Parágrafo - Sem div wrapper e sem max-w-3xl mx-auto.
-            Ele agora ocupa o espaço do container pai, que já é controlado e centralizado.
-          */}
           <p className="text-white max-w-3xl mx-auto leading-relaxed text-base sm:text-lg md:text-xl drop-shadow-md">
             Aqui você pode monitorar, analisar e intervir em cada hectare, de forma única e independente, com rapidez e facilidade.
           </p>
           
-          {/* Vídeo centralizado - SEM MOLDURA (Estrutura mantida, pois já estava correta) */}
+          {/* 
+            Observação: Notei que nos novos prints, o vídeo foi substituído pelo carrossel de imagens.
+            Não tem problema, a lógica de correção do container é a mesma para qualquer conteúdo interno.
+            Estou mantendo o vídeo aqui para ser consistente com o código original que você enviou.
+          */}
           <div className="w-full max-w-2xl flex justify-center">
             <div className="w-full aspect-video rounded-lg shadow-lg overflow-hidden bg-black">
               <video 
@@ -86,7 +85,6 @@ const Index = () => {
             </div>
           </div>
           
-          {/* Botões na parte inferior - Estrutura interna mantida para o layout flex */}
           <div className="w-full max-w-lg">
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full">
               <Button className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
@@ -102,7 +100,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-
+						
       {/* Dobra 2: A Dor e a Promessa */}
       <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
