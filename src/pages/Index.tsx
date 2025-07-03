@@ -52,22 +52,22 @@ const Index = () => {
         {/* Overlay para melhorar legibilidade do texto */}
         <div className="absolute inset-0 bg-black/22"></div>
         
-        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col justify-center items-center h-full pt-4 pb-8 space-y-6">
+        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col items-center pt-8 md:pt-16 pb-8 md:pb-16 space-y-4 sm:space-y-6 lg:space-y-8">
           {/* Texto superior */}
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 sm:mb-4 leading-tight drop-shadow-lg">
               <span className="text-white">Para nós, cada hectare importa!</span>
             </h1>
-            <p className="text-white max-w-3xl mx-auto mb-4 leading-relaxed text-lg md:text-xl drop-shadow-md">
+            <p className="text-white max-w-3xl mx-auto mb-2 sm:mb-4 leading-relaxed text-base sm:text-lg md:text-xl drop-shadow-md">
               Aqui você pode monitorar, analisar e intervir em cada hectare, de forma única e independente, com rapidez e facilidade.
             </p>
           </div>
           
           {/* Vídeo centralizado - SEM MOLDURA */}
-          <div className="w-full max-w-2xl">
+          <div className="w-full max-w-2xl flex justify-center">
             <video 
               src="/Hero_Compress.mp4" 
-              className="w-full h-auto rounded-lg shadow-lg" 
+              className="w-full h-auto max-h-[40vw] sm:max-h-[360px] rounded-lg shadow-lg object-cover" 
               autoPlay 
               loop 
               muted 
@@ -78,15 +78,15 @@ const Index = () => {
           
           {/* Botões na parte inferior */}
           <div className="text-center">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
-              <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg shadow-lg">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-3 sm:mb-4">
+              <Button className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg">
                 Experimente Grátis Agora
               </Button>
-              <Button variant="outline" className="border-white border-2 text-white hover:bg-white hover:text-green-600 px-8 py-4 text-lg shadow-lg">
+              <Button variant="outline" className="border-white border-2 text-white hover:bg-white hover:text-green-600 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg">
                 Ver Demonstração
               </Button>
             </div>
-            <p className="text-sm text-white/80">
+            <p className="text-xs sm:text-sm text-white/80">
               Sem compromisso • Teste grátis • Suporte especializado
             </p>
           </div>
