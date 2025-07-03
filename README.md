@@ -1,4 +1,23 @@
-# Welcome to your Lovable project
+# Agroxeque - Agricultura Digital
+
+Este projeto é uma landing page para a Agroxeque, focada em soluções digitais para o agronegócio.
+
+## Como rodar localmente
+
+Clone o repositório, instale as dependências e rode o projeto:
+
+```bash
+npm install
+npm run dev
+```
+
+## Deploy
+
+O deploy pode ser feito facilmente no Netlify ou Vercel.
+
+## Contato
+
+Para dúvidas ou sugestões, entre em contato pelo e-mail: contato@agroxeque.com
 
 ## Project info
 
