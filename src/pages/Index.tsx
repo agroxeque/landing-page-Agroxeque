@@ -742,7 +742,8 @@ const Index = () => {
             decisões em lucro e sua fazenda em uma referência de eficiência.
           </p>
           <Button className="bg-white text-green-900 hover:bg-gray-100 px-8 md:px-12 py-4 text-base md:text-lg font-semibold">
-            Assista a uma demonstração e ganhe créditos
+            Assista a uma demonstração
+												e ganhe créditos
           </Button>
         </div>
       </section>
