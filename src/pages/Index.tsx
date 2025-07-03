@@ -567,7 +567,7 @@ const Index = () => {
           
           <div className="text-center mt-8 md:mt-12">
             <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 inline-block border border-green-100 shadow-sm">
-              <p className="text-gray-600 text-sm font-medium">* 1 crédito = 1 hectare ou 100 MB</p>
+              <p className="text-gray-600 text-sm font-medium">* 1 crédito = 1 hectare ou 100 MB de imagens</p>
             </div>
           </div>
         </div>
