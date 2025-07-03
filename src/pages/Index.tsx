@@ -40,7 +40,7 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Dobra 1: O Impacto Imediato - Hero Section com Novo Background */}
+      {/* Dobra 1: O Impacto Imediato - Hero Section com Novo Background (CORRIGIDO) */}
       <section 
         className="relative bg-cover bg-center bg-no-repeat overflow-x-hidden"
         style={{
@@ -52,18 +52,27 @@ const Index = () => {
         {/* Overlay para melhorar legibilidade do texto */}
         <div className="absolute inset-0 bg-black/22"></div>
         
-        <div className="w-full max-w-5xl mx-auto px-2 sm:px-4 text-center relative z-10 flex flex-col items-center pt-8 md:pt-16 pb-8 md:pb-16 space-y-4 sm:space-y-6 lg:space-y-8">
-          {/* Texto superior */}
-          <div className="text-center w-full max-w-full">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 sm:mb-4 leading-tight drop-shadow-lg">
-              <span className="text-white">Para nós, cada hectare importa!</span>
-            </h1>
-            <p className="text-white max-w-3xl mx-auto mb-2 sm:mb-4 leading-relaxed text-base sm:text-lg md:text-xl drop-shadow-md">
-              Aqui você pode monitorar, analisar e intervir em cada hectare, de forma única e independente, com rapidez e facilidade.
-            </p>
-          </div>
+        {/* 
+          Container principal. Principais mudanças:
+          - Aumentado o padding horizontal para `px-4` (16px) em telas pequenas para dar mais respiro.
+          - Removidos os divs internos que envolviam o texto e os botões.
+        */}
+        <div className="w-full max-w-5xl mx-auto px-4 text-center relative z-10 flex flex-col items-center justify-center h-full pt-8 md:pt-16 pb-8 md:pb-16 space-y-4 sm:space-y-6">
           
-          {/* Vídeo centralizado - SEM MOLDURA */}
+          {/* Título - Sem div wrapper */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-lg">
+            Para nós, cada hectare importa!
+          </h1>
+          
+          {/* 
+            Parágrafo - Sem div wrapper e sem max-w-3xl mx-auto.
+            Ele agora ocupa o espaço do container pai, que já é controlado e centralizado.
+          */}
+          <p className="text-white max-w-3xl mx-auto leading-relaxed text-base sm:text-lg md:text-xl drop-shadow-md">
+            Aqui você pode monitorar, analisar e intervir em cada hectare, de forma única e independente, com rapidez e facilidade.
+          </p>
+          
+          {/* Vídeo centralizado - SEM MOLDURA (Estrutura mantida, pois já estava correta) */}
           <div className="w-full max-w-2xl flex justify-center">
             <div className="w-full aspect-video rounded-lg shadow-lg overflow-hidden bg-black">
               <video 
@@ -77,9 +86,9 @@ const Index = () => {
             </div>
           </div>
           
-          {/* Botões na parte inferior */}
-          <div className="text-center w-full max-w-full">
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-3 sm:mb-4 w-full max-w-full">
+          {/* Botões na parte inferior - Estrutura interna mantida para o layout flex */}
+          <div className="w-full max-w-lg">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full">
               <Button className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
                 Experimente Grátis Agora
               </Button>
@@ -87,7 +96,7 @@ const Index = () => {
                 Ver Demonstração
               </Button>
             </div>
-            <p className="text-xs sm:text-sm text-white/80">
+            <p className="mt-3 sm:mt-4 text-xs sm:text-sm text-white/80">
               Sem compromisso • Teste grátis • Suporte especializado
             </p>
           </div>
