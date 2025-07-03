@@ -428,7 +428,7 @@ const Index = () => {
                     0
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Cadastro Gratuito</h3>
-                  <p className="text-gray-600">Comece sem custo inicial. Teste a plataforma e veja os resultados.</p>
+                  <p className="text-gray-600">Acesso Livre. Faça seu cadastro, conheça a plataforma e inclua fazendas e talhões sem custo.</p>
                 </div>
                 
                 <div>
