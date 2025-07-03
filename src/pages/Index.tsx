@@ -88,10 +88,10 @@ const Index = () => {
           <div className="w-full max-w-lg">
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full">
               <Button className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
-                Experimente Grátis Agora
+                Assista um vídeo explicativo
               </Button>
-              <Button variant="outline" className="border-white border-2 text-white hover:bg-white hover:text-green-600 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
-                Ver Demonstração
+              <Button variant="outline" className="border-white border-2 text-green-800 hover:bg-[#F0FDF4] hover:text-green-800 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
+                Cadastre-se Grátis
               </Button>
             </div>
           </div>
