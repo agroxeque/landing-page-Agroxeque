@@ -10,9 +10,9 @@ const Index = () => {
   
   // Array com as três imagens para rotação
   const rotatingImages = [
-    "/lovable-uploads/d8064e8f-eb57-44e4-a6c3-a5305a61e286.png",
-    "/lovable-uploads/01005b75-72ca-405b-bf36-b9a86167f5d0.png",
-    "/lovable-uploads/55fc5e86-51f1-47bd-a19c-685bb7aa7f08.png"
+    "/agroxeque-uploads/d8064e8f-eb57-44e4-a6c3-a5305a61e286.png",
+    "/agroxeque-uploads/01005b75-72ca-405b-bf36-b9a86167f5d0.png",
+    "/agroxeque-uploads/55fc5e86-51f1-47bd-a19c-685bb7aa7f08.png"
   ];
 
   // Effect para rotacionar as imagens a cada 3 segundos
@@ -32,7 +32,7 @@ const Index = () => {
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-2 flex justify-between items-center">
           <div className="flex items-center">
-            <img src="/lovable-uploads/4ba08d45-ca97-4027-9bc4-2779e7baf9ba.png" alt="Agroxeque Logo" className="h-12 w-auto" />
+            <img src="/agroxeque-uploads/4ba08d45-ca97-4027-9bc4-2779e7baf9ba.png" alt="Agroxeque Logo" className="h-12 w-auto" />
           </div>
           <Button className="bg-green-600 hover:bg-green-700 text-white px-6">
             Criar Conta Gratuita
@@ -216,7 +216,7 @@ const Index = () => {
             {/* Ranking de Células */}
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="relative flex justify-center">
-                <img src="/lovable-uploads/7bf07b2d-9a2a-4ee8-acb1-8c29dedcc540.png" alt="Ranking de Células interface" className="w-2/3 rounded-lg shadow-xl" />
+                <img src="/agroxeque-uploads/7bf07b2d-9a2a-4ee8-acb1-8c29dedcc540.png" alt="Ranking de Células interface" className="w-2/3 rounded-lg shadow-xl" />
               </div>
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Descubra com a Agroxeque</h3>
@@ -276,7 +276,7 @@ const Index = () => {
                 </div>
               </div>
               <div className="relative">
-                <img alt="Hexagonal cells pattern" className="w-full rounded-lg shadow-xl" src="/lovable-uploads/30573fd0-4e62-4cbd-9fa2-e19e75727003.png" />
+                <img alt="Hexagonal cells pattern" className="w-full rounded-lg shadow-xl" src="/agroxeque-uploads/30573fd0-4e62-4cbd-9fa2-e19e75727003.png" />
               </div>
             </div>
           </div>
@@ -751,7 +751,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
-              <img src="/lovable-uploads/4ba08d45-ca97-4027-9bc4-2779e7baf9ba.png" alt="Agroxeque Logo" className="h-10 w-auto mr-4" />
+              <img src="/agroxeque-uploads/4ba08d45-ca97-4027-9bc4-2779e7baf9ba.png" alt="Agroxeque Logo" className="h-10 w-auto mr-4" />
               <div>
                 <div className="text-sm opacity-75">© 2024 Agroxeque - Agricultura Digital</div>
                 <div className="text-sm opacity-75">Todos os direitos reservados</div>
