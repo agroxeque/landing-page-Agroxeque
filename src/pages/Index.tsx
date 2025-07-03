@@ -397,8 +397,8 @@ const Index = () => {
             </div>
             
             <div className="text-center">
-              <div className="w-24 h-24 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-12 h-12 text-purple-600" />
+              <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Users className="w-12 h-12" style={{color: '#212f0b'}} />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Gerentes de Fazendas</h3>
               <p className="text-gray-600">
@@ -439,7 +439,7 @@ const Index = () => {
                 </div>
                 
                 <div>
-                  <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4" style={{backgroundColor: '#212f0b', color: 'white'}}>
                     %
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Desconto Progressivo</h3>
