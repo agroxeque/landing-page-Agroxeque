@@ -115,7 +115,7 @@ const Index = () => {
                   <span className="text-red-600 font-bold text-xl">×</span>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Diagnósticos Imprecisos</h3>
+                  <h3 className="font-semibold text-gray-900 mb-2">Diagnósticos Incertos</h3>
                   <p className="text-gray-600 text-left">Percorre vários pontos do talhão e ainda sai com mais dúvidas do que respostas?</p>
                 </div>
               </div>
