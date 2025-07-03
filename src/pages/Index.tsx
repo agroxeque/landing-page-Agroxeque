@@ -595,7 +595,7 @@ const Index = () => {
               <CardContent className="p-0">
                 <p className="text-gray-600 mb-4 italic">&quot;Reduzimos em cerca de 18% o custo com herbicidas na dessecação.&quot;</p>
                 <div className="font-semibold text-gray-900">Geraldo Basílio</div>
-                <div className="text-green-600 text-sm">Fazenda Rio da Prata</div>
+                <div className="text-green-600 text-sm">Fazenda Rio Formoso</div>
                 <div className="text-gray-500 text-xs">João Pinheiro - MG</div>
               </CardContent>
             </Card>
@@ -617,7 +617,7 @@ const Index = () => {
               <CardContent className="p-0">
                 <p className="text-gray-600 mb-4 italic">"Gasto muito mais tempo pra percorrer e avaliar os talhões dos clientes que não usam a Agroxeque, e ainda saio de lá com uma visão vaga e subjetiva. Depois que a gente acostuma, fica até difícil avaliar uma lavoura sem o mapa de ranking"</p>
                 <div className="font-semibold text-gray-900">José Carlos Siqueira</div>
-                <div className="text-green-600 text-sm">ZK Agro Consultoria</div>
+                <div className="text-green-600 text-sm">ZK Agro - Consultoria</div>
                 <div className="text-gray-500 text-xs">Franca - SP</div>
               </CardContent>
             </Card>
@@ -642,7 +642,7 @@ const Index = () => {
                   Quais tipos de culturas posso monitorar com a Agroxeque?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
-                  A Agroxeque foi projetada para ser flexível e pode ser utilizada para monitorar uma ampla variedade de culturas agrícolas: Soja, milho, Sorgo, trigo, Algodão, café, cana-de-açúcar, batata, tomate, fruticultura em geral, enfim... a plataforma permite um monitoramento detalhado de qualquer tipo de plantio. Com as imagens de alta resolução e os demais produtos digitais disponíveis na Agroxeque, você consegue acompanhar o desenvolvimento das suas plantas em qualquer estágio, facilitando a identificação de problemas e a tomada de decisões para otimizar a produção.
+                  A plataforma Agroxeque pode ser utilizada para monitorar todos os tipos de culturas agrícolas. Com as imagens de alta resolução e os demais produtos digitais disponíveis na Agroxeque, você consegue acompanhar o desenvolvimento das suas plantas em estágios de desenvolvimento estratégicos, facilitando a identificação de problemas e a tomada de decisões para otimizar a produção.
                 </AccordionContent>
               </AccordionItem>
 
@@ -651,7 +651,7 @@ const Index = () => {
                   Quais modelos de drone posso utilizar?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
-                  Na verdade, você pode usar qualquer drone que seja capaz de realizar mapeamento aéreo autônomo. Existem drones profissionais, projetados especificamente para mapeamentos, que apresentam como vantagem um alto rendimento operacional, porém com um custo mais alto. No entanto, existe uma linha de drones não profissionais, mas muito populares por apresentarem uma boa qualidade de câmera e segurança de operação, com ótimo custo benefício para esta finalidade. Dentre eles, os mais utilizados são os da linha DJI (DJI Air 2S, DJI mini 3, DJI mini 4 e DJI Air 3), mas podem ser utilizados outros modelos da marca, inclusive, modelos de outras marcas também. O mais importante é se certificar que seu drone tenha compatibilidade com softwares de mapeamento (que criam os planos de vôo autônomos), como Dronelink ou Drone Harmony.
+                  Você pode usar qualquer drone que seja capaz de realizar mapeamento aéreo autônomo, desde os mais simples até os mais avançados. Existem drones profissionais, projetados especificamente para mapeamentos, que apresentam como vantagem um alto rendimento operacional, porém com um custo mais alto. No entanto, há também uma linha de drones não profissionais, mas muito populares por apresentarem uma boa qualidade de câmera e segurança de operação, com ótimo custo benefício para esta finalidade, como por exemplo: DJI Air 2S, DJI mini pro 3, DJI Air 3. O mais importante é se certificar que seu drone tenha compatibilidade com softwares de mapeamento (que criam os planos de vôo autônomos), como Dronelink, Drone Harmony ou waypointmap.
                 </AccordionContent>
               </AccordionItem>
 
@@ -660,7 +660,7 @@ const Index = () => {
                   Preciso de equipamentos específicos para utilizar as prescrições geradas na Agroxeque?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
-                  Não necessariamente. As prescrições geradas pela Agroxeque são extremamente versáteis. Se você possui maquinário moderno com sistemas de aplicação por taxa variável, poderá exportar as prescrições geradas em ShapeFile ou KML, e utilizar estes mapas diretamente no seu monitor. Por outro lado, caso você não possua este tipo de equipamento, você pode exportar as prescrições geradas para o aplicativo móvel "Xeque-Map" e utilizá-lo para navegação com seu maquinário. O aplicativo irá carregar o mapa e permitir que você se oriente dentro desta prescrição, auxiliando na aplicação binária (aplica/não aplica) e taxas variáveis com poucas doses, onde você poderia alterar de forma manual a dose do produto aplicado, verificando a mudança de zona pela tela do aplicativo.
+                  Não necessariamente. As prescrições geradas pela Agroxeque são extremamente versáteis. Se você possui maquinário moderno com sistemas de aplicação por taxa variável, ou drones de pulverização, poderá exportar as prescrições geradas em ShapeFile ou KML, e utilizar estes mapas diretamente no seu monitor. Por outro lado, caso você não possua este tipo de equipamento, você pode exportar as prescrições geradas para o aplicativo móvel "Xeque-Map" e utilizá-lo para navegação com seu maquinário. O aplicativo irá carregar o mapa e permitir que você se oriente dentro desta prescrição, auxiliando em alguns tipos de operações mais simples, como a aplicação binária (aplica/não aplica) e taxas variáveis com poucas doses, onde você poderia aplicar polígonos de cada dose isoladamente.
                 </AccordionContent>
               </AccordionItem>
 
@@ -702,10 +702,10 @@ const Index = () => {
 
               <AccordionItem value="creditos" className="bg-white rounded-lg border shadow-sm">
                 <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
-                  E se as imagens que eu enviei apresentarem algum erro em seu processamento? Perco meus créditos?
+                  E se as imagens coletadas no meu levantamento não apresentarem a qualidade necessária, causando erros no processamento? Perco meus créditos?
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-600 leading-relaxed">
-                  Alguns parâmetros errados no planejamento do vôo, defeitos na câmera ou até mesmo sujeira na lente, podem causar imperfeições em algumas imagens, provocando erros no ortomosaico gerado. Nestes casos, você pode abrir uma solicitação de revisão de projeto, dentro de um prazo estabelecido. Caso seja constatado pela nossa equipe, que os arquivos gerados estejam de fato corrompidos, o total de créditos consumidos naquele projeto será creditado em sua conta, pra que possa realizar uma nova aquisição de imagens e criar um novo projeto do zero, sem precisar gastar mais créditos para isso. Mas atenção: Você não pode enviar as mesmas imagens novamente. Este reembolso só é válido para que você faça um novo mapeamento, com parâmetros de voo mais rigorosos, garantindo que o segundo processamento seja realizado com sucesso.
+                  Seus créditos só serão debitados quando o processamento for concluído e disponibilizado na plataforma. Assim, se houver algum erro que impeça que os produtos de processamento sejam gerados, seus créditos nem sequer serão movimentados. No entanto podem haver situações em que alguns parâmetros errados no planejamento do vôo, defeitos na câmera ou até mesmo sujeira na lente, podem causar imperfeições em algumas imagens, provocando erros no ortomosaico gerado. Nestes casos, você pode abrir uma solicitação de revisão de projeto, dentro de um prazo estabelecido. Caso seja constatado pela nossa equipe, que os arquivos gerados estejam de fato corrompidos, o total de créditos consumidos naquele projeto será estornado em sua conta, para que possa realizar uma nova aquisição de imagens e criar um novo projeto do zero. Mas atenção: Você não pode enviar as mesmas imagens novamente. Este reembolso só é válido para que você faça um novo mapeamento, com parâmetros de voo mais rigorosos, garantindo que o segundo processamento seja realizado com sucesso.
                 </AccordionContent>
               </AccordionItem>
 
