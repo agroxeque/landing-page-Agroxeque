@@ -266,7 +266,7 @@ const Index = () => {
                   <h4 className="font-semibold text-blue-800">Catações Localizadas</h4>
                   <p className="text-blue-700 text-sm">Aplicação Binária (aplicar/não aplicar) tratando apenas células selecionadas</p>
                 </div>
-                <div className="p-4 rounded-lg" style={{backgroundColor: '#212f0b'}}>
+                <div className="p-4 rounded-lg" style={{backgroundColor: '#d5e8d0'}}>
                   <h4 className="font-semibold text-white">Mapa Híbrido</h4>
                   <p className="text-white text-sm">Agrupamento de células, formando zonas binárias de aplicação, variando as doses ou tratamento dentro de uma zona.</p>
                 </div>
