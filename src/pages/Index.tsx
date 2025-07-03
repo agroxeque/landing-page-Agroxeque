@@ -385,7 +385,7 @@ const Index = () => {
                 <Users className="w-12 h-12 text-green-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Agricultores Inovadores</h3>
-              <p className="text-gray-600">Produtores que precisam de ferramentas para otimizar recursos, maximizar lucros e tornar a sua atividade agrícola mais eficiente.</p>
+              <p className="text-gray-600">Produtores que precisam de ferramentas para otimizar recursos, maximizar o lucro e tornar a sua atividade agrícola mais eficiente.</p>
             </div>
             
             <div className="text-center">
@@ -393,7 +393,7 @@ const Index = () => {
                 <Users className="w-12 h-12 text-blue-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Consultores Agrícolas</h3>
-              <p className="text-gray-600">Profissionais que desejam utilizar dados inacessíveis aos olhos, para gerar prescrições precisas, de qualquer lugar onde estejam</p>
+              <p className="text-gray-600">Profissionais que desejam utilizar dados inacessíveis aos olhos para avaliar os talhões dos clientes e gerar prescrições precisas, de qualquer lugar onde estejam</p>
             </div>
             
             <div className="text-center">
@@ -402,8 +402,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Gerentes de Fazendas</h3>
               <p className="text-gray-600">
-                Gestores que necessitam de ferramentas para monitoramento eficaz e 
-                gestão inteligente de grandes áreas produtivas.
+                Líderes de operações agrícolas que precisam de um recurso tecnológico simples e poderoso para administrar as atividades das áreas de produção.
               </p>
             </div>
           </div>
