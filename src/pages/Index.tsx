@@ -742,11 +742,8 @@ const Index = () => {
             decisões em lucro e sua fazenda em uma referência de eficiência.
           </p>
           <Button className="bg-white text-green-600 hover:bg-gray-100 px-8 md:px-12 py-4 text-base md:text-lg font-semibold">
-            Crie Sua Conta Gratuita Agora
+            Assista a uma demonstração e ganhe créditos
           </Button>
-          <p className="mt-4 text-sm opacity-75">
-            Sem compromisso • Teste grátis • Suporte especializado
-          </p>
         </div>
       </section>
 
