@@ -607,9 +607,9 @@ const Index = () => {
                   aplicação localizada de nitrogênio com doses de reforço, utilizando a Agroxeque para 
                   gerar as recomendações e os mapas."
                 </p>
-                <div className="font-semibold text-gray-900">Gustavo Grossi</div>
+                <div className="font-semibold text-gray-900">Gustavo Martins</div>
                 <div className="text-green-600 text-sm">Fazenda Lavrinha</div>
-                <div className="text-gray-500 text-xs">Serra do Salitre - MG</div>
+                <div className="text-gray-500 text-xs">Araxá - MG</div>
               </CardContent>
             </Card>
             
