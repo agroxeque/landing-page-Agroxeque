@@ -741,7 +741,7 @@ const Index = () => {
             Junte-se ao grupo da agricultura digital com inteligência natural, e transforme dados em decisões, 
             decisões em lucro e sua fazenda em uma referência de eficiência.
           </p>
-          <Button className="bg-white text-green-600 hover:bg-gray-100 px-8 md:px-12 py-4 text-base md:text-lg font-semibold">
+          <Button className="bg-white text-green-600 hover:bg-gray-100 px-8 md:px-12 py-4 text-base md:text-lg font-bold">
             Assista a uma demonstração e ganhe créditos
           </Button>
         </div>
