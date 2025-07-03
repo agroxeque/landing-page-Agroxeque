@@ -51,13 +51,13 @@ const Index = () => {
         }}
       >
         {/* Overlay para melhorar legibilidade do texto */}
-        <div className="absolute inset-0 bg-black/15"></div>
+        <div className="absolute inset-0 bg-black/22"></div>
         
         {/* 
           Este container interno agora irá se comportar corretamente, pois seu pai (<section>)
           não tem mais uma largura forçada e se ajustará à largura da tela.
         */}
-        <div className="w-full max-w-5xl mx-auto px-4 text-center relative z-10 flex flex-col items-center justify-center h-full min-h-[75vh] py-8 md:py-16 space-y-4 sm:space-y-6">
+        <div className="w-full max-w-5xl mx-auto px-4 text-center relative z-10 flex flex-col items-center justify-start h-full min-h-[75vh] pt-8 md:pt-12 pb-8 md:pb-16 space-y-4 sm:space-y-6">
           
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-lg">
             Para nós, cada hectare importa!
