@@ -42,7 +42,7 @@ const Index = () => {
 
       {/* Dobra 1: O Impacto Imediato - Hero Section com Novo Background */}
       <section 
-        className="relative bg-cover bg-center bg-no-repeat overflow-hidden"
+        className="relative bg-cover bg-center bg-no-repeat overflow-x-hidden"
         style={{
           backgroundImage: `url('/BG_Hero.jpg')`,
           aspectRatio: '16/9',
@@ -52,9 +52,9 @@ const Index = () => {
         {/* Overlay para melhorar legibilidade do texto */}
         <div className="absolute inset-0 bg-black/22"></div>
         
-        <div className="container mx-auto px-4 text-center relative z-10 flex flex-col items-center pt-8 md:pt-16 pb-8 md:pb-16 space-y-4 sm:space-y-6 lg:space-y-8">
+        <div className="w-full max-w-5xl mx-auto px-2 sm:px-4 text-center relative z-10 flex flex-col items-center pt-8 md:pt-16 pb-8 md:pb-16 space-y-4 sm:space-y-6 lg:space-y-8">
           {/* Texto superior */}
-          <div className="text-center">
+          <div className="text-center w-full max-w-full">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 sm:mb-4 leading-tight drop-shadow-lg">
               <span className="text-white">Para nós, cada hectare importa!</span>
             </h1>
@@ -65,24 +65,25 @@ const Index = () => {
           
           {/* Vídeo centralizado - SEM MOLDURA */}
           <div className="w-full max-w-2xl flex justify-center">
-            <video 
-              src="/Hero_Compress.mp4" 
-              className="w-full h-auto max-h-[40vw] sm:max-h-[360px] rounded-lg shadow-lg object-cover" 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              style={{ aspectRatio: '16/9' }}
-            />
+            <div className="w-full aspect-video rounded-lg shadow-lg overflow-hidden bg-black">
+              <video 
+                src="/Hero_Compress.mp4" 
+                className="w-full h-full object-cover" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+              />
+            </div>
           </div>
           
           {/* Botões na parte inferior */}
-          <div className="text-center">
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-3 sm:mb-4">
-              <Button className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg">
+          <div className="text-center w-full max-w-full">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-3 sm:mb-4 w-full max-w-full">
+              <Button className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
                 Experimente Grátis Agora
               </Button>
-              <Button variant="outline" className="border-white border-2 text-white hover:bg-white hover:text-green-600 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg">
+              <Button variant="outline" className="border-white border-2 text-white hover:bg-white hover:text-green-600 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
                 Ver Demonstração
               </Button>
             </div>
