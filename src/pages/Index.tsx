@@ -51,7 +51,7 @@ const Index = () => {
         }}
       >
         {/* Overlay para melhorar legibilidade do texto */}
-        <div className="absolute inset-0 bg-black/22"></div>
+        <div className="absolute inset-0 bg-black/15"></div>
         
         {/* 
           Este container interno agora irá se comportar corretamente, pois seu pai (<section>)
