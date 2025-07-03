@@ -358,14 +358,26 @@ const Index = () => {
           }, {
             title: "Manejo Fitossanitário Estratégico",
             desc: "Economicamente viável e Ecologicamente sustentável",
-            icon: "♟"
-          }].map((benefit, index) => <Card key={index} className="hover:shadow-lg transition-shadow">
+            icon: "♟",
+            isEmoji: true
+          }].map((benefit, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardContent className="p-6 text-center">
-                    <div className="text-4xl mb-4" style={{ color: '#212f0b' }}>{benefit.icon}</div>
+                    {/* 2. Alteramos o 'style' para ser condicional */}
+                    <div 
+                      className="text-4xl mb-4" 
+                      style={{
+                        color: '#212f0b',
+                        // Aplica um filtro para remover a cor do emoji e escurecê-lo
+                        filter: benefit.isEmoji ? 'grayscale(1) brightness(0.3)' : 'none'
+                      }}
+                    >
+                      {benefit.icon}
+                    </div>
                     <h3 className="font-semibold text-gray-900 mb-3">{benefit.title}</h3>
                     <p className="text-gray-600">{benefit.desc}</p>
                   </CardContent>
-                </Card>)}
+                </Card>
           </div>
         </div>
       </section>
