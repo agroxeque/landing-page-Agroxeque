@@ -164,7 +164,7 @@ const Index = () => {
           }, {
             number: "2",
             title: "Processamento Automático",
-            desc: "Obtenha em poucos cliques: Ortofoto, MDS, Índice de Vegetação e Relatório do projeto"
+            desc: "Obtenha automaticamente: Ortofoto, MDS, Índice de Vegetação e Relatório do projeto"
           }, {
             number: "3",
             title: "Análise com Dados Concretos",
