@@ -735,11 +735,11 @@ const Index = () => {
       <section className="py-12 md:py-20 bg-gradient-to-br from-green-600 to-green-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Pronto para Desbloquear o Potencial Máximo da Sua Lavoura?
+            Sim, você pode produzir mais com menos. Vamos começar?
           </h2>
           <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-90">
-            Junte-se à vanguarda da agricultura digital. Transforme dados em decisões, 
-            hectares em lucros e sua fazenda em um case de sucesso.
+            Junte-se ao grupo da agricultura digital com inteligência natural, e transforme dados em decisões, 
+            decisões em lucro e sua fazenda em uma referência de eficiência.
           </p>
           <Button className="bg-white text-green-600 hover:bg-gray-100 px-8 md:px-12 py-4 text-base md:text-lg font-semibold">
             Crie Sua Conta Gratuita Agora
