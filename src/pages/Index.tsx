@@ -57,7 +57,7 @@ const Index = () => {
           Este container interno agora irá se comportar corretamente, pois seu pai (<section>)
           não tem mais uma largura forçada e se ajustará à largura da tela.
         */}
-        <div className="w-full max-w-6xl mx-auto px-4 text-center relative z-10 flex flex-col items-center justify-start h-full min-h-[75vh] pt-8 md:pt-8 pb-4 md:pb-8 space-y-4 sm:space-y-6">
+        <div className="w-full max-w-7xl mx-auto px-4 text-center relative z-10 flex flex-col items-center justify-start h-full min-h-[75vh] pt-8 md:pt-8 pb-4 md:pb-8 space-y-4 sm:space-y-6">
           
           <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
             Dê a cada hectare a atenção que ele merece!
