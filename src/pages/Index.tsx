@@ -81,7 +81,7 @@ const Index = () => {
           <div className="w-full max-w-lg">
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full">
               <Button asChild className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
-                <a href="https://app.agroxeque.com.br/cadastro?video=true">Assista um vídeo explicativo</a>
+                <a href="https://app.agroxeque.com.br/version-test/cadastro?video=true">Assista um vídeo explicativo</a>
               </Button>
               <Button asChild variant="outline" className="border-white border-2 text-green-800 hover:bg-[#E1F5DC] hover:text-green-800 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
                 <a href="https://app.agroxeque.com.br/cadastro">Cadastre-se Grátis</a>
@@ -688,7 +688,7 @@ const Index = () => {
             decisões em lucro e sua atividade agrícola em um modelo de eficiência.
           </p>
           <Button asChild className="bg-white text-green-900 hover:bg-gray-100 px-8 md:px-12 py-4 text-base md:text-lg font-semibold h-auto whitespace-normal">
-            <a href="https://app.agroxeque.com.br/cadastro?video=true">
+            <a href="https://app.agroxeque.com.br/version-test/cadastro?video=true">
               Assista ao vídeo demonstrativo e ganhe créditos para começar agora!
             </a>
           </Button>
