@@ -44,7 +44,7 @@ const Index = () => {
               <span className="text-xs w-full text-center">(Entrar)</span>
             </a>
             <Button asChild className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-xs h-auto min-[560px]:px-6 min-[560px]:py-2 min-[560px]:text-base">
-              <a href="https://app.agroxeque.com.br/cadastro">Criar Conta Gratuita</a>
+              <a href="https://app.agroxeque.com.br/version-test/cadastro">Criar Conta Gratuita</a>
             </Button>
           </div>
         </div>
@@ -84,7 +84,7 @@ const Index = () => {
                 <a href="https://app.agroxeque.com.br/version-test/cadastro?video=true">Assista um vídeo explicativo</a>
               </Button>
               <Button asChild variant="outline" className="border-white border-2 text-green-800 hover:bg-[#E1F5DC] hover:text-green-800 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
-                <a href="https://app.agroxeque.com.br/cadastro">Cadastre-se Grátis</a>
+                <a href="https://app.agroxeque.com.br/version-test/cadastro">Cadastre-se Grátis</a>
               </Button>
             </div>
           </div>
@@ -707,9 +707,9 @@ const Index = () => {
               </div>
             </div>
             <div className="flex space-x-6 text-sm">
-              <a href="https://app.agroxeque.com.br/privacidade" className="hover:text-green-400 transition-colors">Privacidade</a>
-              <a href="https://app.agroxeque.com.br/termos" className="hover:text-green-400 transition-colors">Termos</a>
-              <a href="https://app.agroxeque.com.br/contato" className="hover:text-green-400 transition-colors">Contato</a>
+              <a href="https://app.agroxeque.com.br/version-test/privacidade" className="hover:text-green-400 transition-colors">Privacidade</a>
+              <a href="https://app.agroxeque.com.br/version-test/termos" className="hover:text-green-400 transition-colors">Termos</a>
+              <a href="https://app.agroxeque.com.br/version-test/contato" className="hover:text-green-400 transition-colors">Contato</a>
             </div>
           </div>
         </div>
