@@ -30,26 +30,23 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-2 flex justify-between items-center flex-wrap">
+        <div className="container mx-auto px-4 py-2 flex justify-between items-center">
           <div className="flex items-center">
-            <img src="/agroxeque-uploads/4ba08d45-ca97-4027-9bc4-2779e7baf9ba.png" alt="Agroxeque Logo" className="h-12 w-auto" />
+            <img src="/agroxeque-uploads/4ba08d45-ca97-4027-9bc4-2779e7baf9ba.png" alt="Agroxeque Logo" className="h-10 md:h-12 w-auto" />
           </div>
-          {/* Custom breakpoint: 560px */}
-										<div className="flex flex-row items-center gap-3 sm:gap-4">
-												<a
-														href="https://app.agroxeque.com.br"
-														// Classes simplificadas: fonte menor por padrão, maior em telas a partir de 560px.
-														className="flex flex-col items-center text-green-900 transition-all duration-150 cursor-pointer hover:font-bold hover:underline text-sm min-[560px]:text-base"
-														style={{ whiteSpace: 'nowrap' }}
-												>
-														Já sou cadastrado
-														<span className="text-xs w-full text-center">(Entrar)</span>
-												</a>
-												{/* Classes do botão ajustadas para um tamanho base menor e maior a partir de 560px */}
-												<Button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-xs h-auto min-[560px]:px-6 min-[560px]:py-2 min-[560px]:text-base">
-														Criar Conta Gratuita
-												</Button>
-										</div>
+          <div className="flex flex-row items-center gap-3 sm:gap-4">
+            <a
+              href="https://app.agroxeque.com.br"
+              className="flex flex-col items-center text-green-900 transition-all duration-150 cursor-pointer hover:font-bold hover:underline text-sm min-[560px]:text-base"
+              style={{ whiteSpace: 'nowrap' }}
+            >
+              Já sou cadastrado
+              <span className="text-xs w-full text-center">(Entrar)</span>
+            </a>
+            <Button asChild className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-xs h-auto min-[560px]:px-6 min-[560px]:py-2 min-[560px]:text-base">
+              <a href="https://app.agroxeque.com.br/cadastro">Criar Conta Gratuita</a>
+            </Button>
+          </div>
         </div>
       </header>
 
@@ -58,33 +55,17 @@ const Index = () => {
         className="relative bg-cover bg-center bg-no-repeat overflow-x-hidden"
         style={{
           backgroundImage: `url('/BG_Hero.jpg')`,
-          // A linha abaixo foi removida para resolver o problema de responsividade
-          // aspectRatio: '16/9', 
           minHeight: '75vh'
         }}
       >
-        {/* Overlay para melhorar legibilidade do texto */}
         <div className="absolute inset-0 bg-black/33"></div>
-        
-        {/* 
-          Este container interno agora irá se comportar corretamente, pois seu pai (<section>)
-          não tem mais uma largura forçada e se ajustará à largura da tela.
-        */}
         <div className="w-full max-w-7xl mx-auto px-4 text-center relative z-10 flex flex-col items-center justify-start h-full min-h-[75vh] pt-8 md:pt-8 pb-4 md:pb-8 space-y-4 sm:space-y-6">
-          
           <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
             Dê a cada hectare a atenção que ele merece!
           </h1>
-          
           <p className="text-white max-w-3xl mx-auto leading-relaxed text-base sm:text-lg md:text-xl drop-shadow-md">
             Aqui você pode monitorar, analisar e intervir em cada hectare, de forma única e independente, com rapidez e facilidade.
           </p>
-          
-          {/* 
-            Observação: Notei que nos novos prints, o vídeo foi substituído pelo carrossel de imagens.
-            Não tem problema, a lógica de correção do container é a mesma para qualquer conteúdo interno.
-            Estou mantendo o vídeo aqui para ser consistente com o código original que você enviou.
-          */}
           <div className="w-full max-w-2xl flex justify-center">
             <div className="w-full aspect-video rounded-lg shadow-lg overflow-hidden bg-black">
               <video 
@@ -97,14 +78,13 @@ const Index = () => {
               />
             </div>
           </div>
-          
           <div className="w-full max-w-lg">
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full">
-              <Button className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
-                Assista um vídeo explicativo
+              <Button asChild className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
+                <a href="https://app.agroxeque.com.br/cadastro?video=true">Assista um vídeo explicativo</a>
               </Button>
-              <Button variant="outline" className="border-white border-2 text-green-800 hover:bg-[#E1F5DC] hover:text-green-800 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
-                Cadastre-se Grátis
+              <Button asChild variant="outline" className="border-white border-2 text-green-800 hover:bg-[#E1F5DC] hover:text-green-800 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
+                <a href="https://app.agroxeque.com.br/cadastro">Cadastre-se Grátis</a>
               </Button>
             </div>
           </div>
@@ -120,7 +100,6 @@ const Index = () => {
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">A Agroxeque revela dados preciosos para você explorar o potencial escondido dentro de cada talhão.</p>
           </div>
-          
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
@@ -132,7 +111,6 @@ const Index = () => {
                   <p className="text-gray-600 text-left">Percorre vários pontos do talhão e ainda sai com mais dúvidas do que respostas?</p>
                 </div>
               </div>
-              
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="text-red-600 font-bold text-xl">×</span>
@@ -142,7 +120,6 @@ const Index = () => {
                   <p className="text-gray-600">Tratamento em área total mesmo quando o problema é pontual</p>
                 </div>
               </div>
-              
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="text-red-600 font-bold text-xl">×</span>
@@ -153,7 +130,6 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            
             <div className="relative">
               <img 
                 src={rotatingImages[currentImageIndex]} 
@@ -174,7 +150,6 @@ const Index = () => {
               Transformando Dados em Lucro, com estes <span className="text-green-600">5 Passos Simples</span>
             </h2>
           </div>
-          
           <div className="grid md:grid-cols-5 gap-6 md:gap-8">
             {[{
             number: "1",
@@ -206,8 +181,6 @@ const Index = () => {
               </div>)}
           </div>
         </div>
-        
-        {/* Container de texto com largura total e fundo verde */}
         <div className="w-full bg-green-100 py-8 mt-12">
           <div className="container mx-auto px-4">
             <div className="text-center">
@@ -229,16 +202,14 @@ const Index = () => {
               <span className="text-green-600">Qual é seu melhor hectare?</span>
             </h2>
           </div>
-          
           <div className="space-y-12 md:space-y-20">
-            {/* Ranking de Células */}
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="relative flex justify-center">
                 <img src="/agroxeque-uploads/7bf07b2d-9a2a-4ee8-acb1-8c29dedcc540.png" alt="Ranking de Células interface" className="w-2/3 rounded-lg shadow-xl" />
               </div>
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Descubra com a Agroxeque</h3>
-                <p className="text-base md:text-lg text-gray-600 mb-6">Nossa exclusiva tecnologia de &quot;Ranking&quot; classifica cada célula numericamente, ordenando-as da melhor à pior. Isso otimiza as visitas presenciais, destacando os pontos que requerem mais atenção e permite quantificar a área com uma determinada característica. Dessa forma, você toma decisões mais assertivas, baseando-se em informações, ao invés de impressões.</p>
+                <p className="text-base md:text-lg text-gray-600 mb-6">Nossa exclusiva tecnologia de "Ranking" classifica cada célula numericamente, ordenando-as da melhor à pior. Isso otimiza as visitas presenciais, destacando os pontos que requerem mais atenção e permite quantificar a área com uma determinada característica. Dessa forma, você toma decisões mais assertivas, baseando-se em informações, ao invés de impressões.</p>
                 <ul className="space-y-3">
                   <li className="flex items-center space-x-3">
                     <Check className="w-5 h-5 text-green-600" />
@@ -255,8 +226,6 @@ const Index = () => {
                 </ul>
               </div>
             </div>
-            
-            {/* Nova Seção - Citação Bíblica */}
             <section className="py-8 bg-green-700 md:py-[33px]">
               <div className="container mx-auto px-4 text-center">
                 <h2 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6">
@@ -267,13 +236,10 @@ const Index = () => {
                 </div>
               </div>
             </section>
-            
-            {/* Prescrições Flexíveis */}
             <div className="text-center mb-8 md:mb-12">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Mesmo Talhão, Necessidades Diferentes</h3>
               <p className="text-base md:text-lg text-gray-600 max-w-6xl mx-auto">Defina uma dose ou tratamento específico para cada célula individualmente ou em grupo, de acordo com a necessidade de cada uma</p>
             </div>
-            
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="space-y-4">
                 <div className="bg-green-50 p-4 rounded-lg">
@@ -309,7 +275,6 @@ const Index = () => {
               Xeque-Map: <span className="text-green-600">Seu Plano de Ação na Palma da Mão</span>
             </h2>
           </div>
-          
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="relative">
               <video 
@@ -352,7 +317,6 @@ const Index = () => {
               Uma Plataforma Única, com <span className="text-green-600">Múltiplos Benefícios</span>
             </h2>
           </div>
-          
           <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             {[{
             title: "Redução de Custos",
@@ -377,11 +341,10 @@ const Index = () => {
           }, {
 												title: "Manejo Fitossanitário Estratégico",
 												desc: "Economicamente viável e Ecologicamente sustentável",
-												icon: "♙" // <-- AQUI ESTÁ A MUDANÇA PRINCIPAL: trocado ♟ por ♙
+												icon: "♙"
 										}].map((benefit, index) => (
 												<Card key={index} className="hover:shadow-lg transition-shadow">
 																<CardContent className="p-6 text-center">
-																		{/* O estilo agora é simples novamente, sem o filtro */}
 																		<div className="text-4xl mb-4" style={{ color: '#212f0b' }}>
 																				{benefit.icon}
 																		</div>
@@ -402,7 +365,6 @@ const Index = () => {
               Ideal para Quem Busca <span className="text-green-600">Tomar Decisões Assertivas</span> no Campo
             </h2>
           </div>
-          
           <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             <div className="text-center">
               <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -411,7 +373,6 @@ const Index = () => {
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Agricultores Inovadores</h3>
               <p className="text-gray-600">Produtores que precisam de ferramentas para otimizar recursos, maximizar o lucro e tornar a sua atividade agrícola mais eficiente.</p>
             </div>
-            
             <div className="text-center">
               <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="w-12 h-12 text-blue-600" />
@@ -419,7 +380,6 @@ const Index = () => {
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Consultores Agrícolas</h3>
               <p className="text-gray-600">Profissionais que desejam utilizar dados inacessíveis aos olhos para avaliar os talhões dos clientes e gerar prescrições precisas, de qualquer lugar onde estejam</p>
             </div>
-            
             <div className="text-center">
               <div className="w-24 h-24 bg-[#212f0b] rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="w-12 h-12 text-white" />
@@ -441,7 +401,6 @@ const Index = () => {
               Pague Apenas Pelo Que Usar – <span className="text-green-600">Sem Surpresas</span>
             </h2>
           </div>
-          
           <div className="max-w-4xl mx-auto">
             <Card className="p-6 md:p-8">
               <div className="grid md:grid-cols-3 gap-6 md:gap-8 text-center">
@@ -452,7 +411,6 @@ const Index = () => {
                   <h3 className="text-xl font-semibold mb-2">Cadastro Gratuito</h3>
                   <p className="text-gray-600">Acesso Livre. Faça seu cadastro, conheça a plataforma e inclua fazendas e talhões sem custo.</p>
                 </div>
-                
                 <div>
                   <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                     <Plus />
@@ -460,7 +418,6 @@ const Index = () => {
                   <h3 className="text-xl font-semibold mb-2">Créditos por Projeto</h3>
                   <p className="text-gray-600">Pague apenas pelos hectares processados. Transparência total no investimento.</p>
                 </div>
-                
                 <div>
                   <div className="w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4" style={{backgroundColor: '#212f0b', color: 'white'}}>
                     %
@@ -469,9 +426,7 @@ const Index = () => {
                   <p className="text-gray-600">Quanto mais créditos você compra, mais economiza, com descontos de até 45%.</p>
                 </div>
               </div>
-              
               <div className="text-center mt-8">
-                
               </div>
             </Card>
           </div>
@@ -480,13 +435,11 @@ const Index = () => {
 
       {/* Dobra 8: Pacotes de Créditos */}
       <section className="py-12 md:py-20 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 relative overflow-hidden">
-        {/* Background decorative elements */}
         <div className="absolute inset-0 opacity-5">
           <div className="hexagon-pattern"></div>
         </div>
         <div className="absolute top-10 left-10 w-32 h-32 bg-green-200 rounded-full opacity-20 blur-xl"></div>
         <div className="absolute bottom-10 right-10 w-40 h-40 bg-emerald-200 rounded-full opacity-20 blur-xl"></div>
-        
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -495,9 +448,7 @@ const Index = () => {
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-4">
               Escolha uma combinação de pacotes que melhor se adequa à sua demanda e frequencia de uso.
             </p>
-            
           </div>
-          
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-green-200">
               <CardContent className="p-6 md:p-8 text-center">
@@ -516,7 +467,6 @@ const Index = () => {
                 </Button>
               </CardContent>
             </Card>
-            
             <Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-green-200">
               <CardContent className="p-6 md:p-8 text-center">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">50 Créditos</h3>
@@ -534,7 +484,6 @@ const Index = () => {
                 </Button>
               </CardContent>
             </Card>
-            
             <Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-3 border-gradient-to-r from-yellow-400 to-orange-500 shadow-lg">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
                 <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full text-sm font-bold flex items-center gap-2 shadow-lg mx-0 my-0 py-[10px] px-[2px]">
@@ -558,7 +507,6 @@ const Index = () => {
                 </Button>
               </CardContent>
             </Card>
-            
             <Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-green-200">
               <CardContent className="p-6 md:p-8 text-center">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">200 Créditos</h3>
@@ -577,7 +525,6 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
-          
           <div className="text-center mt-8 md:mt-12">
             <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 inline-block border border-green-100 shadow-sm">
               <p className="text-gray-600 text-sm font-medium">* 1 crédito = 1 hectare ou 100 MB de imagens</p>
@@ -594,25 +541,22 @@ const Index = () => {
               Veja o Que Dizem <span className="text-green-600">Nossos Clientes</span>
             </h2>
           </div>
-          
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             <Card className="p-6">
               <CardContent className="p-0">
-                <p className="text-gray-600 mb-4 italic">&quot;Utilizando a Agroxeque, conseguimos melhorar o aproveitamento e o vigor da nossa semente, identificando áreas mais prejudicadas e realizando a colheita delas separadamente. Assim, destinamos para semente apenas a produção de áreas sem ocorrência de avarias e longe de reboleiras.&quot;</p>
+                <p className="text-gray-600 mb-4 italic">"Utilizando a Agroxeque, conseguimos melhorar o aproveitamento e o vigor da nossa semente, identificando áreas mais prejudicadas e realizando a colheita delas separadamente. Assim, destinamos para semente apenas a produção de áreas sem ocorrência de avarias e longe de reboleiras."</p>
                 <div className="font-semibold text-gray-900">Márcia Soares</div>
                 <div className="text-green-600 text-sm">Sementes Planura</div>
               </CardContent>
             </Card>
-            
             <Card className="p-6">
               <CardContent className="p-0">
-                <p className="text-gray-600 mb-4 italic">&quot;Reduzimos em cerca de 18% o custo com herbicidas na dessecação.&quot;</p>
+                <p className="text-gray-600 mb-4 italic">"Reduzimos em cerca de 18% o custo com herbicidas na dessecação."</p>
                 <div className="font-semibold text-gray-900">Geraldo Basílio</div>
                 <div className="text-green-600 text-sm">Fazenda Rio Formoso</div>
                 <div className="text-gray-500 text-xs">João Pinheiro - MG</div>
               </CardContent>
             </Card>
-            
             <Card className="p-6">
               <CardContent className="p-0">
                 <p className="text-gray-600 mb-4 italic">
@@ -625,7 +569,6 @@ const Index = () => {
                 <div className="text-gray-500 text-xs">Araxá - MG</div>
               </CardContent>
             </Card>
-            
             <Card className="p-6">
               <CardContent className="p-0">
                 <p className="text-gray-600 mb-4 italic">"Gasto muito mais tempo pra percorrer e avaliar os talhões dos clientes que não usam a Agroxeque, e ainda saio de lá com uma visão vaga e subjetiva. Depois que a gente acostuma, fica até difícil avaliar uma lavoura sem o mapa de ranking"</p>
@@ -647,7 +590,6 @@ const Index = () => {
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Tire suas dúvidas sobre a Agroxeque e descubra como nossa plataforma pode transformar o manejo da sua lavoura</p>
           </div>
-          
           <div className="max-w-4xl mx-auto">
             <Accordion type="single" collapsible className="w-full space-y-4">
               <AccordionItem value="culturas" className="bg-white rounded-lg border shadow-sm">
@@ -658,7 +600,6 @@ const Index = () => {
                   A plataforma Agroxeque pode ser utilizada para monitorar todos os tipos de culturas agrícolas. Com as imagens de alta resolução e os demais produtos digitais disponíveis na Agroxeque, você consegue acompanhar o desenvolvimento das suas plantas em estágios de desenvolvimento estratégicos, facilitando a identificação de problemas e a tomada de decisões para otimizar a produção.
                 </AccordionContent>
               </AccordionItem>
-
               <AccordionItem value="drones" className="bg-white rounded-lg border shadow-sm">
                 <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
                   Quais modelos de drone posso utilizar?
@@ -667,7 +608,6 @@ const Index = () => {
                   Você pode usar qualquer drone que gere imagens RGB (câmeras tradicionais), capaz de realizar mapeamento aéreo autônomo, desde os mais simples até os mais avançados. Existem drones profissionais, projetados especificamente para mapeamentos, que apresentam como vantagem um alto rendimento operacional e câmeras mais robustas, que exigiriam um invetimento mais alto. No entanto, há também uma linha de drones não profissionais, mas muito populares por apresentarem uma boa qualidade de câmera e segurança de operação, com ótimo custo benefício para esta finalidade, como por exemplo: DJI Air 2S, DJI mini pro 3, DJI Air 3. O mais importante é se certificar que seu drone tenha compatibilidade com softwares de mapeamento (que criam os planos de vôo autônomos), como Dronelink, Drone Harmony ou waypointmap.
                 </AccordionContent>
               </AccordionItem>
-
               <AccordionItem value="equipamentos" className="bg-white rounded-lg border shadow-sm">
                 <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
                   Preciso de equipamentos específicos para utilizar as prescrições geradas na Agroxeque?
@@ -676,7 +616,6 @@ const Index = () => {
                   Não necessariamente. As prescrições geradas pela Agroxeque são extremamente versáteis. Se você possui maquinário moderno com sistemas de aplicação por taxa variável, ou drones de pulverização, poderá exportar as prescrições geradas em ShapeFile ou KML e utilizar estes mapas diretamente no seu monitor. Por outro lado, caso você não possua este tipo de equipamento, você pode exportar as prescrições geradas para o aplicativo móvel "Xeque-Map" e utilizá-lo para navegação com seu maquinário. O aplicativo irá carregar o mapa que você exportou e permitir que se oriente dentro desta prescrição, auxiliando em alguns tipos de operações mais simples, como a aplicação binária (aplica/não aplica) e taxas variáveis com poucas doses, onde você poderia aplicar polígonos de cada dose isoladamente. Além disso o Xeque-Map é muito útil em inspeções de rotina e até em amostragens de solo, folha, nematóides, etc.
                 </AccordionContent>
               </AccordionItem>
-
               <AccordionItem value="cadastro" className="bg-white rounded-lg border shadow-sm">
                 <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
                   Como faço para cadastrar um talhão?
@@ -685,7 +624,6 @@ const Index = () => {
                   Este é um processo bastante simples, que é realizado em poucos segundos. Você precisa apenas informar à qual fazenda o talhão pertence, inserir o nome de identificação do talhão, selecionar o formato da grade (malha de células) que prefere utilizar, além de definir também o tamanho das células que compõem a malha. Por fim, você deve subir um arquivo de polígono, em formato kml ou kmz, referente à delimitação deste talhão. Caso ainda não tenha este arquivo de polígono, você pode gerá-lo facilmente de várias formas, inclusive pelo Google Earth.
                 </AccordionContent>
               </AccordionItem>
-
               <AccordionItem value="ranking" className="bg-white rounded-lg border shadow-sm">
                 <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
                   O que exatamente é o "Ranking de células"?
@@ -694,7 +632,6 @@ const Index = () => {
                   Nossa exclusiva tecnologia de ranking de células, consiste em aplicar sobre o talhão, uma malha virtual, com tamanho e formato personalizados. O processamento automatizado Agroxeque, irá extrair várias informações referentes à cultura presente dentro da região de cada célula, atribuindo uma espécie de nota para cada uma, e em seguida classificar e ordenar todo o conjunto. Assim, se seu talhão possui 75 células, o sistema irá definir como célula 1, aquela que está posicionada sobre a cultura com o melhor nível de desenvolvimento naquele talhão, e 75 seria a onde a cultura apresenta a pior condição de desenvolvimento, em comparação com as demais células.
                 </AccordionContent>
               </AccordionItem>
-
               <AccordionItem value="limites" className="bg-white rounded-lg border shadow-sm">
                 <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
                   Qual o limite de área e imagens para cada projeto de processamento?
@@ -703,7 +640,6 @@ const Index = () => {
                   Um projeto deve conter entre 2 e 100 hectares, e um limite máximo de 1.000 imagens. Caso seu talhão exceda este limite, você pode dividir o talhão em 2 ou mais partes, cadastrando-o como por exemplo: "Pivô 7 lado A" e "Pivô 7 lado B", o que irá reduzir também o número de imagens geradas em cada projeto.
                 </AccordionContent>
               </AccordionItem>
-
               <AccordionItem value="computador" className="bg-white rounded-lg border shadow-sm">
                 <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
                   Preciso de um computador potente para utilizar a plataforma AgroXeque?
@@ -712,7 +648,6 @@ const Index = () => {
                   Não. E essa é uma das grandes vantagens da nossa plataforma! Todo o processamento pesado das imagens (a criação da ortofoto e dos modelos digitais) é realizado em servidores cloud de alta performance, não no seu computador.
                 </AccordionContent>
               </AccordionItem>
-
               <AccordionItem value="creditos" className="bg-white rounded-lg border shadow-sm">
                 <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
                   E se as imagens coletadas no meu levantamento não apresentarem a qualidade necessária, causando erros no processamento? Perco meus créditos?
@@ -721,7 +656,6 @@ const Index = () => {
                   Seus créditos só serão debitados quando o processamento for concluído e disponibilizado na plataforma. Assim, se houver algum erro que impeça que os produtos de processamento sejam gerados, seus créditos nem sequer serão movimentados. No entanto podem haver situações em que alguns parâmetros errados no planejamento do vôo, defeitos na câmera ou até mesmo sujeira na lente, podem causar imperfeições em algumas imagens, provocando erros no ortomosaico gerado. Nestes casos, você pode abrir uma solicitação de revisão de projeto, dentro de um prazo estabelecido. Caso seja constatado pela nossa equipe, que os arquivos gerados estejam de fato corrompidos, o total de créditos consumidos naquele projeto será estornado em sua conta, para que possa realizar uma nova aquisição de imagens e criar um novo projeto do zero. Mas atenção: Você não pode enviar as mesmas imagens novamente. Este reembolso só é válido para que você faça um novo mapeamento, com parâmetros de voo mais rigorosos, garantindo que o segundo processamento seja realizado com sucesso.
                 </AccordionContent>
               </AccordionItem>
-
               <AccordionItem value="offline" className="bg-white rounded-lg border shadow-sm">
                 <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
                   O aplicativo Xeque-Map funciona offline?
@@ -730,7 +664,6 @@ const Index = () => {
                   Sim! O Xeque-Map foi desenvolvido pensando na realidade do campo, onde normalmente a conexão com a internet é instável ou inexistente. O funcionamento é simples: Enquanto estiver conectado (em casa, no escritório, ou em uma área com sinal), você abre o aplicativo e faz o download dos mapas de prescrição que deseja usar, para memória do seu smartphone ou tablet. Uma vez no campo, mesmo sem qualquer sinal de internet, o aplicativo usará o GPS do seu aparelho (que não precisa de internet) para permitir sua navegação dentro dos polígonos e das células de manejo que você criou na plataforma.
                 </AccordionContent>
               </AccordionItem>
-
               <AccordionItem value="pontos-controle" className="bg-white rounded-lg border shadow-sm">
                 <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:no-underline">
                   Preciso coletar pontos de controle para o levantamento aéreo do meu projeto?
@@ -754,8 +687,10 @@ const Index = () => {
             Leve a Agroxeque para o seu negócio e transforme dados em decisões, 
             decisões em lucro e sua atividade agrícola em um modelo de eficiência.
           </p>
-          <Button className="bg-white text-green-900 hover:bg-gray-100 px-8 md:px-12 py-4 text-base md:text-lg font-semibold h-auto whitespace-normal">
-            Assista ao vídeo demonstrativo e ganhe créditos para começar agora!
+          <Button asChild className="bg-white text-green-900 hover:bg-gray-100 px-8 md:px-12 py-4 text-base md:text-lg font-semibold h-auto whitespace-normal">
+            <a href="https://app.agroxeque.com.br/cadastro?video=true">
+              Assista ao vídeo demonstrativo e ganhe créditos para começar agora!
+            </a>
           </Button>
         </div>
       </section>
@@ -772,9 +707,9 @@ const Index = () => {
               </div>
             </div>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="hover:text-green-400 transition-colors">Privacidade</a>
-              <a href="#" className="hover:text-green-400 transition-colors">Termos</a>
-              <a href="#" className="hover:text-green-400 transition-colors">Contato</a>
+              <a href="https://app.agroxeque.com.br/privacidade" className="hover:text-green-400 transition-colors">Privacidade</a>
+              <a href="https://app.agroxeque.com.br/termos" className="hover:text-green-400 transition-colors">Termos</a>
+              <a href="https://app.agroxeque.com.br/contato" className="hover:text-green-400 transition-colors">Contato</a>
             </div>
           </div>
         </div>
