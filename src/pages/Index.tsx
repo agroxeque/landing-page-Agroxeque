@@ -275,7 +275,7 @@ const Index = () => {
                   <h4 className="font-semibold text-green-1000">Mapa Híbrido</h4>
                   <p className="text-green-900">Agrupamento de células, formando zonas binárias de aplicação, variando as doses ou tratamento dentro de uma zona.</p>
                 </div>
-                <div className="bg-blue-60 p-4 rounded-lg">
+                <div className="bg-[#DDEAF6] p-4 rounded-lg">
                   <h4 className="font-semibold text-blue-900">Taxa Fixa</h4>
                   <p className="text-blue-800 text-sm">Recomendações gerais mais precisas, apoiadas em análise de dados concretos, sob uma visão detalhada e abrangente do talhão.</p>
                 </div>
