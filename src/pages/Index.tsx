@@ -30,22 +30,22 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+        <div className="container mx-auto px-4 py-2 flex justify-between items-center flex-wrap">
           <div className="flex items-center">
             <img src="/agroxeque-uploads/4ba08d45-ca97-4027-9bc4-2779e7baf9ba.png" alt="Agroxeque Logo" className="h-12 w-auto" />
           </div>
-          <div className="flex items-center gap-6">
-            <a
-              href="https://app.agroxeque.com.br"
-              className="text-green-900 text-base transition-all duration-150 cursor-pointer hover:font-bold hover:underline"
-              style={{ whiteSpace: 'nowrap' }}
-            >
-              Já sou cadastrado
-	      (Entrar)
-            </a>
-            <Button className="bg-green-600 hover:bg-green-700 text-white px-6">
+          <div className="flex flex-col items-end gap-1 sm:flex-row sm:items-center sm:gap-6">
+            <Button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm sm:px-6 sm:py-2 sm:text-base">
               Criar Conta Gratuita
             </Button>
+            <a
+              href="https://app.agroxeque.com.br"
+              className="text-green-900 text-base transition-all duration-150 cursor-pointer hover:font-bold hover:underline text-right"
+              style={{ whiteSpace: 'nowrap' }}
+            >
+              Já sou cadastrado<br />
+              <span className="text-sm">(Entrar)</span>
+            </a>
           </div>
         </div>
       </header>
