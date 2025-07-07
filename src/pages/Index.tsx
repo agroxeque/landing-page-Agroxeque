@@ -60,7 +60,7 @@ const Index = () => {
         <div className="w-full max-w-5xl mx-auto px-4 text-center relative z-10 flex flex-col items-center justify-start h-full min-h-[75vh] pt-8 md:pt-8 pb-4 md:pb-8 space-y-4 sm:space-y-6">
           
           <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
-            Dê a cada hectare a atenção que ele tanto merece!
+            Dê a cada hectare a atenção que ele merece!
           </h1>
           
           <p className="text-white max-w-3xl mx-auto leading-relaxed text-base sm:text-lg md:text-xl drop-shadow-md">
