@@ -60,7 +60,7 @@ const Index = () => {
         <div className="w-full max-w-5xl mx-auto px-4 text-center relative z-10 flex flex-col items-center justify-start h-full min-h-[75vh] pt-8 md:pt-8 pb-4 md:pb-8 space-y-4 sm:space-y-6">
           
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-lg">
-            Para nós, cada hectare importa!
+            Dê a cada hectare, a atenção que ele tanto merece!
           </h1>
           
           <p className="text-white max-w-3xl mx-auto leading-relaxed text-base sm:text-lg md:text-xl drop-shadow-md">
@@ -275,8 +275,8 @@ const Index = () => {
                   <h4 className="font-semibold text-green-1000">Mapa Híbrido</h4>
                   <p className="text-green-900">Agrupamento de células, formando zonas binárias de aplicação, variando as doses ou tratamento dentro de uma zona.</p>
                 </div>
-                <div className="bg-orange-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-orange-800">Taxa Fixa</h4>
+                <div className="bg-blue-80 p-4 rounded-lg">
+                  <h4 className="font-semibold text-blue-1000">Taxa Fixa</h4>
                   <p className="text-orange-700 text-sm">Recomendações gerais mais precisas, apoiadas em análise de dados concretos, sob uma visão detalhada e abrangente do talhão.</p>
                 </div>
               </div>
@@ -738,11 +738,11 @@ const Index = () => {
             Sim, você pode produzir mais com menos. Vamos começar?
           </h2>
           <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-90">
-            Junte-se ao grupo da agricultura digital com inteligência natural, e transforme dados em decisões, 
-            decisões em lucro e sua fazenda em uma referência de eficiência.
+            Leve a Agroxeque para o seu negócio e transforme dados em decisões, 
+            decisões em lucro e sua atividade agrícola em um modelo de eficiência.
           </p>
           <Button className="bg-white text-green-900 hover:bg-gray-100 px-8 md:px-12 py-4 text-base md:text-lg font-semibold h-auto whitespace-normal">
-            Assista ao vídeo demonstrativo e ganhe créditos
+            Assista ao vídeo demonstrativo e ganhe créditos para começar agora!
           </Button>
         </div>
       </section>
