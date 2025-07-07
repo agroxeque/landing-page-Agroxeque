@@ -34,9 +34,18 @@ const Index = () => {
           <div className="flex items-center">
             <img src="/agroxeque-uploads/4ba08d45-ca97-4027-9bc4-2779e7baf9ba.png" alt="Agroxeque Logo" className="h-12 w-auto" />
           </div>
-          <Button className="bg-green-600 hover:bg-green-700 text-white px-6">
-            Criar Conta Gratuita
-          </Button>
+          <div className="flex items-center gap-6">
+            <a
+              href="https://app.agroxeque.com.br"
+              className="text-green-900 text-base transition-all duration-150 cursor-pointer hover:font-bold hover:underline"
+              style={{ whiteSpace: 'nowrap' }}
+            >
+              Já sou cadastrado (Entrar)
+            </a>
+            <Button className="bg-green-600 hover:bg-green-700 text-white px-6">
+              Criar Conta Gratuita
+            </Button>
+          </div>
         </div>
       </header>
 
