@@ -35,19 +35,21 @@ const Index = () => {
             <img src="/agroxeque-uploads/4ba08d45-ca97-4027-9bc4-2779e7baf9ba.png" alt="Agroxeque Logo" className="h-12 w-auto" />
           </div>
           {/* Custom breakpoint: 560px */}
-          <div className="flex flex-col items-start gap-2 min-[560px]:flex-row min-[560px]:items-center min-[560px]:gap-6">
-            <a
-              href="https://app.agroxeque.com.br"
-              className="flex flex-col items-center text-green-900 text-base transition-all duration-150 cursor-pointer hover:font-bold hover:underline text-right min-[560px]:items-center min-[560px]:mr-0 mr-6"
-              style={{ whiteSpace: 'nowrap' }}
-            >
-              Já sou cadastrado
-              <span className="text-sm w-full text-center">(Entrar)</span>
-            </a>
-            <Button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm min-[560px]:px-6 min-[560px]:py-2 min-[560px]:text-base">
-              Criar Conta Gratuita
-            </Button>
-          </div>
+										<div className="flex flex-row items-center gap-3 sm:gap-4">
+												<a
+														href="https://app.agroxeque.com.br"
+														// Classes simplificadas: fonte menor por padrão, maior em telas a partir de 560px.
+														className="flex flex-col items-center text-green-900 transition-all duration-150 cursor-pointer hover:font-bold hover:underline text-sm min-[560px]:text-base"
+														style={{ whiteSpace: 'nowrap' }}
+												>
+														Já sou cadastrado
+														<span className="text-xs w-full text-center">(Entrar)</span>
+												</a>
+												{/* Classes do botão ajustadas para um tamanho base menor e maior a partir de 560px */}
+												<Button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-xs h-auto min-[560px]:px-6 min-[560px]:py-2 min-[560px]:text-base">
+														Criar Conta Gratuita
+												</Button>
+										</div>
         </div>
       </header>
 
