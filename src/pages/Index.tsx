@@ -40,7 +40,8 @@ const Index = () => {
               className="text-green-900 text-base transition-all duration-150 cursor-pointer hover:font-bold hover:underline"
               style={{ whiteSpace: 'nowrap' }}
             >
-              Já sou cadastrado (Entrar)
+              Já sou cadastrado
+	      (Entrar)
             </a>
             <Button className="bg-green-600 hover:bg-green-700 text-white px-6">
               Criar Conta Gratuita
