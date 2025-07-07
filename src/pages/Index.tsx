@@ -59,8 +59,8 @@ const Index = () => {
         */}
         <div className="w-full max-w-5xl mx-auto px-4 text-center relative z-10 flex flex-col items-center justify-start h-full min-h-[75vh] pt-8 md:pt-8 pb-4 md:pb-8 space-y-4 sm:space-y-6">
           
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-lg">
-            Dê a cada hectare, a atenção que ele tanto merece!
+          <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
+            Dê a cada hectare a atenção que ele tanto merece!
           </h1>
           
           <p className="text-white max-w-3xl mx-auto leading-relaxed text-base sm:text-lg md:text-xl drop-shadow-md">
@@ -275,8 +275,8 @@ const Index = () => {
                   <h4 className="font-semibold text-green-1000">Mapa Híbrido</h4>
                   <p className="text-green-900">Agrupamento de células, formando zonas binárias de aplicação, variando as doses ou tratamento dentro de uma zona.</p>
                 </div>
-                <div className="bg-blue-80 p-4 rounded-lg">
-                  <h4 className="font-semibold text-blue-1000">Taxa Fixa</h4>
+                <div className="bg-blue-70 p-4 rounded-lg">
+                  <h4 className="font-semibold text-blue-900">Taxa Fixa</h4>
                   <p className="text-orange-700 text-sm">Recomendações gerais mais precisas, apoiadas em análise de dados concretos, sob uma visão detalhada e abrangente do talhão.</p>
                 </div>
               </div>
