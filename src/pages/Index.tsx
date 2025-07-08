@@ -81,7 +81,7 @@ const Index = () => {
           <div className="w-full max-w-lg">
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full">
               <Button asChild className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
-                <a href="https://app.agroxeque.com.br/version-test/cadastro?video=true">Assista o vídeo explicativo e ganhe céditos ao final</a>
+                <a href="https://app.agroxeque.com.br/version-test/cadastro?video=true">Assista ao vídeo explicativo e ganhe um bônus para começar</a>
               </Button>
               <Button asChild variant="outline" className="border-white border-2 text-green-800 hover:bg-[#E1F5DC] hover:text-green-800 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
                 <a href="https://app.agroxeque.com.br/version-test/cadastro">Cadastre-se Grátis</a>
