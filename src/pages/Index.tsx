@@ -433,105 +433,112 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Dobra 8: Pacotes de Créditos */}
-      <section className="py-12 md:py-20 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="hexagon-pattern"></div>
-        </div>
-        <div className="absolute top-10 left-10 w-32 h-32 bg-green-200 rounded-full opacity-20 blur-xl"></div>
-        <div className="absolute bottom-10 right-10 w-40 h-40 bg-emerald-200 rounded-full opacity-20 blur-xl"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-green-600">Pacotes de Créditos</span> que se encaixam no seu negócio
-            </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-4">
-              Escolha uma combinação de pacotes que melhor se adequa à sua demanda e frequencia de uso.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            <Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-green-200">
-              <CardContent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">10 Créditos</h3>
-                <div className="mb-6">
-                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 7,90</span>
-                  <span className="text-gray-600 text-sm block">/hectare</span>
-                </div>
-                <div className="mb-6 space-y-2">
-                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 79,00</p>
-                  <p className="text-sm text-gray-600">Em até 6 x de R$ 13,16</p>
-                  <p className="text-xs text-gray-500">Sem acréscimos</p>
-                </div>
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
-                  Escolher Pacote
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-green-200">
-              <CardContent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">50 Créditos</h3>
-                <div className="mb-6">
-                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 5,96</span>
-                  <span className="text-gray-600 text-sm block">/hectare</span>
-                </div>
-                <div className="mb-6 space-y-2">
-                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 298,00</p>
-                  <p className="text-sm text-gray-600">Em até 6 x de R$ 49,66</p>
-                  <p className="text-xs text-gray-500">Sem acréscimos</p>
-                </div>
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
-                  Escolher Pacote
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-3 border-gradient-to-r from-yellow-400 to-orange-500 shadow-lg">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full text-sm font-bold flex items-center gap-2 shadow-lg mx-0 my-0 py-[10px] px-[2px]">
-                  <Crown className="w-4 h-4 fill-current" />
-                  Mais Vendido
-                </div>
-              </div>
-              <CardContent className="p-6 md:p-8 text-center pt-10">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">100 Créditos</h3>
-                <div className="mb-6">
-                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 4,98</span>
-                  <span className="text-gray-600 text-sm block">/hectare</span>
-                </div>
-                <div className="mb-6 space-y-2">
-                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 498,00</p>
-                  <p className="text-sm text-gray-600">Em até 6 x de R$ 83,00</p>
-                  <p className="text-xs text-gray-500">Sem acréscimos</p>
-                </div>
-                <Button className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
-                  Escolher Pacote
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-green-200">
-              <CardContent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">200 Créditos</h3>
-                <div className="mb-6">
-                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 4,49</span>
-                  <span className="text-gray-600 text-sm block">/hectare</span>
-                </div>
-                <div className="mb-6 space-y-2">
-                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 898,00</p>
-                  <p className="text-sm text-gray-600">Em até 6 x de R$ 149,66</p>
-                  <p className="text-xs text-gray-500">Sem acréscimos</p>
-                </div>
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
-                  Escolher Pacote
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-          <div className="text-center mt-8 md:mt-12">
-            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 inline-block border border-green-100 shadow-sm">
-              <p className="text-gray-600 text-sm font-medium">* 1 crédito = 1 hectare ou 100 MB de imagens</p>
-            </div>
-          </div>
-        </div>
-      </section>
+						{/* Dobra 8: Pacotes de Créditos */}
+						<section className="py-12 md:py-20 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 relative overflow-hidden">
+								<div className="absolute inset-0 opacity-5">
+										<div className="hexagon-pattern"></div>
+								</div>
+								<div className="absolute top-10 left-10 w-32 h-32 bg-green-200 rounded-full opacity-20 blur-xl"></div>
+								<div className="absolute bottom-10 right-10 w-40 h-40 bg-emerald-200 rounded-full opacity-20 blur-xl"></div>
+								<div className="container mx-auto px-4 relative z-10">
+										<div className="text-center mb-12 md:mb-16">
+												<h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+														<span className="text-green-600">Pacotes de Créditos</span> que se encaixam no seu negócio
+												</h2>
+												<p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-4">
+														Escolha uma combinação de pacotes que melhor se adequa à sua demanda e frequencia de uso.
+												</p>
+										</div>
+										<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+												{/* --- Card 1: 10 Créditos --- */}
+												<Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-green-200">
+														<CardContent className="p-6 md:p-8 text-center">
+																<h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">10 Créditos</h3>
+																<div className="mb-6">
+																		<span className="text-3xl md:text-4xl font-bold text-green-600">R$ 7,90</span>
+																		<span className="text-gray-600 text-sm block">/hectare</span>
+																</div>
+																<div className="mb-6 space-y-2">
+																		<p className="text-lg md:text-xl font-semibold text-gray-800">R$ 79,00</p>
+																		<p className="text-sm text-gray-600">Em até 6 x de R$ 13,16</p>
+																		<p className="text-xs text-gray-500">Sem acréscimos</p>
+																</div>
+																<Button asChild className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
+																		<a href="https://app.agroxeque.com.br/comprar_creditos">Escolher Pacote</a>
+																</Button>
+														</CardContent>
+												</Card>
+
+												{/* --- Card 2: 50 Créditos --- */}
+												<Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-green-200">
+														<CardContent className="p-6 md:p-8 text-center">
+																<h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">50 Créditos</h3>
+																<div className="mb-6">
+																		<span className="text-3xl md:text-4xl font-bold text-green-600">R$ 5,96</span>
+																		<span className="text-gray-600 text-sm block">/hectare</span>
+																</div>
+																<div className="mb-6 space-y-2">
+																		<p className="text-lg md:text-xl font-semibold text-gray-800">R$ 298,00</p>
+																		<p className="text-sm text-gray-600">Em até 6 x de R$ 49,66</p>
+																		<p className="text-xs text-gray-500">Sem acréscimos</p>
+																</div>
+																<Button asChild className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
+																		<a href="https://app.agroxeque.com.br/comprar_creditos">Escolher Pacote</a>
+																</Button>
+														</CardContent>
+												</Card>
+												
+												{/* --- Card 3: 100 Créditos (Mais Vendido) --- */}
+												<Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-3 border-gradient-to-r from-yellow-400 to-orange-500 shadow-lg">
+														<div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+																<div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full text-sm font-bold flex items-center gap-2 shadow-lg mx-0 my-0 py-[10px] px-[2px]">
+																		<Crown className="w-4 h-4 fill-current" />
+																		Mais Vendido
+																</div>
+														</div>
+														<CardContent className="p-6 md:p-8 text-center pt-10">
+																<h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">100 Créditos</h3>
+																<div className="mb-6">
+																		<span className="text-3xl md:text-4xl font-bold text-green-600">R$ 4,98</span>
+																		<span className="text-gray-600 text-sm block">/hectare</span>
+																</div>
+																<div className="mb-6 space-y-2">
+																		<p className="text-lg md:text-xl font-semibold text-gray-800">R$ 498,00</p>
+																		<p className="text-sm text-gray-600">Em até 6 x de R$ 83,00</p>
+																		<p className="text-xs text-gray-500">Sem acréscimos</p>
+																</div>
+																<Button asChild className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
+																		<a href="https://app.agroxeque.com.br/comprar_creditos">Escolher Pacote</a>
+																</Button>
+														</CardContent>
+												</Card>
+
+												{/* --- Card 4: 200 Créditos --- */}
+												<Card className="relative hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-green-200">
+														<CardContent className="p-6 md:p-8 text-center">
+																<h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">200 Créditos</h3>
+																<div className="mb-6">
+																		<span className="text-3xl md:text-4xl font-bold text-green-600">R$ 4,49</span>
+																		<span className="text-gray-600 text-sm block">/hectare</span>
+																</div>
+																<div className="mb-6 space-y-2">
+																		<p className="text-lg md:text-xl font-semibold text-gray-800">R$ 898,00</p>
+																		<p className="text-sm text-gray-600">Em até 6 x de R$ 149,66</p>
+																		<p className="text-xs text-gray-500">Sem acréscimos</p>
+																</div>
+																<Button asChild className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
+																		<a href="https://app.agroxeque.com.br/comprar_creditos">Escolher Pacote</a>
+																</Button>
+														</CardContent>
+												</Card>
+										</div>
+										<div className="text-center mt-8 md:mt-12">
+												<div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 inline-block border border-green-100 shadow-sm">
+														<p className="text-gray-600 text-sm font-medium">* 1 crédito = 1 hectare ou 100 MB de imagens</p>
+												</div>
+										</div>
+								</div>
+						</section>
 
       {/* Dobra 9: Prova Social */}
       <section className="py-12 md:py-20 bg-white">
