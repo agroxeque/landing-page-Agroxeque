@@ -44,7 +44,7 @@ const Index = () => {
               <span className="text-xs w-full text-center">(Entrar)</span>
             </a>
             <Button asChild className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-xs h-auto min-[560px]:px-6 min-[560px]:py-2 min-[560px]:text-base">
-              <a href="https://app.agroxeque.com.br/version-test/cadastro">Criar Conta Gratuita</a>
+              <a href="https://app.agroxeque.com.br/cadastro">Criar Conta Gratuita</a>
             </Button>
           </div>
         </div>
@@ -81,10 +81,10 @@ const Index = () => {
           <div className="w-full max-w-lg">
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full">
               <Button asChild className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
-                <a href="https://app.agroxeque.com.br/version-test/cadastro?video=true">Assista ao vídeo explicativo e receba bônus</a>
+                <a href="https://app.agroxeque.com.br/cadastro?video=true">Assista ao vídeo explicativo e receba bônus</a>
               </Button>
               <Button asChild variant="outline" className="border-white border-2 text-green-800 hover:bg-[#E1F5DC] hover:text-green-800 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
-                <a href="https://app.agroxeque.com.br/version-test/cadastro">Cadastre-se Grátis</a>
+                <a href="https://app.agroxeque.com.br/cadastro">Cadastre-se Grátis</a>
               </Button>
             </div>
           </div>
@@ -454,12 +454,12 @@ const Index = () => {
               <CardContent className="p-6 md:p-8 text-center">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">10 Créditos</h3>
                 <div className="mb-6">
-                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 8,90</span>
+                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 7,90</span>
                   <span className="text-gray-600 text-sm block">/hectare</span>
                 </div>
                 <div className="mb-6 space-y-2">
-                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 89,00</p>
-                  <p className="text-sm text-gray-600">Em até 6 x de R$ 14,83</p>
+                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 79,00</p>
+                  <p className="text-sm text-gray-600">Em até 6 x de R$ 13,16</p>
                   <p className="text-xs text-gray-500">Sem acréscimos</p>
                 </div>
                 <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
@@ -471,12 +471,12 @@ const Index = () => {
               <CardContent className="p-6 md:p-8 text-center">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">50 Créditos</h3>
                 <div className="mb-6">
-                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 6,98</span>
+                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 5,96</span>
                   <span className="text-gray-600 text-sm block">/hectare</span>
                 </div>
                 <div className="mb-6 space-y-2">
-                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 349,00</p>
-                  <p className="text-sm text-gray-600">Em até 6 x de R$ 58,17</p>
+                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 298,00</p>
+                  <p className="text-sm text-gray-600">Em até 6 x de R$ 49,66</p>
                   <p className="text-xs text-gray-500">Sem acréscimos</p>
                 </div>
                 <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
@@ -494,12 +494,12 @@ const Index = () => {
               <CardContent className="p-6 md:p-8 text-center pt-10">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">100 Créditos</h3>
                 <div className="mb-6">
-                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 5,49</span>
+                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 4,98</span>
                   <span className="text-gray-600 text-sm block">/hectare</span>
                 </div>
                 <div className="mb-6 space-y-2">
-                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 549,00</p>
-                  <p className="text-sm text-gray-600">Em até 6 x de R$ 91,50</p>
+                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 498,00</p>
+                  <p className="text-sm text-gray-600">Em até 6 x de R$ 83,00</p>
                   <p className="text-xs text-gray-500">Sem acréscimos</p>
                 </div>
                 <Button className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
@@ -511,12 +511,12 @@ const Index = () => {
               <CardContent className="p-6 md:p-8 text-center">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">200 Créditos</h3>
                 <div className="mb-6">
-                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 4,89</span>
+                  <span className="text-3xl md:text-4xl font-bold text-green-600">R$ 4,49</span>
                   <span className="text-gray-600 text-sm block">/hectare</span>
                 </div>
                 <div className="mb-6 space-y-2">
-                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 978,00</p>
-                  <p className="text-sm text-gray-600">Em até 6 x de R$ 163,00</p>
+                  <p className="text-lg md:text-xl font-semibold text-gray-800">R$ 898,00</p>
+                  <p className="text-sm text-gray-600">Em até 6 x de R$ 149,66</p>
                   <p className="text-xs text-gray-500">Sem acréscimos</p>
                 </div>
                 <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
@@ -688,7 +688,7 @@ const Index = () => {
             decisões em lucro e sua atividade agrícola em um modelo de eficiência.
           </p>
           <Button asChild className="bg-white text-green-900 hover:bg-gray-100 px-8 md:px-12 py-4 text-base md:text-lg font-semibold h-auto whitespace-normal">
-            <a href="https://app.agroxeque.com.br/version-test/cadastro?video=true">
+            <a href="https://app.agroxeque.com.br/cadastro?video=true">
               Assista ao vídeo demonstrativo e ganhe créditos para começar agora!
             </a>
           </Button>
@@ -707,9 +707,9 @@ const Index = () => {
               </div>
             </div>
             <div className="flex space-x-6 text-sm">
-              <a href="https://app.agroxeque.com.br/version-test/privacidade" className="hover:text-green-400 transition-colors">Privacidade</a>
-              <a href="https://app.agroxeque.com.br/version-test/termos" className="hover:text-green-400 transition-colors">Termos</a>
-              <a href="https://app.agroxeque.com.br/version-test/contato" className="hover:text-green-400 transition-colors">Contato</a>
+              <a href="https://app.agroxeque.com.br/privacidade" className="hover:text-green-400 transition-colors">Privacidade</a>
+              <a href="https://app.agroxeque.com.br/termos" className="hover:text-green-400 transition-colors">Termos</a>
+              <a href="https://app.agroxeque.com.br/contato" className="hover:text-green-400 transition-colors">Contato</a>
             </div>
           </div>
         </div>
