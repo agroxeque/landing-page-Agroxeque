@@ -691,7 +691,7 @@ const Index = () => {
             Leve a Agroxeque para o seu negócio e transforme dados em decisões, 
             decisões em lucro e sua atividade agrícola em um modelo de eficiência.
           </p>
-          <Button asChild className="bg-[#182602] text-white hover:bg-[#C2C9BD] px-8 md:px-12 py-4 text-base md:text-lg font-semibold h-auto whitespace-normal">
+          <Button asChild className="bg-[#182602] text-white hover:bg-[#C2C9BD] hover:text-[#212F0B] px-8 md:px-12 py-4 text-base md:text-lg font-semibold h-auto whitespace-normal">
             <a href="https://app.agroxeque.com.br/formulario">
               Assista ao vídeo demonstrativo e ganhe créditos para começar agora!
             </a>
