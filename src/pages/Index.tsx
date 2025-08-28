@@ -688,7 +688,7 @@ const Index = () => {
             Sim, você pode produzir mais com menos. Vamos começar?
           </h2>
           <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-90">
-            Leve a Agroxeque para o seu negócio e transforme dados em decisões, decisões em lucro e sua propriedade em uma referência de resultados.
+            Leve a Agroxeque para a sua fazenda e potencialize o resultado de cada hectare, transformando dados em decisões e decisões em lucro.
           </p>
           <Button asChild className="bg-[#182602] text-white hover:bg-[#C2C9BD] hover:text-[#212F0B] px-8 md:px-12 py-4 text-base md:text-lg font-semibold h-auto whitespace-normal">
             <a href="https://app.agroxeque.com.br/formulario">
