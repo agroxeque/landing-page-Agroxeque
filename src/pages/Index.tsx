@@ -4,6 +4,14 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Check, Users, ArrowDown, Plus, Crown } from "lucide-react";
 import { useState, useEffect } from "react";
 
+// Adiciona a declaração para que o TypeScript conheça as funções gtag e fbq
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+    fbq?: (...args: any[]) => void;
+  }
+}
+
 const Index = () => {
   // Estado para controlar a rotação das imagens
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -26,6 +34,47 @@ const Index = () => {
     return () => clearInterval(interval);
   }, []);
 
+  // --- FUNÇÕES DE RASTREAMENTO DE CONVERSÃO ---
+
+  // Função para rastrear cliques de GERAÇÃO DE LEAD
+  const handleLeadConversionClick = () => {
+    console.log("Rastreando clique de Geração de Lead na LP...");
+
+    // Google Ads: Geração de Lead (LP)
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+          'send_to': 'AW-17474491809/A9S7CJ2khKQbEKGrvoxB',
+          'value': 1.0,
+          'currency': 'BRL'
+      });
+    }
+
+    // Meta Ads: Lead
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'Lead');
+    }
+  };
+
+  // Função para rastrear cliques de INTENÇÃO DE COMPRA
+  const handlePurchaseIntentClick = () => {
+    console.log("Rastreando clique de Intenção de Compra na LP...");
+
+    // Google Ads: Iniciar finalização de compra
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+          'send_to': 'AW-17474491809/wL2ACISShaQbEKGrvoxB',
+          'value': 1.0,
+          'currency': 'BRL'
+      });
+    }
+
+    // Meta Ads: InitiateCheckout (Iniciar Finalização de Compra)
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'InitiateCheckout');
+    }
+  };
+
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -43,14 +92,14 @@ const Index = () => {
               Já sou cadastrado
               <span className="text-xs w-full text-center">(Entrar)</span>
             </a>
-            <Button asChild className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-xs h-auto min-[560px]:px-6 min-[560px]:py-2 min-[560px]:text-base">
+            <Button asChild onClick={handleLeadConversionClick} className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-xs h-auto min-[560px]:px-6 min-[560px]:py-2 min-[560px]:text-base">
               <a href="https://app.agroxeque.com.br/cadastro">Criar Conta Gratuita</a>
             </Button>
           </div>
         </div>
       </header>
 
-{/* Dobra 1: O Impacto Imediato - Hero Section (VERSÃO CORRIGIDA FINAL) */}
+      {/* Dobra 1: O Impacto Imediato - Hero Section */}
       <section 
         className="relative bg-cover bg-center bg-no-repeat overflow-x-hidden"
         style={{
@@ -80,7 +129,7 @@ const Index = () => {
           </div>
           <div className="w-full max-w-lg">
             <div className="flex justify-center w-full">
-              <Button asChild className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
+              <Button asChild onClick={handleLeadConversionClick} className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
                 <a href="https://app.agroxeque.com.br/formulario">Assista ao vídeo explicativo e receba bônus</a>
               </Button>
             </div>
@@ -452,15 +501,15 @@ const Index = () => {
 														<CardContent className="p-6 md:p-8 text-center">
 																<h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">10 Créditos</h3>
 																<div className="mb-6">
-																		<span className="text-3xl md:text-4xl font-bold text-green-600">R$ 7,90</span>
+																		<span className="text-3xl md:text-4xl font-bold text-green-600">R$ 8,90</span>
 																		<span className="text-gray-600 text-sm block">/hectare</span>
 																</div>
 																<div className="mb-6 space-y-2">
-																		<p className="text-lg md:text-xl font-semibold text-gray-800">R$ 79,00</p>
-																		<p className="text-sm text-gray-600">Em até 6 x de R$ 13,16</p>
+																		<p className="text-lg md:text-xl font-semibold text-gray-800">R$ 89,00</p>
+																		<p className="text-sm text-gray-600">Em até 6 x de R$ 14,83</p>
 																		<p className="text-xs text-gray-500">Sem acréscimos</p>
 																</div>
-																<Button asChild className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
+																<Button asChild onClick={handlePurchaseIntentClick} className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
 																		<a href="https://app.agroxeque.com.br/comprar_creditos">Escolher Pacote</a>
 																</Button>
 														</CardContent>
@@ -479,7 +528,7 @@ const Index = () => {
 																		<p className="text-sm text-gray-600">Em até 6 x de R$ 49,66</p>
 																		<p className="text-xs text-gray-500">Sem acréscimos</p>
 																</div>
-																<Button asChild className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
+																<Button asChild onClick={handlePurchaseIntentClick} className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
 																		<a href="https://app.agroxeque.com.br/comprar_creditos">Escolher Pacote</a>
 																</Button>
 														</CardContent>
@@ -504,7 +553,7 @@ const Index = () => {
 																		<p className="text-sm text-gray-600">Em até 6 x de R$ 83,00</p>
 																		<p className="text-xs text-gray-500">Sem acréscimos</p>
 																</div>
-																<Button asChild className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
+																<Button asChild onClick={handlePurchaseIntentClick} className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
 																		<a href="https://app.agroxeque.com.br/comprar_creditos">Escolher Pacote</a>
 																</Button>
 														</CardContent>
@@ -523,7 +572,7 @@ const Index = () => {
 																		<p className="text-sm text-gray-600">Em até 6 x de R$ 149,66</p>
 																		<p className="text-xs text-gray-500">Sem acréscimos</p>
 																</div>
-																<Button asChild className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
+																<Button asChild onClick={handlePurchaseIntentClick} className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-base md:text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all">
 																		<a href="https://app.agroxeque.com.br/comprar_creditos">Escolher Pacote</a>
 																</Button>
 														</CardContent>
@@ -690,7 +739,7 @@ const Index = () => {
           <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-90">
             Leve a Agroxeque para a sua fazenda e potencialize o resultado de cada hectare, transformando dados em decisões e decisões em lucro.
           </p>
-          <Button asChild className="bg-[#182602] text-white hover:bg-[#C2C9BD] hover:text-[#212F0B] px-8 md:px-12 py-4 text-base md:text-lg font-semibold h-auto whitespace-normal">
+          <Button asChild onClick={handleLeadConversionClick} className="bg-[#182602] text-white hover:bg-[#C2C9BD] hover:text-[#212F0B] px-8 md:px-12 py-4 text-base md:text-lg font-semibold h-auto whitespace-normal">
             <a href="https://app.agroxeque.com.br/formulario">
               Assista ao vídeo demonstrativo e ganhe créditos para começar agora!
             </a>
