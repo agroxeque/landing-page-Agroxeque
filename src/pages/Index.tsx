@@ -130,7 +130,7 @@ const Index = () => {
           <div className="w-full max-w-lg">
             <div className="flex justify-center w-full">
               <Button asChild onClick={handleLeadConversionClick} className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto">
-                <a href="https://app.agroxeque.com.br/formulario">Assista ao vídeo explicativo e receba bônus</a>
+                <a href="https://app.agroxeque.com.br/promo_boas_vindas">Assista ao vídeo explicativo e receba bônus</a>
               </Button>
             </div>
           </div>
@@ -740,7 +740,7 @@ const Index = () => {
             Leve a Agroxeque para a sua fazenda e potencialize o resultado de cada hectare, transformando dados em decisões e decisões em lucro.
           </p>
           <Button asChild onClick={handleLeadConversionClick} className="bg-[#182602] text-white hover:bg-[#C2C9BD] hover:text-[#212F0B] px-8 md:px-12 py-4 text-base md:text-lg font-semibold h-auto whitespace-normal">
-            <a href="https://app.agroxeque.com.br/formulario">
+            <a href="https://app.agroxeque.com.br/promo_boas_vindas">
               Assista ao vídeo demonstrativo e ganhe créditos para começar agora!
             </a>
           </Button>
